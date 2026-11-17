@@ -1,0 +1,6 @@
+/media/
+/blender/src/
+/vendor/bin/
+/out/
+/node_modules/
+.DS_Store

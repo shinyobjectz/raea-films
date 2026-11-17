@@ -1,0 +1,18 @@
+// 04 Open what comes back (3): the cut's card pecked, opening full size over the chat and the panel; Esc back.
+import { cap, chapter, click, hover, key, move, node, pause, tip, vis, d } from "./tk.mjs"
+chapter("04")
+const card = (await d.ui()).nodes.find((n) => n.visible && /^card-i-/.test(n.id))
+console.log("card", d.fmt(card))
+await hover("card-watch", 0, { steps: 5 })
+await cap("087-cut-hover", "Pointer on the cut's card in the feed")
+await click("card-watch")
+await pause(250)
+await cap("088-cut-opening", "Opening: the card growing to full size", { live: true })
+await pause(2500)
+await move(800, 300, 2)
+await cap("089-cut-full", "The cut full size, over the chat and the panel")
+const u = await d.ui()
+for (const n of u.nodes) if (n.visible && (n.name || /back|close|version|export|share|comment|tool/i.test(n.id)) && n.rect.y < 120) console.log("top", d.fmt(n))
+await key("Escape")
+await pause(1500)
+await cap("090-esc-back", "Esc: back to the feed and the chat, as they were")

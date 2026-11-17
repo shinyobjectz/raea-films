@@ -1,0 +1,25 @@
+// 03 Start the project (3): Stop hovered while the job runs; /goal: "honk" typed and deleted, the real condition set,
+// and the goal's line over the composer. The agent's job still holds at its "build" gate (04 releases it).
+import { cap, chapter, click, hover, key, move, node, pause, text, tip, typeInto, vis, d } from "./tk.mjs"
+chapter("03")
+await hover("agent-send", 0, { steps: 4 })
+await tip()
+await cap("066-stop-hover", "Pointer on Stop, in Send's place while the job runs (1 running folded over the box)")
+await click("agent-prompt")
+await text("/")
+await pause(800)
+await cap("067-slash", "/ typed in the box: raea's commands, /goal first")
+await typeInto("agent-prompt", "goal honk", {})
+await pause(500)
+await cap("068-goal-honk", "\"/goal honk\" typed")
+for (let i = 0; i < 10; i++) { await key("Backspace"); await pause(110); if (i === 4) await cap("069-goal-deleting", "Deleting it, a letter at a time", { live: true }) }
+await pause(400)
+await cap("070-goal-gone", "Gone: the box empty again")
+await typeInto("agent-prompt", "/goal every shot has me in it", { every: 15, name: "071-goal", about: "The goal typed" })
+await pause(500)
+await key("Enter")
+await pause(3000)
+await move(700, 560, 3)
+await cap("072-goal-set", "The goal set: its line over the composer, with the running job")
+const u2 = await d.ui()
+for (const n of u2.nodes) if (n.visible && /goal|work-|running/i.test(n.id + " " + (n.name ?? ""))) console.log("node", d.fmt(n))

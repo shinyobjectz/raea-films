@@ -1,0 +1,50 @@
+{
+ "deep analog synth bass, short punchy pluck, dark and warm, mono": {
+  "24": 1,
+  "27": 1,
+  "30": 1,
+  "33": 3,
+  "36": 2,
+  "39": 1,
+  "42": 3,
+  "45": 1,
+  "48": 1
+ },
+ "glassy analog synth pluck, short, clean and bright": {
+  "60": 3,
+  "63": 2,
+  "66": 3,
+  "69": 2,
+  "72": 4,
+  "75": 4,
+  "78": 1,
+  "81": 1,
+  "84": 2
+ },
+ "soft felt piano, intimate and close, dark and warm": {
+  "48": 1,
+  "51": 2,
+  "54": 1,
+  "57": 3,
+  "60": 1,
+  "63": 2,
+  "66": 2,
+  "69": 2,
+  "72": 3,
+  "75": 1,
+  "78": 1,
+  "81": 1,
+  "84": 1
+ },
+ "staccato cello section, short spiccato, dark and tense": {
+  "36": 3,
+  "39": 2,
+  "42": 3,
+  "45": 2,
+  "48": 1,
+  "51": 3,
+  "54": 1,
+  "57": 3,
+  "60": 3
+ }
+}

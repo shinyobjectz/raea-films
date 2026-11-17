@@ -1,0 +1,257 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index eee7de1..36a8aa6 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -25,10 +25,10 @@ bevy-aqua-spray = { path = "crates/bevy-aqua-spray", version = "0.1.3" }
+ bevy-aqua-shore = { path = "crates/bevy-aqua-shore", version = "0.1.3" }
+ bevy-aqua-volume = { path = "crates/bevy-aqua-volume", version = "0.1.3" }
+ bevy-aqua-waves = { path = "crates/bevy-aqua-waves", version = "0.1.3" }
+-bevy = { version = "0.19", default-features = false }
+-bevy_ecs = "0.19"
++bevy = { version = "=0.20.0", default-features = false }
++bevy_ecs = "=0.20.0"
+ bevy_hanabi = { version = "0.19.0", default-features = false, features = ["3d"] }
+-glam = "0.32"
++glam = "0.33"
+ 
+ [workspace.lints.rust]
+ ambiguous_negative_literals = "warn"
+diff --git a/crates/bevy-aqua-core/src/bed.rs b/crates/bevy-aqua-core/src/bed.rs
+index f816492..242d6d8 100644
+--- a/crates/bevy-aqua-core/src/bed.rs
++++ b/crates/bevy-aqua-core/src/bed.rs
+@@ -41,6 +41,7 @@ pub const NO_BED_DEPTH: f32 = 256.0;
+ /// image must become GPU-ready before dependent wave and foam passes resume.
+ /// This does not support live terrain edits that reuse the same image handle.
+ #[derive(Resource, Debug, Clone, ExtractResource)]
++#[extract_app(bevy::render::RenderApp)]
+ pub struct BedHeightMap {
+     /// Single-channel image; red channel holds normalised height in [0, 1].
+     pub image: Handle<Image>,
+@@ -108,6 +109,7 @@ impl BedHeightMap {
+ /// Fallback binding when no [`BedHeightMap`] exists. Its contents are never
+ /// read: shaders return the deep default before touching the texture.
+ #[derive(Resource, Debug, Clone, ExtractResource)]
++#[extract_app(bevy::render::RenderApp)]
+ pub struct GpuFallback(pub Handle<Image>);
+ 
+ impl FromWorld for GpuFallback {
+diff --git a/crates/bevy-aqua-core/src/cascade.rs b/crates/bevy-aqua-core/src/cascade.rs
+index 04b0782..1c18925 100644
+--- a/crates/bevy-aqua-core/src/cascade.rs
++++ b/crates/bevy-aqua-core/src/cascade.rs
+@@ -68,6 +68,7 @@ pub struct Cascade {
+ /// pulls foam textures from a feature resource. Extracted into the render
+ /// app so render-side consumers see the same handles.
+ #[derive(Resource, Debug, Clone, bevy::render::extract_resource::ExtractResource)]
++#[extract_app(bevy::render::RenderApp)]
+ pub struct Data {
+     material: Handle<CascadeMaterial>,
+     texture: Handle<Image>,
+diff --git a/crates/bevy-aqua-core/src/lib.rs b/crates/bevy-aqua-core/src/lib.rs
+index 939a683..56a21bb 100644
+--- a/crates/bevy-aqua-core/src/lib.rs
++++ b/crates/bevy-aqua-core/src/lib.rs
+@@ -105,7 +105,7 @@ pub struct AnimWavesStatus {
+ /// Body colour is not authored: it emerges from `extinction` and the particle
+ /// scattering terms. Localized bodies read every field except `sss_tint`,
+ /// which only the global ocean preset ([`AquaSettings::water_optics`]) uses.
+-#[derive(Component, Debug, Clone, Copy, PartialEq)]
++#[derive(Component, Debug, Clone, Copy, PartialEq, bevy::reflect::Reflect)]
+ pub struct WaterOptics {
+     /// Per-channel extinction in inverse metres. Clear mountain water:
+     /// red dies a little faster than green/blue, giving brown-green pools.
+@@ -181,14 +181,15 @@ impl WaterOptics {
+ /// Insert this resource to enable the camera-centred ocean. Remove it for
+ /// bounded-water-only worlds. [`AquaSettings`] and [`OceanWaves`] remain the
+ /// authoritative global appearance and simulation resources.
+-#[derive(Resource, Debug, Default, Clone, Copy, PartialEq)]
++#[derive(Resource, Debug, Default, Clone, Copy, PartialEq, bevy::reflect::Reflect)]
++#[reflect(Resource)]
+ pub struct Ocean {
+     /// Undisplaced ocean surface level in world metres.
+     pub level: f32,
+ }
+ 
+ /// Selects the producer behind Aqua's stable AnimWaves cascade interface.
+-#[derive(Debug, Default, Clone, Copy, PartialEq, Eq)]
++#[derive(Debug, Default, Clone, Copy, PartialEq, Eq, bevy::reflect::Reflect)]
+ pub enum WaveModel {
+     /// Crest-style deterministic Gerstner component bands.
+     #[default]
+@@ -199,7 +200,7 @@ pub enum WaveModel {
+ }
+ 
+ /// Selects a preset displacement-energy level.
+-#[derive(Debug, Default, Clone, Copy, PartialEq, Eq, Hash)]
++#[derive(Debug, Default, Clone, Copy, PartialEq, Eq, Hash, bevy::reflect::Reflect)]
+ pub enum SeaState {
+     /// Half-height waves for sheltered or calm presentation.
+     Calm,
+@@ -247,7 +248,8 @@ impl std::fmt::Display for SeaState {
+ /// defaults. The `model` and `shallow_water_attenuation` fields can change at
+ /// runtime. `sea_state` is sampled during startup because it determines
+ /// generated spectrum assets.
+-#[derive(Resource, Debug, Clone, Copy)]
++#[derive(Resource, Debug, Clone, Copy, bevy::reflect::Reflect)]
++#[reflect(Resource)]
+ pub struct OceanWaves {
+     pub model: WaveModel,
+     /// Startup-only displacement-energy preset.
+@@ -291,7 +293,7 @@ impl Default for OceanWaves {
+ }
+ 
+ /// Supplies reflected radiance from the environment or mirrored scene views.
+-#[derive(Debug, Clone, Copy, PartialEq)]
++#[derive(Debug, Clone, Copy, PartialEq, bevy::reflect::Reflect)]
+ pub enum ReflectionMode {
+     /// Sample only the existing environment cubemap.
+     Cubemap,
+@@ -314,7 +316,7 @@ impl Default for ReflectionMode {
+ }
+ 
+ /// Controls sunlight focused onto visible underwater beds.
+-#[derive(Debug, Clone, Copy, PartialEq)]
++#[derive(Debug, Clone, Copy, PartialEq, bevy::reflect::Reflect)]
+ pub struct Caustics {
+     /// Radiance multiplier, clamped to zero or greater (`0.35` by default).
+     pub strength: f32,
+@@ -356,7 +358,8 @@ pub struct AuxiliaryWaterView;
+ ///
+ /// Insert this resource before adding the Aqua plugins to replace the
+ /// defaults. Its fields can also be changed at runtime.
+-#[derive(Resource, Debug, Clone, Copy)]
++#[derive(Resource, Debug, Clone, Copy, bevy::reflect::Reflect)]
++#[reflect(Resource)]
+ pub struct AquaSettings {
+     /// Overall detail-layer strength (`0.08` default, `0` disables, clamped
+     /// to `0..=2`). Scales the Crest detail normals, the world-space
+diff --git a/crates/bevy-aqua-core/src/view.rs b/crates/bevy-aqua-core/src/view.rs
+index 2cb0432..2afa970 100644
+--- a/crates/bevy-aqua-core/src/view.rs
++++ b/crates/bevy-aqua-core/src/view.rs
+@@ -22,6 +22,7 @@ pub struct ViewOrder(pub isize);
+ 
+ /// Marks the one 3D camera whose view drives Aqua's cascades this frame.
+ #[derive(Component, Debug, Clone, Copy, bevy::render::extract_component::ExtractComponent)]
++#[extract_app(bevy::render::RenderApp)]
+ pub struct OceanView;
+ 
+ const MIN_SCREEN_SAMPLES_PER_WAVE: f32 = 4.0;
+diff --git a/crates/bevy-aqua-foam/src/lib.rs b/crates/bevy-aqua-foam/src/lib.rs
+index 3cf7d38..41125f9 100644
+--- a/crates/bevy-aqua-foam/src/lib.rs
++++ b/crates/bevy-aqua-foam/src/lib.rs
+@@ -181,6 +181,7 @@ fn target_tick(elapsed_seconds: f64) -> u32 {
+ 
+ #[doc(hidden)]
+ #[derive(Resource, Clone, ExtractResource, Debug)]
++#[extract_app(bevy::render::RenderApp)]
+ pub struct Frame {
+     state_a: Handle<Image>,
+     state_b: Handle<Image>,
+diff --git a/crates/bevy-aqua-motion/src/lib.rs b/crates/bevy-aqua-motion/src/lib.rs
+index ce26ea3..dc1839d 100644
+--- a/crates/bevy-aqua-motion/src/lib.rs
++++ b/crates/bevy-aqua-motion/src/lib.rs
+@@ -29,6 +29,7 @@ pub enum AquaMotionSystems {
+ }
+ 
+ #[derive(Resource, Clone, Copy, Debug, Default, ExtractResource)]
++#[extract_app(bevy::render::RenderApp)]
+ pub(crate) struct MotionEpoch(pub(crate) u64);
+ 
+ impl Plugin for AquaMotionPlugin {
+diff --git a/crates/bevy-aqua-query/src/lib.rs b/crates/bevy-aqua-query/src/lib.rs
+index ce60cb6..60bac1f 100644
+--- a/crates/bevy-aqua-query/src/lib.rs
++++ b/crates/bevy-aqua-query/src/lib.rs
+@@ -239,6 +239,7 @@ fn generation_after(candidate: u32, reference: u32) -> bool {
+ }
+ 
+ #[derive(Resource, Clone, ExtractResource)]
++#[extract_app(bevy::render::RenderApp)]
+ struct Buffers {
+     requests: Handle<ShaderBuffer>,
+     results: Handle<ShaderBuffer>,
+@@ -282,11 +283,11 @@ impl Plugin for AquaQueryPlugin {
+ 
+ fn init_buffers(mut commands: Commands, mut buffers: ResMut<Assets<ShaderBuffer>>) {
+     let requests = buffers.add(ShaderBuffer::with_size(
+-        MAX_QUERIES as usize * QueryRequest::SHADER_SIZE.get() as usize,
++        MAX_QUERIES as u64 * QueryRequest::SHADER_SIZE.get(),
+         RenderAssetUsages::default(),
+     ));
+     let results = buffers.add(ShaderBuffer::with_size(
+-        MAX_QUERIES as usize * QueryResult::SHADER_SIZE.get() as usize,
++        MAX_QUERIES as u64 * QueryResult::SHADER_SIZE.get(),
+         RenderAssetUsages::default(),
+     ));
+     commands.insert_resource(Buffers {
+diff --git a/crates/bevy-aqua-reflect/src/resolve.rs b/crates/bevy-aqua-reflect/src/resolve.rs
+index 2caf70c..eb2b925 100644
+--- a/crates/bevy-aqua-reflect/src/resolve.rs
++++ b/crates/bevy-aqua-reflect/src/resolve.rs
+@@ -19,6 +19,7 @@ use bevy::{
+ use bevy_aqua_core::pass::{self, PassSpec, Passes, ShaderSource, Span, Step};
+ 
+ #[derive(Component, Clone, Debug, ExtractComponent)]
++#[extract_app(bevy::render::RenderApp)]
+ pub(crate) struct ReflectionOutput(pub Handle<Image>);
+ 
+ #[derive(Resource, Debug)]
+@@ -118,7 +119,7 @@ fn resolve(
+         })
+         .collect();
+     let ready = prepass
+-        .and_then(ViewPrepassTextures::depth_view)
++        .and_then(ViewPrepassTextures::depth_only_view)
+         .zip(pipelines.0.ready(&cache, "aqua_planar_resolve", "main"))
+         .zip(pipelines.0.ready(&cache, "aqua_planar_mip", "main"));
+     let Some(((depth, pipeline), mip_pipeline)) = ready else {
+diff --git a/crates/bevy-aqua-volume/src/lib.rs b/crates/bevy-aqua-volume/src/lib.rs
+index 59a3b14..35ec239 100644
+--- a/crates/bevy-aqua-volume/src/lib.rs
++++ b/crates/bevy-aqua-volume/src/lib.rs
+@@ -59,6 +59,7 @@ impl Plugin for AquaVolumePlugin {
+ 
+ /// GPU payload extracted each frame. Inactive frames skip the composite.
+ #[derive(Resource, Clone, ExtractResource, Debug)]
++#[extract_app(bevy::render::RenderApp)]
+ struct ExtractedVolume {
+     active: bool,
+     surface_level: f32,
+diff --git a/crates/bevy-aqua-waves/src/lib.rs b/crates/bevy-aqua-waves/src/lib.rs
+index 24d1c4d..d44a1b1 100644
+--- a/crates/bevy-aqua-waves/src/lib.rs
++++ b/crates/bevy-aqua-waves/src/lib.rs
+@@ -295,6 +295,7 @@ pub fn update(
+ /// Per-frame wave simulation resources: textures, uniforms, model gates.
+ #[doc(hidden)]
+ #[derive(Resource, Clone, ExtractResource, Debug)]
++#[extract_app(bevy::render::RenderApp)]
+ pub struct Frame {
+     output: Handle<Image>,
+     surface: Handle<Image>,
+diff --git a/src/ocean.rs b/src/ocean.rs
+index f692f11..bb23dc7 100644
+--- a/src/ocean.rs
++++ b/src/ocean.rs
+@@ -58,7 +58,7 @@ impl OceanGeometry {
+ pub(crate) fn init(mut commands: Commands, mut mesh_assets: ResMut<Assets<Mesh>>) {
+     let built = geometry::Patch::ALL.map(geometry::build_patch);
+     let bounds = built.each_ref().map(|mesh| {
+-        mesh.compute_aabb()
++        bevy::camera::primitives::MeshAabb::get_aabb(mesh)
+             .expect("ocean patches must have position bounds")
+     });
+     let meshes = built.map(|mesh| mesh_assets.add(mesh));
+@@ -143,7 +143,7 @@ pub(crate) fn sync(
+                             identity_parent_padding(lod, displacement[lod]),
+                         ),
+                         NoAutoAabb,
+-                        MeshTag(lod as u32),
++                        MeshTag::new(lod as u32),
+                         Mesh3d(geometry.mesh(layout.patch)),
+                         MeshMaterial3d(material.clone()),
+                         Transform::from_xyz(relative.x, 0.0, relative.y)

@@ -1,0 +1,37 @@
+// 02 Connect your AI: the rail's foot (Publish, Connections, Settings; Search sits at the top), the wrong door taken
+// first, then Connections, its Agents, and Connect pressed on Claude (what the scratch Mac really shows next).
+import { cap, chapter, click, hover, move, node, tip, vis, d } from "./tk.mjs"
+chapter("02")
+await move(300, 640, 4)
+await cap("030-rail-foot", "On Night Shift Trailer: the pointer heads to the rail's foot, where Publish, Connections and Settings sit over the account")
+for (const [id, n] of [["publish", "031"], ["open-plugins", "032"], ["open-settings", "033"]]) {
+  await hover(id, 0, { steps: 3 })
+  await tip()
+  await cap(`${n}-foot-${id}`, `Pointer on the rail's ${(await node(id)).name}: its tip`)
+}
+await hover("open-library", 0, { steps: 4 })
+await tip()
+await cap("034-search-door", "Pointer on the rail's Search (near the top, under Everything): where libraries are searched and connected")
+// the wrong door first: Settings
+await click("open-settings", 0, { steps: 4 })
+await node("settings-nav-account")
+await move(700, 420, 3)
+await cap("035-wrong-door-settings", "The wrong door: Settings (Account, signed out)")
+await click("open-plugins", 0, { steps: 4 })
+await node("plugins-section-agents")
+await d.wait("the agents looked up", async () => vis(await d.ui(), "plugin-connect-claude-acp"), 30000)
+await move(830, 300, 3)
+await cap("036-connections", "Connections: Connected (Kimi, the take's stand-in, Signed in), then Agents: The AIs that run your agents, over ACP. Bring the one you already pay for. Claude, ChatGPT, Kimi, Gemini, OpenCode, Grok Bot, Your own agent")
+await click("plugins-category-agents", 0, { steps: 3 })
+await d.settled()
+await move(830, 380, 2)
+await cap("037-connections-agents", "Connections filtered to Agents")
+await hover("plugin-claude-acp", 0, { steps: 3 })
+await cap("038-claude-row", "Pointer on Claude: Claude Code over ACP, signed in with your Claude plan or an Anthropic key")
+await hover("plugin-connect-claude-acp", 0, { steps: 2 })
+await cap("039-claude-connect-hover", "Pointer on Claude's Connect")
+await click("plugin-connect-claude-acp")
+await d.settled()
+await cap("040-claude-connect-pressed", "Connect pressed on Claude, on a Mac without Claude Code signed in: what Connections shows next")
+await hover("plugin-codex-acp", 0, { steps: 3 })
+await cap("041-chatgpt-row", "Pointer on ChatGPT: OpenAI's Codex over ACP, signed in with your ChatGPT plan")

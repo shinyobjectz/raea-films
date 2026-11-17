@@ -1,0 +1,216 @@
+import { script } from "raea/brief";
+
+// Storyboard draft 2 (11-11), after graybox v1. the director on v1: "more dynamic scenes liek an office or with more props and
+// detail. more moving of 3d objects and things ... more diverse scnes and the blocking and camera movments and more
+// complex actions. we are imaginga cursor in the 3d evionment"; then "the pool scene doesnt really work ... unless justa
+// brief cutaway. id love to see more match cuts between scenes ... also sun at 6 makes no sense". Kept from draft 1
+// (approved 11-11): the spine (a generator rerolls everything; in raea you point at a thing and only it changes), the
+// agent never seen (only its changes, its real tool log in the app shots), the peak's slam JUST THAT., and every beat's
+// timing on Stay (media/music/stay.wav, 1:29.65; stay.song.json). New: an office opens it and the pool is a half-second
+// cutaway; a laundromat, a kid's bedroom and a parking garage; the cursor acts in each place (picks, drags, swings,
+// pulls, winds, flicks, spins, throws, scrubs) as well as leaving the comments the agent acts on; every shot moves;
+// every change of place is a match cut. Each place's props are in parts/places.ts, one Blender component each.
+export default script({
+  title: "Stay",
+  logline: "A generator rerolls the whole place every time you ask. In raea you point at one thing, and only that changes.",
+  scenes: [
+    {
+      heading: "BLACK - A PROMPT",
+      payoff: "Someone asks a generator for a place.",
+      beats: [
+        {
+          onScreen: "Black. A prompt types itself in mono, lowercase, centred: an office at night, cinematic. The caret blinks.",
+          camera: "None: type on black",
+          cut: "From black, the film's first frame",
+          cues: ["The song's first notes", "A soft key tick under each typed letter"],
+          seconds: 2.75,
+        },
+      ],
+    },
+    {
+      heading: "INT. A GENERATOR'S OFFICE - NIGHT",
+      payoff: "Asking a generator for a change rerolls everything, and it never comes back.",
+      beats: [
+        {
+          onScreen: "An open-plan office at night under rows of tubes, every desk empty and each thing a little wrong: a monitor facing the wall, a chair with six legs rolling down the aisle on its own, the printer feeding one endless sheet across the floor, a wall clock with thirteen hours, the ceiling fan turning backwards. On each hit the office jumps to a reroll with everything different: the desks in a circle, then cubicles stacked to the ceiling with the water cooler glugging upside down, then the carpet climbing the walls. On the half-second hit at 7.11 the generator loses the thread: a cutaway (0.5 s) to an empty pool under the same tubes, and an office again at 7.61. Under it the prompt line types more cinematic, then no. the first one. The first one never comes back.",
+          camera: "28 mm at sitting height, one slow dolly down the aisle that carries on through every reroll: the move never breaks, only the place under it",
+          cut: "Hard cut on \"Hold still\" (2.75); a jump cut on each hit at 3.94, 7.11, 7.61 and 8.89, the dolly picked up where it was; a match cut on the water line from the upside-down cooler's water to the pool's, and back",
+          cues: ["The tubes' buzz far under the song", "A key tick per letter", "The printer's feed and the fan, cut mid-sound on each reroll"],
+          seconds: 9.44,
+        },
+        {
+          onScreen: "The verse's hit: the tubes die a row at a time, at 12.19 and 13.77, until the office is dark but for the monitors' standby lights and the exit sign, the six-legged chair still rolling somewhere in it. One last reroll lands on 15.01, the dullest office yet: a drop ceiling, grey partitions, the tubes buzzing again, one chair turned to face the wall. The prompt types close enough, slowly.",
+          camera: "The dolly slows to a stop at the end of the aisle and drifts",
+          cut: "On the drop at 12.19",
+          cues: ["Each row's tubes clunk off, well under the song", "The room tone thins to nothing in the dark"],
+          seconds: 6.17,
+        },
+      ],
+    },
+    {
+      heading: "INT. THE SAME OFFICE - NIGHT INTO MORNING",
+      payoff: "In raea you point at things in the scene and only those change: the office holds still and becomes beautiful.",
+      beats: [
+        {
+          onScreen: "The office holds and does not reroll. A cursor drifts in through the room's air: the real pointer as a small object in the space, lit by the tubes, its shadow sliding over the desks. The cursor picks the chair facing the wall, and a thin outline boxes it, as raea's Play view boxes a picked thing. The cursor drags it: the chair rolls across the carpet, swivels on its base and tucks in under its desk with a bump that sets the mug on it rocking. Then the cursor crosses to the blinds and clicks. raea's comment card opens in the air beside them and types: lose the tubes. morning through the blinds.",
+          camera: "A lateral track along the desks with the rolling chair, easing to rest on the windows",
+          cut: "None: the swell starts at 18.36 and the shot doesn't cut",
+          cues: ["The chair's casters on the carpet and its bump against the desk", "One click", "The card's typing", "The swell rising under it"],
+          seconds: 5.12,
+        },
+        {
+          onScreen: "Sent on 23.48. On that beat and the next two (24.52, 25.46) a row of tubes goes out, and the agent turns the blinds' slats open and draws the blinds up: a low morning sun floods along the desks, shafts standing in the dust, every chair leg laying a long shadow over the carpet, the monitors' glass flaring. The comment card folds away resolved on 24.52.",
+          camera: "The film's first big move: a crane up from the desks and over the partitions toward the windows",
+          cut: "None",
+          cues: ["The swell's peak", "The blinds' cords running", "The tubes' buzz gone with the last row"],
+          seconds: 4.22,
+        },
+        {
+          onScreen: "In the morning light the cursor takes a monitor by its edge and swings it round on its arm, the arm's joints folding, until the screen faces us and wakes: the raea app (a capture of the real app: Watch, the office so far, the blinds' comment resolved in its thread).",
+          camera: "Down from the crane's height in an arc that ends square on the monitor",
+          cut: "Hard cut on 27.70, the crane's height picked up",
+          cues: ["The monitor arm's joints, under the song", "The monitor's wake tone, faint"],
+          seconds: 3.68,
+        },
+        {
+          onScreen: "The push carries into the monitor's screen until the app's frame is the film's frame, and the office falls away behind it.",
+          camera: "A fast push into the screen, 50 mm",
+          cut: "None: the push lands as the shot ends",
+          cues: ["The room tone drawn out to nothing"],
+          seconds: 2.39,
+        },
+      ],
+    },
+    {
+      heading: "THE RAEA APP - IN THE DARK",
+      payoff: "This is a real app, and an agent made that change.",
+      beats: [
+        {
+          onScreen: "The monitor's frame becomes the app's own: the raea app floating in the dark over a black mirror floor that its light falls on (a capture of the real app: Watch, the film so far, the office's comment resolved in its thread). The cursor crosses to a frame of a slot canyon at noon and, as the song stops (36.26), pins a comment on its wall: make it golden hour. In the stop's silence, only the card's typing; on the drop the agent's real tool log starts under it.",
+          camera: "Pulling back from the screen to the whole app, then a slow arc round it, 30 mm",
+          cut: "Match cut on \"Stay...\" (33.77): the monitor's frame to the floating app's frame",
+          cues: ["\"Stay...\"", "The stop at 36.26: nothing but the card's typing", "Sent on the drop"],
+          seconds: 4.85,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A SLOT CANYON - NOON INTO GOLDEN HOUR",
+      payoff: "Lighting, directed: one ask and the light moves.",
+      beats: [
+        {
+          onScreen: "On the drop the screen bursts into tiles blown outward and we fly through into the canyon its frame showed. Noon light lies flat on the sand. The cursor, there before us, picks a tumbleweed off the sand and throws it down the slot; it bounds along the floor ahead of us. On each beat the agent lowers the sun a step and the light climbs the red wall, going gold, dust lit inside it and sand streams falling off the rim into the light, until only the rim burns and the slot below glows with its bounce. The slam GOLDEN HOUR. lands on 39.72.",
+          camera: "We fly through the burst and down the slot, 18 mm, banking through its turns behind the tumbleweed, fast, then slowing as the light settles",
+          cut: "Match cut on the drop (38.62): the canyon frame on the screen becomes the canyon",
+          cues: ["The drop", "Wind in the slot, under the song", "The tumbleweed's bounces, faint"],
+          seconds: 4.47,
+        },
+      ],
+    },
+    {
+      heading: "INT. A LAUNDROMAT - 3 A.M.",
+      payoff: "Animation, directed: the same laundry, slowed until it floats.",
+      beats: [
+        {
+          onScreen: "The sinking sun's disc becomes a dryer's round window, glowing: a laundromat at three in the morning, a row of dryers tumbling, plastic chairs under the window, a vending machine humming, a laundry cart standing alone on the floor. The cursor pulls a dryer's door open on its hinge and, as the song collapses, clicks on the tumbling drum: slower. let it float. Over the next four seconds the agent slows every drum in the row until the laundry hangs weightless inside, and one white sheet drifts out of the open door into the room. The words let it float stand across the dryers in big type, their letters drifting apart as the drums slow.",
+          camera: "A slow arc past the row of round windows, 40 mm, ending on the open door",
+          cut: "Match cut on the collapse (43.09): the sun's disc to the dryer's round window",
+          cues: ["Near silence: the song's stop", "The dryers' rumble falling away under it", "The door's latch", "One click"],
+          seconds: 4.69,
+        },
+      ],
+    },
+    {
+      heading: "INT. A KID'S BEDROOM - AFTERNOON INTO NIGHT",
+      payoff: "Time, directed: the cursor turns the clock and the day turns with it.",
+      beats: [
+        {
+          onScreen: "The drifting sheet fills the frame and settles over a kid's bed: a bedroom from the nineties, packed: posters, a desk with a CRT and a stack of games, a globe, a fish tank bubbling, a bent-necked lamp, model planes hanging on threads. The cursor picks the wall clock, takes its minute hand and winds it round: with every turn the sun swings across the room, the blinds' stripes climbing the wall and sliding over the floor, afternoon to dusk to night, the model planes turning in the warm air. On its way out the cursor flicks the globe, and it spins.",
+          camera: "From the sheet, a slow half-turn pan across the room following the light as it sweeps",
+          cut: "Match cut on the build (47.78): the drifting sheet to the sheet settling on the bed",
+          cues: ["The clock's ratchet under the song", "The fish tank's bubbles", "The globe's spin"],
+          seconds: 4.79,
+        },
+        {
+          onScreen: "Night now, the lamp on. On the desk the CRT shows the raea app (captures of the real app: Play, the wall clock picked with its Inspector card open on its hours, then the agent's real tool log on the next comment). The cursor pins that comment on the window: rain. Rain starts on the glass.",
+          camera: "A push past the CRT toward the window and the first drops on the glass",
+          cut: "On the dip (52.57)",
+          cues: ["The dip", "The CRT's whine, faint", "Rain beginning on the glass"],
+          seconds: 4.06,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A FOREST ROAD - NIGHT, RAIN",
+      payoff: "Texture and simulation, directed: the road gets wet and the car goes through it.",
+      beats: [
+        {
+          onScreen: "The window's rain becomes rain on a car's windscreen, its wipers sweeping it clear onto a forest road at night, the asphalt only damp. We rise out ahead of the car, its headlights far down the road. The cursor in the rain clicks on the road: wetter.",
+          camera: "From behind the wipers, a crane up and out ahead of the car, down to the road's edge, 35 mm",
+          cut: "Match cut on 56.63: rain on the bedroom window to rain on the windscreen, the wiper's sweep wiping us onto the road",
+          cues: ["The song holds with no beats to 60.06", "Rain and the wipers, under it"],
+          seconds: 3.43,
+        },
+        {
+          onScreen: "On the hit (60.06) the road soaks: puddles open and the asphalt becomes a mirror of the trees and the headlights. The car comes through the puddle in front of the camera on 61.30, its spray lit by its own lights, and its dark flank passes the lens. The word wetter lies on the road, rained on and reflected.",
+          camera: "The same low camera; it whips with the car as it passes",
+          cut: "None: the hit lands in the shot",
+          cues: ["The pass-by and the splash, under the song"],
+          seconds: 3.1,
+        },
+      ],
+    },
+    {
+      heading: "INT. A PARKING GARAGE - NIGHT",
+      payoff: "A material, directed.",
+      beats: [
+        {
+          onScreen: "The car's flank clears the lens and it's rolling into a multi-storey car park: sodium lights, numbered bays, an empty ticket booth, the barrier arm still lifting, a trolley drifting down the ramp on its own. The car stops in a bay, beaded with rain. The cursor picks the car and spins it on the spot like a turntable until its side takes the light, then clicks on the door: deeper red. On the stop's hits (64.41, 67.03) the paint goes to a deep candy red, the sodium lights streaking in its clearcoat and the beads sitting up on it, and the bay lights behind it come on one by one.",
+          camera: "A slow arc round the car, 85 mm, ending in a slide along the paint",
+          cut: "Match cut on the second \"Stay...\" (63.16): the car's flank passing the lens on the road to the same flank rolling into the garage",
+          cues: ["\"Stay...\"", "The tyres on wet concrete, the engine ticking as it cools", "One click"],
+          seconds: 5.33,
+        },
+      ],
+    },
+    {
+      heading: "MONTAGE - EVERY PLACE, TWICE",
+      payoff: "Rerolled against directed: the whole difference, on every beat.",
+      beats: [
+        {
+          onScreen: "A beat each on the second drop: every place twice on the same move, first as a generator rerolls it (everything changed and slightly wrong), then as directed (one thing changed, the rest held): the office, the laundromat, the bedroom, the road, the garage, the canyon. Each place hands on to the next on a circle turning the same way: the chair's spinning base to the dryer's drum, the drum to the globe, the globe to the car's wheel, the wheel to the canyon's sun.",
+          camera: "Each pair on one fast move, picked up across the cut",
+          cut: "On the drop (68.49), then a cut on every beat: within a place the rerolled to the directed, between places a match cut on a turning circle",
+          cues: ["The second drop", "Nothing but the song"],
+          seconds: 6.87,
+        },
+      ],
+    },
+    {
+      heading: "EXT. THE SEA - SUNSET, THE RAEA APP OVER IT",
+      payoff: "Everything in the film was made by pointing and asking in raea.",
+      beats: [
+        {
+          onScreen: "The canyon's sun becomes the sun on the sea: the raea app floats over the water at sunset, the sea running under it, every comment from the film along its timeline, each resolved (a capture of the real app). The cursor scrubs the timeline end to end and each place flashes by in the viewer. The slam JUST THAT. lands on the peak (80.32).",
+          camera: "A slow pull back out of the viewer and over the water, 26 mm",
+          cut: "Match cut on 75.36: the canyon's sun to the sun on the sea",
+          cues: ["The build to the peak at 80.32", "Surf far under the song"],
+          seconds: 7.45,
+        },
+      ],
+    },
+    {
+      heading: "THE CARD",
+      payoff: "raea 0.1.1.",
+      beats: [
+        {
+          onScreen: "The card: raea's lockup, and under it 0.1.1 · MAC · WINDOWS · LINUX.",
+          camera: "None",
+          cut: "On the song's last beat (82.81)",
+          cues: ["The song rings out to its end"],
+          seconds: 6.84,
+        },
+      ],
+    },
+  ],
+});

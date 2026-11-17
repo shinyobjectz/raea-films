@@ -1,0 +1,22 @@
+// 08 Find things (1): Source with all its files; / jumps to the tab's search; "goose" typed: a long list.
+import { cap, chapter, click, key, move, node, pause, tap, typeInto, vis, d } from "./tk.mjs"
+chapter("08")
+await click("source-search")
+await key("a", ["meta"])
+await key("Backspace")
+await key("Escape")
+await pause(300)
+await move(600, 300, 2)
+await tap(600, 300, "chat text")
+await pause(600)
+await move(1370, 500, 3)
+await cap("141-source", "Source: what the project's made of, its files")
+await key("/")
+await pause(700)
+const f = vis(await d.ui(), "source-search")
+console.log("search", d.fmt(f))
+if (f?.value === "/") { console.log("slash typed, not a jump"); process.exit(3) }
+await cap("142-slash", "/: the tab's search, focused")
+await typeInto("source-search", "goose", { every: 10, name: "143-source-goose", about: "\"goose\" typed: a long list" })
+await pause(800)
+await cap("143-source-goose", "\"goose\": All 35, a long list of goose")

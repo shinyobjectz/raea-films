@@ -1,0 +1,23 @@
+// 04 Open what comes back (2): the cut lands (v2), v3 replaces it in place, the agent replies and its job ends, the
+// goal's own turn runs and is met. (No question card: posting one needs the raea CLI, which reads the person's own
+// project list; the take never touches it.)
+import { cap, chapter, go, mark, move, pause, d } from "./tk.mjs"
+chapter("04")
+const cards = async () => (await d.ui()).nodes.filter((n) => n.visible && /^card-/.test(n.id))
+go("cut"); await mark("v2", 60000)
+await pause(3000); await move(1360, 300, 3)
+await cap("082-cut-landed", "The cut landed: Swamp Goose, a watch card at the top of the feed over the three stills")
+go("v3"); await mark("v3", 60000)
+await pause(3000)
+await cap("083-v3-landed", "Version 3 replaced it in place: the same card, now v3")
+go("reply"); await mark("done", 60000)
+await pause(2500)
+await move(700, 420, 3)
+await cap("084-reply", "The agent's reply in the chat; its job done, the running line gone, the goal over the box")
+await mark("goal", 90000).catch((e) => console.log("no goal turn:", e.message))
+await pause(1500)
+await cap("085-goal-working", "The goal's own turn: the agent working toward it")
+go("goal-end")
+await pause(7000)
+await cap("086-goal-met", "The goal checked and met")
+for (const c of await cards()) console.log("card", d.fmt(c))

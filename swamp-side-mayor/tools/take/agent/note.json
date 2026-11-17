@@ -1,0 +1,167 @@
+[
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-note-working",
+   "title": "comment_task",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "item": "$item",
+    "comments": [
+     "$comment"
+    ],
+    "state": "working"
+   }
+  }
+ },
+ {
+  "tool": "comment_task",
+  "args": {
+   "item": "$item",
+   "comments": [
+    "$comment"
+   ],
+   "state": "working"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-note-working",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "agent_message_chunk",
+   "content": {
+    "type": "text",
+    "text": "Taking your note on the wings."
+   }
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-note-plan",
+   "title": "plan_add",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "tasks": [
+     {
+      "title": "Draw the wings as wings: feathers, not planks",
+      "from": "$item#$comment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "tool": "plan_add",
+  "args": {
+   "tasks": [
+    {
+     "title": "Draw the wings as wings: feathers, not planks",
+     "from": "$item#$comment"
+    }
+   ]
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-note-plan",
+   "status": "completed"
+  }
+ },
+ {
+  "mark": "note-planned"
+ },
+ {
+  "gate": "v4"
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-cut-v4",
+   "title": "feed_post",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "type": "watch",
+    "title": "Swamp Goose",
+    "file": "/tmp/goose-tut-take/media/goose-v3.mp4",
+    "replaces": "$item",
+    "answers": [
+     "$comment"
+    ],
+    "changed": "drawn wings, not planks"
+   }
+  }
+ },
+ {
+  "tool": "feed_post",
+  "args": {
+   "type": "watch",
+   "title": "Swamp Goose",
+   "file": "/tmp/goose-tut-take/media/goose-v3.mp4",
+   "replaces": "$item",
+   "answers": [
+    "$comment"
+   ],
+   "changed": "drawn wings, not planks"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-cut-v4",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-note-close",
+   "title": "plan_close",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "id": "$id:Draw the wings as wings: feathers, not planks"
+   }
+  }
+ },
+ {
+  "tool": "plan_close",
+  "args": {
+   "id": "$id:Draw the wings as wings: feathers, not planks"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-note-close",
+   "status": "completed"
+  }
+ },
+ {
+  "mark": "v4"
+ },
+ {
+  "gate": "note-reply"
+ },
+ {
+  "update": {
+   "sessionUpdate": "agent_message_chunk",
+   "content": {
+    "type": "text",
+    "text": "Version 3 is in the feed: drawn wings, feathers and all."
+   }
+  }
+ },
+ {
+  "mark": "note-done"
+ }
+]

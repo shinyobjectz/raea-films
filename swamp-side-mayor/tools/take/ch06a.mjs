@@ -1,0 +1,26 @@
+// 06 Fix it yourself (1): the film full size with its timeline; Space plays it and stops on the opening shot, the one
+// with no goose in it; B lights the Blade at the shot's end; the shot picked and deleted, the track closing up.
+import { cap, chapter, click, hover, key, move, node, pause, tap, tip, vis, d } from "./tk.mjs"
+chapter("06")
+const playing = async () => vis(await d.ui(), "play-toggle")?.name
+await tap(207, 816, "timeline-ruler")
+await pause(1500)
+await move(800, 420, 3)
+await pause(700)
+await cap("120-timeline", "The film full size, its timeline under the picture, the one row of tools")
+await key("Space")
+await pause(600)
+console.log("after Space:", await playing())
+await pause(1300)
+await cap("121-playing", "Space: the film plays, the playhead running", { live: true })
+await key("Space")
+await pause(900)
+console.log("after 2nd Space:", await playing())
+await cap("122-stopped", "Stopped on the opening shot: the swamp with no goose in it")
+await key("b")
+await pause(500)
+await move(255, 846, 4)
+await pause(600)
+await cap("123-blade", "B: the Blade lit, its line on the shot's end")
+const u = await d.ui()
+for (const n of u.nodes) if (n.visible && /tl-|play-toggle|timeline-time|send|edits/i.test(n.id + " " + (n.name ?? ""))) console.log("n", d.fmt(n))

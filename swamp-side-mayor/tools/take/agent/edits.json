@@ -1,0 +1,17 @@
+[
+ {
+  "update": {
+   "sessionUpdate": "agent_message_chunk",
+   "content": {
+    "type": "text",
+    "text": "Got your edit: the frog's shot is gone. I'll carry on from your cut."
+   }
+  }
+ },
+ {
+  "mark": "edits"
+ },
+ {
+  "gate": "edits-end"
+ }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "stay",
+  "private": true,
+  "description": "The Stay film. Its one Bevy plugin: bevy_fft (mate-h, MIT, Bevy 0.20), a GPU FFT ocean with a Jacobian foam mask, forked in vendor/bevy_fft for the sea shot: shaders embedded, the surface tiled by position, and one Sea component (src/ocean/sea.rs) a scene sets. bevy-aqua's port (vendor/bevy-aqua, studies/bevy-aqua-bevy-0.20.patch) compiles but its 30 shaders still need converting to WESL.",
+  "raea": {
+    "plugins": {
+      "sea": {
+        "crate": "bevy_fft",
+        "versions": { "0.20": { "path": "vendor/bevy_fft" } },
+        "features": [],
+        "plugin": "bevy_fft::ocean::sea::SeaPlugin",
+        "types": ["bevy_fft::ocean::sea::"],
+        "proof": "draws an ocean: needs the renderer and its compute passes"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+target*/
+Cargo.lock
+.cargo
+assets/test/
+rustc-ice-*.txt
+
+# internal working notes, never published
+refs/

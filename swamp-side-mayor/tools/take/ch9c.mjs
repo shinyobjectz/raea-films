@@ -1,0 +1,45 @@
+// v9 (3), in the take's finished world: comment mode off and the notes rail shut; v3 picked again; the "More" menu at
+// the timeline's end, its CapCut draft; back to the feed, and the panel's four tabs clicked in turn. Captures 170-179.
+import { cap, chapter, click, hover, key, move, node, pause, tap, tip, vis, d } from "./tk.mjs"
+chapter("v9")
+const show = async (re) => { const u = await d.ui(); for (const n of u.nodes) if (n.visible && re.test(n.id + " " + (n.name ?? ""))) console.log("n", d.fmt(n), JSON.stringify(n.text ?? n.value ?? "")) }
+await key("Escape")
+await pause(500)
+if (vis(await d.ui(), "notes-toggle")?.name === "Hide notes") { await click("notes-toggle"); await pause(800) }
+await click("versions")
+await pause(800)
+await click("version-3")
+await pause(2000)
+await tap(1095, 816, "timeline-ruler")
+await pause(1500)
+await move(900, 600, 3)
+await pause(500)
+await show(/notes-toggle|timeline-time|frame-picture/)
+await cap("170-v3-whole", "v3, the plank-free cut, full size at 0:58.5")
+await hover("media-more", 0, { steps: 5 })
+await tip()
+await cap("171-more-hover", "Pointer on More at the timeline's end: \"its folder, a CapCut draft\"")
+await click("media-more")
+await pause(900)
+await show(/menu|capcut|folder|draft/i)
+await cap("172-more-menu", "The More menu open")
+const u = await d.ui()
+const cc = u.nodes.find((n) => n.visible && /capcut/i.test((n.name ?? "") + " " + (n.text ?? "") + " " + n.id))
+if (cc) { await hover(cc.id, 0, { steps: 3 }); await pause(500); await cap("173-capcut-hover", "Pointer on the menu's CapCut draft") }
+else console.log("no CapCut item found")
+await key("Escape")
+await pause(600)
+await click("back")
+await pause(1800)
+await move(700, 500, 3)
+await show(/^shell-tab/)
+for (const [tab, n, about] of [["feed", 174, "Feed: the work"], ["source", 175, "Source: what it's made of"], ["tasks", 176, "Tasks: the agent's plan"], ["controllers", 177, "Controllers: its settings"]]) {
+  await hover(`shell-tab-${tab}`, 0, { steps: 4 })
+  await pause(450)
+  await click(`shell-tab-${tab}`)
+  await pause(1300)
+  await move(1370, 420, 3)
+  await pause(400)
+  await cap(`${n}-tab-${tab}`, `The panel's ${tab} tab clicked. ${about}`)
+}
+await d.png("/tmp/goose-tut-take/out/v9c.png")

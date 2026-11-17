@@ -1,0 +1,223 @@
+{
+ "fps": 30,
+ "frames": 2697,
+ "bpm": 90.11,
+ "g0": 0.36,
+ "sections": [
+  {
+   "name": "hello",
+   "from": 0,
+   "to": 20
+  },
+  {
+   "name": "summon",
+   "from": 20,
+   "to": 26
+  },
+  {
+   "name": "rise",
+   "from": 26,
+   "to": 34
+  },
+  {
+   "name": "verse",
+   "from": 34,
+   "to": 48
+  },
+  {
+   "name": "dance",
+   "from": 48,
+   "to": 72
+  },
+  {
+   "name": "type",
+   "from": 72,
+   "to": 92
+  },
+  {
+   "name": "build",
+   "from": 92,
+   "to": 122
+  },
+  {
+   "name": "home",
+   "from": 122,
+   "to": 135
+  }
+ ],
+ "patterns": [
+  "bob",
+  "sway",
+  "strut",
+  "wings"
+ ],
+ "typed": "make me a music video",
+ "keysFrom": 74,
+ "moves": [
+  {
+   "name": "swim",
+   "from": 0,
+   "to": 12.6
+  },
+  {
+   "name": "climb",
+   "from": 12.6,
+   "to": 14.1
+  },
+  {
+   "name": "stroll",
+   "from": 14.1,
+   "to": 17.6
+  },
+  {
+   "name": "shakeoff",
+   "from": 17.6,
+   "to": 19.2
+  },
+  {
+   "name": "face",
+   "from": 19.2,
+   "to": 20
+  },
+  {
+   "name": "turn",
+   "from": 20,
+   "to": 21.6
+  },
+  {
+   "name": "call",
+   "from": 21.6,
+   "to": 26
+  },
+  {
+   "name": "behold",
+   "from": 26,
+   "to": 34
+  },
+  {
+   "name": "back",
+   "from": 34,
+   "to": 39.9
+  },
+  {
+   "name": "stompL",
+   "from": 39.9,
+   "to": 40.9
+  },
+  {
+   "name": "stompR",
+   "from": 40.9,
+   "to": 41.9
+  },
+  {
+   "name": "shake",
+   "from": 41.9,
+   "to": 43.6
+  },
+  {
+   "name": "sticky",
+   "from": 43.6,
+   "to": 48
+  },
+  {
+   "name": "spin",
+   "from": 48,
+   "to": 50.4
+  },
+  {
+   "name": "quack2",
+   "from": 50.4,
+   "to": 51.8
+  },
+  {
+   "name": "mudfoot",
+   "from": 51.8,
+   "to": 54.2
+  },
+  {
+   "name": "quack3",
+   "from": 54.2,
+   "to": 55.9
+  },
+  {
+   "name": "waddle",
+   "from": 55.9,
+   "to": 57.9
+  },
+  {
+   "name": "slide",
+   "from": 57.9,
+   "to": 59.5
+  },
+  {
+   "name": "pop",
+   "from": 59.5,
+   "to": 61.0
+  },
+  {
+   "name": "shuffle",
+   "from": 61.0,
+   "to": 63.0
+  },
+  {
+   "name": "duck",
+   "from": 63,
+   "to": 65.3
+  },
+  {
+   "name": "soup",
+   "from": 65.3,
+   "to": 66.6
+  },
+  {
+   "name": "mayor",
+   "from": 66.6,
+   "to": 72
+  },
+  {
+   "name": "keys",
+   "from": 72,
+   "to": 74
+  },
+  {
+   "name": "fly",
+   "from": 74,
+   "to": 92
+  },
+  {
+   "name": "enter",
+   "from": 92,
+   "to": 92.6
+  },
+  {
+   "name": "dive",
+   "from": 92.6,
+   "to": 94.25
+  },
+  {
+   "name": "plunge",
+   "from": 94.25,
+   "to": 96
+  },
+  {
+   "name": "circle",
+   "from": 96,
+   "to": 124
+  },
+  {
+   "name": "swimhome",
+   "from": 124,
+   "to": 127
+  },
+  {
+   "name": "stamp",
+   "from": 127,
+   "to": 131.4
+  },
+  {
+   "name": "last",
+   "from": 131.4,
+   "to": 135
+  }
+ ]
+}

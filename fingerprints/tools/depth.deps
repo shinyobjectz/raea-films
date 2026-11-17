@@ -1,0 +1,1 @@
+--with depth-anything-3 --with addict --with torch --with torchvision --with einops --with huggingface_hub --with safetensors --with omegaconf --with imageio --with pillow --with trimesh --with opencv-python-headless 

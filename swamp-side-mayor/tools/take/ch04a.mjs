@@ -1,0 +1,31 @@
+// 04 Open what comes back (1): the agent's job let go step by step, so the cards land in the feed one kind at a time
+// (three stills, a question, the cut, which v3 then replaces); its turn ends and the goal's own turn runs and is met;
+// then the cut opened full size, and Esc back.
+import { execFileSync } from "node:child_process"
+import { cap, chapter, click, go, hover, key, mark, move, node, pause, tip, vis, d } from "./tk.mjs"
+chapter("04")
+const cards = async () => (await d.ui()).nodes.filter((n) => n.visible && /^card-/.test(n.id))
+go("build"); await mark("controller", 60000)
+go("stills"); await mark("stills", 60000)
+await pause(2500); await move(1360, 420, 4)
+await cap("080-stills-landed", "Three stills landed in the feed, under today's pill")
+for (const c of await cards()) console.log("card", d.fmt(c))
+console.log(execFileSync("/tmp/goose-tut-take/ask.sh", { encoding: "utf8" }))
+await pause(3000)
+await cap("081-question-landed", "The agent's question landed: its choices on the card")
+go("cut"); await mark("v2", 60000)
+await pause(3000)
+await cap("082-cut-landed", "The cut landed: Swamp Goose, a watch card at the top")
+go("v3"); await mark("v3", 60000)
+await pause(3000)
+await cap("083-v3-landed", "Version 3 replaced it in place: the same card, now v3")
+go("reply"); await mark("done", 60000)
+await pause(2000)
+await cap("084-reply", "The agent's reply in the chat; its job done, the running line gone")
+await mark("goal", 90000).catch((e) => console.log("no goal turn:", e.message))
+await pause(1500)
+await cap("085-goal-working", "The goal's own turn: the agent working toward it")
+go("goal-end")
+await pause(6000)
+await cap("086-goal-met", "The goal checked and met")
+for (const c of await cards()) console.log("card", d.fmt(c))

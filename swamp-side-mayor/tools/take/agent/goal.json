@@ -1,0 +1,17 @@
+[
+ {
+  "update": {
+   "sessionUpdate": "agent_message_chunk",
+   "content": {
+    "type": "text",
+    "text": "Got it: every shot has you in it. Once the cut is up I'll check it shot by shot, and recut any you're missing from."
+   }
+  }
+ },
+ {
+  "mark": "goal"
+ },
+ {
+  "gate": "goal-end"
+ }
+]

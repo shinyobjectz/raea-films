@@ -1,0 +1,1312 @@
+{
+  "version": 1,
+  "snapshot": {
+    "root_packages": {
+      "perfect-freehand@^1.2.3": {
+        "nv": "perfect-freehand@1.2.3",
+        "peer_dependencies": []
+      },
+      "tonal@^6.5.1": {
+        "nv": "tonal@6.5.1",
+        "peer_dependencies": []
+      },
+      "@tonejs/midi@^2.0.28": {
+        "nv": "@tonejs/midi@2.0.28",
+        "peer_dependencies": []
+      },
+      "roughjs@^4.6.6": {
+        "nv": "roughjs@4.6.6",
+        "peer_dependencies": []
+      }
+    },
+    "packages": [
+      {
+        "id": {
+          "nv": "points-on-path@0.2.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/points-on-path/-/points-on-path-0.2.1.tgz",
+          "shasum": "553202b5424c53bed37135b318858eacff85dd52",
+          "integrity": "sha512-25ClnWWuw7JbWZcgqY/gJ4FQWadKxGWk+3kR/7kD0tCaDtPPMj7oHu2ToLaVhfpnHrZzYby2w6tUA0eOIuUg8g=="
+        },
+        "dependencies": {
+          "path-data-parser": {
+            "nv": "path-data-parser@0.1.0",
+            "peer_dependencies": []
+          },
+          "points-on-curve": {
+            "nv": "points-on-curve@0.2.0",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/pitch-distance@5.0.7",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/pitch-distance/-/pitch-distance-5.0.7.tgz",
+          "shasum": "ebad2005bdb026125e552243f959fd5e79e32355",
+          "integrity": "sha512-x+tC1izI1+5dzhHf1JRVVggN4pFEKTkbANSLRYEwW6PmUm3uuPPsDwHyHCWE9iwlIEc9YpG8Kc1ioeXGiCQ9xg=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/interval@5.1.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/interval/-/interval-5.1.1.tgz",
+          "shasum": "60042ec98c9a4a14bc79f41fb2e18cafb778afcd",
+          "integrity": "sha512-Zqowl7yIlSA45ibMWV4Kcb/VMd06L0GXxi6Qf2pk6ERUNbRtx+D+0S2mmIHLO/VcwkenyyUraUriYTmLiPESXA=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/midi@4.10.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/midi/-/midi-4.10.4.tgz",
+          "shasum": "7ec97be966cbcc4b803a0baa2fee8622c7d377f0",
+          "integrity": "sha512-pEIwjTUiJyVlfVJlG0pYLTSCQ4xoWo+NYLChFMIcrq/KUjdrtGOwgbFVfD2jyff5qgDmH05rRrJBJsVE1gwIkg=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/rhythm-pattern@1.0.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/rhythm-pattern/-/rhythm-pattern-1.0.1.tgz",
+          "shasum": "f14bf3b1141468e3f21dd1a647706207b514a95c",
+          "integrity": "sha512-4nMuBnlL9GDX8SoJneiYlMyNxiKynMAA9jf0ubB04sPqe6ALE+sLCNlqcKoYO9ARZ92bUN4Etj5VWMN7pdevDQ=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/pitch-note@6.1.2",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/pitch-note/-/pitch-note-6.1.2.tgz",
+          "shasum": "baa736f73f52fc273c3a745cd1ba118a32cef531",
+          "integrity": "sha512-xNtUXR6DvFMHyXKgewF0QFv9UIAd8Xxc07HIWOABIGFuKFmgT3znN2TbACSnHJGIKVfSoJhwPen2eok6UdOCwg=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/chord@6.2.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/chord/-/chord-6.2.1.tgz",
+          "shasum": "acd8fcba47430be5a9df60d05e4fefc95af01521",
+          "integrity": "sha512-7K4J8B6xv8usTkKJ/Fg/r5Ay6Nc0TxWc+jr25ijYPJZstJH8gnWMGxsWjFnqjZViu8lrFxa4F384iJtS+X8w+Q=="
+        },
+        "dependencies": {
+          "@tonaljs/chord-type": {
+            "nv": "@tonaljs/chord-type@5.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/scale-type": {
+            "nv": "@tonaljs/scale-type@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/chord-detect": {
+            "nv": "@tonaljs/chord-detect@4.9.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/collection": {
+            "nv": "@tonaljs/collection@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/interval": {
+            "nv": "@tonaljs/interval@5.1.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/pitch-interval@6.1.2",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/pitch-interval/-/pitch-interval-6.1.2.tgz",
+          "shasum": "6bfd3678884db9597be3747d6a48aab63537924c",
+          "integrity": "sha512-obMQb1Z1rP54BMiJmroCeStHsQyYCuI2MwxadAjvFYl69h2Cv+yBH5/A9Miq25hQi/M2yLjBZtm1nE9opL9Ltg=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/key@4.11.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/key/-/key-4.11.4.tgz",
+          "shasum": "025d7336f1a5eb81148963f6fdb5a0d203e5be14",
+          "integrity": "sha512-Mhd+kNNw3l0kmPf4I5wy3zXIXqPj1/QB1bc78Zb+H5tDAT92Gycpa3vlbiKvVZrq6OsUcF9+2TNXO+P1SSbJ3w=="
+        },
+        "dependencies": {
+          "@tonaljs/note": {
+            "nv": "@tonaljs/note@4.12.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/roman-numeral": {
+            "nv": "@tonaljs/roman-numeral@4.9.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/progression@4.9.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/progression/-/progression-4.9.4.tgz",
+          "shasum": "7d75dc2884e7f151d48cce30844eb3b86abfebbc",
+          "integrity": "sha512-AEwXlVztdlKNgHFDscR5cBzbCkGVjLOZ/gNnxTOCbj3vYaqw8+Fek76ZCCwT1eVkcuD+C690AgTEPrMemENI1g=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/roman-numeral": {
+            "nv": "@tonaljs/roman-numeral@4.9.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/chord": {
+            "nv": "@tonaljs/chord@6.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/collection@4.9.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/collection/-/collection-4.9.1.tgz",
+          "shasum": "0536b04de03314960777035e822aa8ab834fc91f",
+          "integrity": "sha512-xcWRxcX17qwMKEBAcpkp100eFeRbNnt08FEoomAmbfkpg7i33iNwsR8FFHJ9CnkoMcEVKqLVEGW5hdEXMSjjCg=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "array-flatten@3.0.0",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/array-flatten/-/array-flatten-3.0.0.tgz",
+          "shasum": "6428ca2ee52c7b823192ec600fa3ed2f157cd541",
+          "integrity": "sha512-zPMVc3ZYlGLNk4mpK1NzP2wg0ml9t7fUgDsayR5Y5rSzxQilzR9FGu/EH2jQOcKSAeAfWeylyW8juy3OkWRvNA=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/core@5.0.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/core/-/core-5.0.4.tgz",
+          "shasum": "6e9ea284f0dc5cc5a94c17b2d70a9662c3f4528c",
+          "integrity": "sha512-KQ1EcjgduPkBzduJ0FhezndTQZsupqcdulh9kLcUSH6YY1ehDsJzRm3vdXdcvSn5SqHs2oxveM2TENQColAErw=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/pcset@4.10.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/pcset/-/pcset-4.10.3.tgz",
+          "shasum": "b3705a94ab61666005af1f97fdd245c64c3fbffb",
+          "integrity": "sha512-LhynuFEyjgPJH4T9VENDRx1CSqKR9kJ2txWTqyxwUoCMnNL3I7UdyxFKPijr2V1IEMplJsk/G1TaPMYVVCdqoA=="
+        },
+        "dependencies": {
+          "@tonaljs/collection": {
+            "nv": "@tonaljs/collection@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/time-signature@4.10.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/time-signature/-/time-signature-4.10.1.tgz",
+          "shasum": "193e6b310632efd291039d9ee917ddbe4ac20480",
+          "integrity": "sha512-ljAA8x1ChYMmYAThAPfUuzLNrFWd+eVuvljUzbgg3Fnmvjnwg4JgTku0kK9wqDZc7NsdngFlS32kzAOS2eUBmw=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "tonal@6.5.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/tonal/-/tonal-6.5.1.tgz",
+          "shasum": "8f81e6868c9a894cbb4943d6c93652b9745b43c2",
+          "integrity": "sha512-zIg3eBoRooX6f3bSFpPh/qKWMRrWGbNUVgklqCXDKt8eDi9snJt5UBFhwE3/JkupPV5w+JaeU7Lk0f0sFTFM/Q=="
+        },
+        "dependencies": {
+          "@tonaljs/scale": {
+            "nv": "@tonaljs/scale@4.13.6",
+            "peer_dependencies": []
+          },
+          "@tonaljs/duration-value": {
+            "nv": "@tonaljs/duration-value@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/array": {
+            "nv": "@tonaljs/array@4.8.6",
+            "peer_dependencies": []
+          },
+          "@tonaljs/scale-type": {
+            "nv": "@tonaljs/scale-type@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/time-signature": {
+            "nv": "@tonaljs/time-signature@4.10.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/voice-leading": {
+            "nv": "@tonaljs/voice-leading@5.1.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/rhythm-pattern": {
+            "nv": "@tonaljs/rhythm-pattern@1.0.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/progression": {
+            "nv": "@tonaljs/progression@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/voicing": {
+            "nv": "@tonaljs/voicing@5.1.5",
+            "peer_dependencies": []
+          },
+          "@tonaljs/abc-notation": {
+            "nv": "@tonaljs/abc-notation@4.9.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/key": {
+            "nv": "@tonaljs/key@4.11.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/roman-numeral": {
+            "nv": "@tonaljs/roman-numeral@4.9.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/interval": {
+            "nv": "@tonaljs/interval@5.1.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/mode": {
+            "nv": "@tonaljs/mode@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/voicing-dictionary": {
+            "nv": "@tonaljs/voicing-dictionary@5.1.5",
+            "peer_dependencies": []
+          },
+          "@tonaljs/chord-type": {
+            "nv": "@tonaljs/chord-type@5.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/note": {
+            "nv": "@tonaljs/note@4.12.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/chord": {
+            "nv": "@tonaljs/chord@6.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/core": {
+            "nv": "@tonaljs/core@5.0.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/collection": {
+            "nv": "@tonaljs/collection@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/range": {
+            "nv": "@tonaljs/range@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/midi": {
+            "nv": "@tonaljs/midi@4.10.4",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/voice-leading@5.1.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/voice-leading/-/voice-leading-5.1.4.tgz",
+          "shasum": "e8a33dfa922a3697bd1552d9aeb167f4b5d5877c",
+          "integrity": "sha512-Qn2RkwjL6zfpiklE9hFKsg7IK69aBKgCZXNmDTJPm6cyReXMrSvO/Ufv7YahfbypHTthL05zE27QviB3SaYJKw=="
+        },
+        "dependencies": {
+          "@tonaljs/note": {
+            "nv": "@tonaljs/note@4.12.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/mode@4.9.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/mode/-/mode-4.9.4.tgz",
+          "shasum": "4801fd8347330447cb4f77f87f3a7b0f9fdd79ce",
+          "integrity": "sha512-99kkIEVxEyfTwLFO/jUJdaHNHzTLe9B+U4bjVcgjGBFaQEYpn9DZO8/3+HbFMfkucx2wtyo1uY/JS2YGT/E/Aw=="
+        },
+        "dependencies": {
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/collection": {
+            "nv": "@tonaljs/collection@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/interval": {
+            "nv": "@tonaljs/interval@5.1.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/scale-type": {
+            "nv": "@tonaljs/scale-type@4.9.4",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/voicing-dictionary@5.1.5",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/voicing-dictionary/-/voicing-dictionary-5.1.5.tgz",
+          "shasum": "dbdcab43a063b86f44979fec4904e618b9c7337e",
+          "integrity": "sha512-XALBmXTeR04Z9+IlHFjspLeHDT9wQ9bkU9OGaETCXOZkO5r6KOoxnv7ZvA9nkWVH7AmOagRM/+xEbLgCYe9xag=="
+        },
+        "dependencies": {
+          "@tonaljs/voice-leading": {
+            "nv": "@tonaljs/voice-leading@5.1.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/note": {
+            "nv": "@tonaljs/note@4.12.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/chord": {
+            "nv": "@tonaljs/chord@6.2.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/chord-detect@4.9.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/chord-detect/-/chord-detect-4.9.3.tgz",
+          "shasum": "672f8fe444bf7f3e20d4474ae6c3ce589be0064e",
+          "integrity": "sha512-L6qFtpM2hFXM7Nexq1EPM+6vt5tElYzFftmtH2UbtwmpS2f6+Lx9iPC8hBuu3HLUFld5vOd+7o7hyzabDAmsDg=="
+        },
+        "dependencies": {
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/chord-type": {
+            "nv": "@tonaljs/chord-type@5.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/pitch@5.0.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/pitch/-/pitch-5.0.3.tgz",
+          "shasum": "68cf6264f9aa33a187137e6dbad7399834b26d15",
+          "integrity": "sha512-2OpxK/p0NaOymVdlxgJxruFAt2pHfFIkPxkQ3PKQqMXhaza+SXG1Kxpo0jpuAjw946LlQ3KBC+GJRSncjYtoKA=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "path-data-parser@0.1.0",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/path-data-parser/-/path-data-parser-0.1.0.tgz",
+          "shasum": "8f5ba5cc70fc7becb3dcefaea08e2659aba60b8c",
+          "integrity": "sha512-NOnmBpt5Y2RWbuv0LMzsayp3lVylAHLPUTut412ZA3l+C4uw4ZVkQbjShYCQ8TCpUMdPapr4YjUqLYD6v68j+w=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/roman-numeral@4.9.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/roman-numeral/-/roman-numeral-4.9.3.tgz",
+          "shasum": "46b44d58316eb253ead9c23a8ff1414e02598141",
+          "integrity": "sha512-MnnVYosos1unepZRQd3fGKV5FQXNXs1ijUEN1pL65GuAlEhKIikDUR8nNgl7IoSEp63TpEhKXZXK7efZt1e95w=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/abc-notation@4.9.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/abc-notation/-/abc-notation-4.9.3.tgz",
+          "shasum": "612088e4aa9f4881a7a45eb1d738ad9f31887f00",
+          "integrity": "sha512-t1mH17qPEDSHqSa4+enqeYPEf/6vLZD8aavsMGY1eiXGUO3lIc6sjkI2skQEmhFlMCTEx6HO/dJQL3Det7U2Kw=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "roughjs@4.6.6",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/roughjs/-/roughjs-4.6.6.tgz",
+          "shasum": "1059f49a5e0c80dee541a005b20cc322b222158b",
+          "integrity": "sha512-ZUz/69+SYpFN/g/lUlo2FXcIjRkSu3nDarreVdGGndHEBJ6cXPdKguS8JGxwj5HA5xIbVKSmLgr5b3AWxtRfvQ=="
+        },
+        "dependencies": {
+          "points-on-path": {
+            "nv": "points-on-path@0.2.1",
+            "peer_dependencies": []
+          },
+          "hachure-fill": {
+            "nv": "hachure-fill@0.5.2",
+            "peer_dependencies": []
+          },
+          "path-data-parser": {
+            "nv": "path-data-parser@0.1.0",
+            "peer_dependencies": []
+          },
+          "points-on-curve": {
+            "nv": "points-on-curve@0.2.0",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/scale@4.13.6",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/scale/-/scale-4.13.6.tgz",
+          "shasum": "a558e6322b011da03e17d4681a3a7ecad3f8afab",
+          "integrity": "sha512-Yb+gWXj5G4nTZ8jm+RwFvupVkvZ2NhrLNpPv5WW8nFXjYtMdsGR88fg7Fg3bAxjQSoMAdFY59yXNv7NbfQ0rSg=="
+        },
+        "dependencies": {
+          "@tonaljs/chord-type": {
+            "nv": "@tonaljs/chord-type@5.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/note": {
+            "nv": "@tonaljs/note@4.12.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/scale-type": {
+            "nv": "@tonaljs/scale-type@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/collection": {
+            "nv": "@tonaljs/collection@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "midi-file@1.2.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/midi-file/-/midi-file-1.2.4.tgz",
+          "shasum": "e5803a8fc79cdd1692ac6ef6b1491043b397eb87",
+          "integrity": "sha512-B5SnBC6i2bwJIXTY9MElIydJwAmnKx+r5eJ1jknTLetzLflEl0GWveuBB6ACrQpecSRkOB6fhTx1PwXk2BVxnA=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "points-on-curve@0.2.0",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/points-on-curve/-/points-on-curve-0.2.0.tgz",
+          "shasum": "7dbb98c43791859434284761330fa893cb81b4d1",
+          "integrity": "sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/array@4.8.6",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/array/-/array-4.8.6.tgz",
+          "shasum": "ce8efb9683594a322aba7c5816606a2a7032e43e",
+          "integrity": "sha512-zBLWZVvZEtbekuV1+60cx5LZcT8tMU1fa1OGzxV7Zz0WuanckMw5Wm0v9LUCHnWxvBMWXlIsoWm6W98A6Mj7bg=="
+        },
+        "dependencies": {
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/chord-type@5.2.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/chord-type/-/chord-type-5.2.1.tgz",
+          "shasum": "3dcd186b336beb44dc77d5cf75c92775c797a0b3",
+          "integrity": "sha512-Zr1HApsSLFklR4VFOlxnM+7eCLQ1VZEOSBTuSLa3cd+Y/LLsbOI+xDxraspcAfPP3tgJziQFkzT864eF47cY3w=="
+        },
+        "dependencies": {
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "perfect-freehand@1.2.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/perfect-freehand/-/perfect-freehand-1.2.3.tgz",
+          "shasum": "f78b4f85464297e5861a9f6c3efd4c0abfa2f4be",
+          "integrity": "sha512-bHZSfqDHGNlPpgH2yxXgPHlQSPpEbo+qg7li0M78J9vNAi2yjwLeA4x79BEQhX44lEWpCLSFCeRZwpw0niiXPA=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonejs/midi@2.0.28",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonejs/midi/-/midi-2.0.28.tgz",
+          "shasum": "2fad0f62aa9a95ab0b5f151a6dcf03408f8d5442",
+          "integrity": "sha512-RII6YpInPsOZ5t3Si/20QKpNqB1lZ2OCFJSOzJxz38YdY/3zqDr3uaml4JuCWkdixuPqP1/TBnXzhQ39csyoVg=="
+        },
+        "dependencies": {
+          "midi-file": {
+            "nv": "midi-file@1.2.4",
+            "peer_dependencies": []
+          },
+          "array-flatten": {
+            "nv": "array-flatten@3.0.0",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "hachure-fill@0.5.2",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/hachure-fill/-/hachure-fill-0.5.2.tgz",
+          "shasum": "d19bc4cc8750a5962b47fb1300557a85fcf934cc",
+          "integrity": "sha512-3GKBOn+m2LX9iq+JC1064cSFprJY4jL1jCXTcpnfER5HYE2l/4EfWSGzkPa/ZDBmYI0ZOEj5VHV/eKnPGkHuOg=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/duration-value@4.9.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/duration-value/-/duration-value-4.9.1.tgz",
+          "shasum": "f45f17444c0c8265e07b1363bdf131c8b343802d",
+          "integrity": "sha512-wX3Q3QM0tTC2ZP7RyWxnOcHh47Z3zf93UaKi0W9RnoNpXWxyiYWzGehPe0FzFRhcjEhh2Fl4qN9M6Feo9+etig=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/note@4.12.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/note/-/note-4.12.3.tgz",
+          "shasum": "3baad3543d017ce8d0e5b81be4632fe53e1c5e89",
+          "integrity": "sha512-UhGXcLgLymnK7ANvdCzi1D1nW+1bj4OhDGe0J82O2V+ofYVdBCKc0w5a79mfGEt01omKARaWeAzf3rgSEopwEQ=="
+        },
+        "dependencies": {
+          "@tonaljs/midi": {
+            "nv": "@tonaljs/midi@4.10.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch": {
+            "nv": "@tonaljs/pitch@5.0.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-distance": {
+            "nv": "@tonaljs/pitch-distance@5.0.7",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-interval": {
+            "nv": "@tonaljs/pitch-interval@6.1.2",
+            "peer_dependencies": []
+          },
+          "@tonaljs/pitch-note": {
+            "nv": "@tonaljs/pitch-note@6.1.2",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/range@4.9.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/range/-/range-4.9.4.tgz",
+          "shasum": "2e9deffc7c56078dd4492225441e38bdbf2e5934",
+          "integrity": "sha512-2ZDAy5HmDGt1rySlkqS+jbWsSwhudJJwVZ7JITdCKz4ZU9S0xbGsKvg/jjRv/sFiaEL3EeCKSAC6C4eWz8Y7Vg=="
+        },
+        "dependencies": {
+          "@tonaljs/collection": {
+            "nv": "@tonaljs/collection@4.9.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/midi": {
+            "nv": "@tonaljs/midi@4.10.4",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/voicing@5.1.5",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/voicing/-/voicing-5.1.5.tgz",
+          "shasum": "4da9a94e18c84d9a4193d9db5fcef372109ca636",
+          "integrity": "sha512-iNbXna6aCUdiTbl2bxPeSTiUwthDsvJGFyWF0zlNYFCTAW5aSgXUlVPqHpAsCuQuy5QDUIWuyTxWN7qfvwvMNw=="
+        },
+        "dependencies": {
+          "@tonaljs/chord": {
+            "nv": "@tonaljs/chord@6.2.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/interval": {
+            "nv": "@tonaljs/interval@5.1.1",
+            "peer_dependencies": []
+          },
+          "@tonaljs/note": {
+            "nv": "@tonaljs/note@4.12.3",
+            "peer_dependencies": []
+          },
+          "@tonaljs/range": {
+            "nv": "@tonaljs/range@4.9.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/voice-leading": {
+            "nv": "@tonaljs/voice-leading@5.1.4",
+            "peer_dependencies": []
+          },
+          "@tonaljs/voicing-dictionary": {
+            "nv": "@tonaljs/voicing-dictionary@5.1.5",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@tonaljs/scale-type@4.9.4",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@tonaljs/scale-type/-/scale-type-4.9.4.tgz",
+          "shasum": "aae30911f6e85db908b37d014489d9c51efc3ed2",
+          "integrity": "sha512-yuG4dLCrA9q2X+DpIMrz+4S+8CLCFDBWm+WQh/sJgBaU2ADULjajuYnWPWacBAPpBDVXYYgbvm8Qbs6EzLGvrg=="
+        },
+        "dependencies": {
+          "@tonaljs/pcset": {
+            "nv": "@tonaljs/pcset@4.10.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      }
+    ]
+  }
+}

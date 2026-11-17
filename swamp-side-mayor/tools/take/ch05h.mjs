@@ -1,0 +1,20 @@
+// 05 Point at it (8): the menu closed, v3 taken to 0:58.5 (the ruler with the notes rail open: 00:00 at x 207,
+// 11.63 px a second), then Compare (the toolbar's "Compare with the version before"): a wipe from v2 to v3.
+import { cap, chapter, click, hover, key, move, node, pause, tap, tip, vis, d } from "./tk.mjs"
+chapter("05")
+await click("compare-toggle")
+await pause(500)
+await tap(888, 816, "timeline-ruler")
+await pause(1500)
+await move(700, 740, 2)
+await pause(600)
+await cap("117-v3-at-058", "v3 at 0:58.5: drawn wings, feathered, over the keyboard")
+await hover("compare-toggle", 0, { steps: 4 })
+await tip()
+await cap("118-compare-hover", "Pointer on Compare, at the top: \"Compare with the version before\"")
+await click("compare-toggle")
+await pause(1800)
+await move(700, 400, 3)
+await cap("119-compare", "Compare: a wipe between v2's planks and v3's drawn wings")
+const u = await d.ui()
+for (const n of u.nodes) if (n.visible && /compare|wipe|split|handle|divider|timeline-time/i.test(n.id + " " + (n.name ?? ""))) console.log("n", d.fmt(n))

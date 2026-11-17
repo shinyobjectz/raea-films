@@ -1,0 +1,255 @@
+import { script } from "raea/brief";
+
+// Storyboard draft 5 (11-11): the film as built in v3/, started over after the director's notes on assembly 8 and changed again
+// on his notes on v3 itself (all verbatim in brief.ts). Drafts 2 to 4 are kept as docs/stay.script.draftN.ts.txt.
+//  - "the first 30-40s econds right now is all ofcicie id rather not be there and shift into amny other places we can
+//    build and center on something liek a door for match cuts", "we cant linger it gets boring otherwise": the opening
+//    is one walk through eight new rooms, each crossed toward a door centred in its far wall.
+//  - "the mouse shoudl be like animating in 3d space not 2d space", "make sure clicking on things ... show up in the
+//    screen": the cursor is a solid in each place and its clicks are forced into the frame.
+//  - "the sea scenes are also too long ... the outro actually being more ui product of the app itself with some cool
+//    depth of field shots of timelines and thigns and comments and then a wide of the platform the the logo".
+//  - "you dont show any text or prompts or anythign. just use only environment with mixtures of wirframes and things
+//    like cursor moving objects and the native boxes that go over objects and mixtures of some 2d aniamtions ... no
+//    text at all no logo until the end": nothing is read until the card. No prompt, no note card, no type, no app window.
+//  - "the whole stills thing doesnt work. take these environements and try to do something completely different with
+//    them": no held frames. The idea now: a place is a drawing until the cursor touches it.
+//  - "you will have to completely rip out timing and camera": one straight camera move a shot at one speed (v3/cam.ts),
+//    one event a shot.
+//  - "cinematic vintage not home camera vitnage" and "think like an a24 trailer": a low-key print, no artefacts.
+// Kept: every cut on Stay's own beats (v3/plan.ts), the places and their rigs, the cursor that only moves things.
+export default script({
+  title: "Stay",
+  logline: "A walk through doors. Each place is a drawing until the cursor touches it. No words until the product and its card.",
+  scenes: [
+    {
+      heading: "INT. A HALLWAY - A DRAWING",
+      payoff: "A place is first a drawing.",
+      beats: [
+        {
+          onScreen: "Out of black the lines of a hallway come up, pale on a dark sheet, a door at its far end. We are already walking toward it. The cursor comes in past the lens, a small solid arrow in the room's own space, and a round window of the real hallway travels with it.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "From black, the film's first frame",
+          cues: ["The song's first notes","No sound from the place: a drawing is silent"],
+          seconds: 2.75,
+        },
+      ],
+    },
+    {
+      heading: "INT. A HOME KITCHEN - A DRAWING",
+      payoff: "What the cursor rests on is real.",
+      beats: [
+        {
+          onScreen: "The lines of a kitchen: a stove, a table laid for tea, a lamp over it. The cursor rests on the plant by the door, and inside the pick box round it the plant and the corner behind it are real. Then the cursor takes the door's knob and pulls the door open.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door (2.75): a door at the centre of the frame to the next room's door at the centre of the frame, the walk unbroken",
+          cues: ["The song","A soft tick as the cursor rests; the latch"],
+          seconds: 4.36,
+        },
+      ],
+    },
+    {
+      heading: "INT. A LIVING ROOM - A DRAWING",
+      payoff: "The same touch, another room.",
+      beats: [
+        {
+          onScreen: "The lines of a living room: sofas, a console and its television, a tall clock. The cursor rests on a lounge chair, which shows real in its pick box, then opens the door.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door (7.11)",
+          cues: ["The song","The latch"],
+          seconds: 5.08,
+        },
+      ],
+    },
+    {
+      heading: "INT. A STUDY - A DRAWING, THEN DUSK",
+      payoff: "One click, and the drawing is a place.",
+      beats: [
+        {
+          onScreen: "On the drop the cursor clicks, and the real study spreads out from the click in a growing circle: walls in deep green paint, a cabinet, a round table, a chandelier. The cursor opens the door onto light.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door, on the drop (12.19)",
+          cues: ["The drop","A click; the room's air from the moment it is real; the latch"],
+          seconds: 2.82,
+        },
+      ],
+    },
+    {
+      heading: "INT. A WORKSHOP - DAY",
+      payoff: "In a real place the cursor moves real things.",
+      beats: [
+        {
+          onScreen: "A workshop under grey daylight: shelves, a tool cart, a drill press. The cursor picks a stool up out of our way, the pick box round it, and sets it down by the wall. It opens the door.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door (15.01)",
+          cues: ["A workshop's air, low","A click as the stool is picked and put down; the latch"],
+          seconds: 3.35,
+        },
+      ],
+    },
+    {
+      heading: "INT. A GREENHOUSE - DAY",
+      payoff: "And puts them where they belong.",
+      beats: [
+        {
+          onScreen: "A greenhouse room in full sun: planters along the walls, a bench, a table of pots. The cursor picks a potted plant off the floor and carries it across to the planters. It opens the door.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door (18.36)",
+          cues: ["Leaves and a room in the sun, low","A click on the plant; the latch"],
+          seconds: 5.12,
+        },
+      ],
+    },
+    {
+      heading: "INT. A DINING ROOM - EVENING",
+      payoff: "One thing changes; the rest stays.",
+      beats: [
+        {
+          onScreen: "A dining room in low evening sun: a table laid with a cake and a tea set, a cabinet, a tall clock. The cursor picks a chair and pulls it back to the table. It opens the door.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door (23.48)",
+          cues: ["A room in the evening, low","A click on the chair; the latch"],
+          seconds: 4.22,
+        },
+      ],
+    },
+    {
+      heading: "INT. A CELLAR - LAMPLIGHT, THEN A DRAWING",
+      payoff: "And any place can go back to its drawing.",
+      beats: [
+        {
+          onScreen: "A cellar under two bare lamps: barrels, crates, a chest. The cursor clicks, and the drawing spreads back over the room in a growing circle. In the drawing it pulls the last door open.",
+          camera: "A dolly straight down the middle of the room toward its door at walking pace, the door at the centre of the frame",
+          cut: "Match cut on the door (27.70)",
+          cues: ["A cellar's air, low, falling silent as the drawing returns","A click; the latch"],
+          seconds: 6.07,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A SLOT CANYON - A DRAWING, THEN LATE AFTERNOON",
+      payoff: "It works anywhere: the same touch, a different place.",
+      beats: [
+        {
+          onScreen: "The lines of a slot canyon, travelled into. The cursor rests on a tumbleweed, which shows real in its pick box. On the drop it clicks and the real canyon opens from the click in a circle; the sun comes down the walls from noon to a low warm light as sand streams fall from the rim. The cursor picks the tumbleweed and pulls it out of our way.",
+          camera: "A dolly down the slot at just under a metre a second, tilted a little up to the strip of sky",
+          cut: "Match cut on the door (33.77): the cellar's open door, as lines, to the slot of the canyon, as lines. The circle opens on the drop at 38.62",
+          cues: ["Silence, then a riser into the drop", "A click; wind in the slot from the moment it is real"],
+          seconds: 9.32,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A GARDEN IN A WOOD - DUSK",
+      payoff: "The thing in the cursor's hand is real before the place is.",
+      beats: [
+        {
+          onScreen: "A drawing of a garden in a clearing: a picnic table, a bench, a jacaranda, firs behind. The cursor lifts a storm lantern from the grass, the lantern real inside its pick box while the garden is still lines, and stands it on the table. Where it is set down its flame comes up and the real garden spreads out in a circle, the low sun through the trees.",
+          camera: "A slow push toward the table",
+          cut: "Match cut on the collapse (43.09): the canyon's low sun down its walls to the garden's low sun through the trees",
+          cues: ["A click on the lantern", "The garden's evening from the moment it is real: crickets, leaves"],
+          seconds: 4.69,
+        },
+      ],
+    },
+    {
+      heading: "INT. A KID'S BEDROOM - AFTERNOON INTO RAIN",
+      payoff: "The cursor can draw the line between the two itself.",
+      beats: [
+        {
+          onScreen: "A drawing of a kid's bedroom: a carved bed, a nightstand and its alarm clock, a dartboard by the door. The cursor takes hold at the left edge and drags a line across the frame; the real room is on its near side, afternoon sun lying across the white bed and the floorboards.",
+          camera: "A slow push toward the bed",
+          cut: "Match cut on the build (47.78): the sheet's drift from the dryer to the white sheets of the bed",
+          cues: ["A click as the line is taken", "The room's air behind the line, a few birds outside"],
+          seconds: 4.79,
+        },
+        {
+          onScreen: "The same room's window, its blinds down, the door behind us. The cursor picks the blinds and lifts them: rain is running down the glass under a grey sky, and the room falls back to the light of its desk lamp.",
+          camera: "A push toward the window",
+          cut: "Match cut on the light (52.57): the sun on the bed to the window it came through",
+          cues: ["A click on the blinds", "Rain on the glass from the moment they are up"],
+          seconds: 4.06,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A FOREST ROAD - RAIN",
+      payoff: "The rain carries us out of the room and onto the road.",
+      beats: [
+        {
+          onScreen: "A drawing of a road between tall trees, low by its centre line. The cursor comes in past the lens and clicks the road ahead; the real place spreads from the click, wet and grey in the mist, the rain falling fine. The red car comes through, its headlamps on, throwing spray from both wheels.",
+          camera: "A slow low track back along the centre line as the car comes on",
+          cut: "Match cut on the rain (56.63): rain on the window's glass to rain on the road",
+          cues: ["Rain on the road and wind in the trees, from the moment it is real", "The car passing through water"],
+          seconds: 6.53,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A HARBOUR - DUSK",
+      payoff: "One click on one thing.",
+      beats: [
+        {
+          onScreen: "A drawing of a wooden pier and a sailing ship moored along it, masts over the frame. The cursor slides a crate, real inside its pick box, out of the way down the planks. It clicks the ship's side: the real harbour opens from the click, still water under a burning sky, and the lantern on the pier is alight.",
+          camera: "A slow dolly down the pier beside the hull",
+          cut: "Match cut on the line (63.16): the road running away from the lens to the pier's planks running away from the lens",
+          cues: ["A click on the crate, a click on the ship", "The harbour from the moment it is real: water on the piles, the ship's timbers"],
+          seconds: 5.33,
+        },
+      ],
+    },
+    {
+      heading: "MONTAGE - TWENTY PLACES",
+      payoff: "Any place at all, as its drawing and as itself.",
+      beats: [
+        {
+          onScreen: "Twenty places, two a beat, then one a beat, then two a beat again, real and drawing by turns: a record shop's turntable, the liminal office, a koi pond, a pier at sundown (drawn), a stairwell's spiral, a boat cresting a simulated sea, a ferris wheel (drawn), a laundromat, a clock tower's gears (drawn), a parking garage, a subway's train (drawn), a coffee cup from above, a gym (drawn), a cathedral, a kelp forest (drawn), a lighthouse, a wind turbine (drawn), a hoop in the rain, an observatory's moon (drawn), a swimming pool.",
+          camera: "Each a short push at one speed, already moving",
+          cut: "On every beat from the drop at 68.49: five beats shared two places each, two places a beat each, then eight at two a beat, a match cut on the circle each place carries",
+          cues: ["The song alone: its peak"],
+          seconds: 6.87,
+        },
+      ],
+    },
+    {
+      heading: "THE RAEA APP - CLOSE",
+      payoff: "All of that was made here.",
+      beats: [
+        {
+          onScreen: "A capture of the real raea app, very close and mostly out of focus: we travel along the timeline under the film, its markers passing through the plane of focus toward the playhead.",
+          camera: "A macro dolly along the timeline, a fast lens, the focus a hand's width deep",
+          cut: "Match cut on the circle (75.36): the pool's pace clock to the playhead's round head",
+          cues: ["The song", "Nothing else"],
+          seconds: 2.48,
+        },
+        {
+          onScreen: "The same capture, close on its notes: each a line someone wrote on the film (morning light through that window. darker walls. a room for reading. more green by the bench.) and under it what the agent did, each coming sharp as we pass it.",
+          camera: "A macro dolly down the notes, the focus on the note we are passing",
+          cut: "Cut on the downbeat (77.84)",
+          cues: ["The song"],
+          seconds: 2.48,
+        },
+        {
+          onScreen: "The whole platform: the capture of the raea app at full width in the dark, the film in its viewer, the notes beside it, the timeline under it. We draw slowly back from it.",
+          camera: "A slow pull back from the whole window",
+          cut: "On the drop (80.32)",
+          cues: ["The drop"],
+          seconds: 2.49,
+        },
+      ],
+    },
+    {
+      heading: "THE CARD",
+      payoff: "raea 0.1.1.",
+      beats: [
+        {
+          onScreen: "Black. raea's lockup, and under it: 0.1.1 · MAC · WINDOWS · LINUX.",
+          camera: "None: a slow scale up on the lockup",
+          cut: "Cut to black on the beat (82.81): the platform to its name",
+          cues: ["The song's last bars", "The sea fading out"],
+          seconds: 6.84,
+        },
+      ],
+    },
+  ],
+});

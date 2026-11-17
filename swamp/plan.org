@@ -1,0 +1,488 @@
+#+TITLE: v0.1.5
+#+TODO: TODO MAKING REVIEW | DONE DROPPED
+
+* First pass
+** DONE Write the plan: shape the brief, the film's script, the tasks
+CLOSED: [2026-11-15 Sun 20:27]
+Brief shaped (every field assumed, for the director to confirm), script written as hype.script.ts, tasks planned.
+** DONE Previz: grey-box blocking, camera and timing of the whole film
+CLOSED: [2026-11-15 Sun 20:27]
+compositions/previz.tsx, 14 shots, 44 s; render clean (0 errors).
+** DONE Storyboard approved                                            :gate:
+CLOSED: [2026-11-15 Sun 21:09]
+Nothing of the real film renders until the director approves the script and previz.
+Waiting on the director: the previz and script, and the brief's assumed fields.
+The director, 11-15: no end card or "made in raea" line; 16:9, cinematic; the UI and the atmosphere carry it. Previz v2 and the script now end on the picture.
+The director, 11-15, on the end line: no version number, no "the raea app"; the logomark alone. Previz v3 and the script close on the mark only (assets/brand/raea-mark.svg, the site's own file).
+The director, 11-15: more chances to show it working, other interactive components, until the entire world is different. Previz v4 and the script: the project is the swamp; Sun slider, water colour, a tree dragged in the scene and the timeline each change the world. 50 s.
+The director, 11-15: "finish the whole, don't stop until complete". Previz v4 and the script are the plan.
+* The world
+** DONE The app take: a fresh project, Swamp, driven in raea's own window (chat, feed, its Controllers, the scene full size, its timeline), captured state by state for the monitor
+CLOSED: [2026-11-15 Sun 22:52]
+New content only, made for this film; no other project's work on screen.
+- [ ] scratch world with one new project
+- [ ] the piece the robot makes (its own composition, rendered)
+- [ ] each UI state captured from raea's window
+- [ ] every click target checked on a contact sheet
+The project needs real controllers (Light: Sun; Water: Colour) and a scene item whose parts drag and whose timeline scrubs: check each exists in the 0.1.5 app as scripted before building on it.
+Take captured: 103 states with pointer and rects (assets/app-take). Canopy slider stands in for dragging a tree in the scene. Keyed and scheduled on the film's clock (components/take.ts, page.tsx); checking on the monitor now.
+103 captured app states play on the monitor through the whole film, with the item's picture re-shot from the set as it now stands.
+** DONE Look development: hyper-realistic and cinematic, ray-traced light on real scanned assets and materials, the screen staying sharp
+CLOSED: [2026-11-15 Sun 22:52]
+- [ ] Solari + volumetric shafts metered
+- [ ] paint look tuned on one hero still
+- [ ] UI on the monitor readable through the look
+Paint + traced light works in the film frame (exposure in stops, plain mesh in the ui pass). Feedback 16 Nov: too plain, not Ghibli, not cinematic. Pushing: painted foliage masses, cloud sky, dappled light, shafts, depth layers, lens.
+Direction changed 16 Nov: drop the watercolour, pencil line and low-poly shapes. Photoreal lighting and assets instead.
+Photoreal look posted as a look check: Poly Haven CC0 scans, HDRI sky, Solari. Engine note: a Model with <Atmosphere light> panics, so the sky is an HDRI Environment.
+Photoreal look settled in look check v2.
+** DONE Props, each checked close, in both states (dead grey and alive): monitor, keyboard under grass and rubble, cursor robot, water and lilies, scanned trees, rocks, plants, mist, fireflies
+CLOSED: [2026-11-15 Sun 22:52]
+- [ ] swamp monitor
+- [ ] keyboard, grass and rubble
+- [ ] cursor robot
+- [ ] water
+- [ ] trees, reeds, moss
+- [ ] mist and fireflies
+Rubble is now scanned mossy rock sitting on the caps; keycaps dirtied; bank given a front lip under the keyboard; monitor moss shrunk; pale calathea swapped for ferns; screen brightness 1.5.
+Monitor with ivy, vintage keyboard with grime and scanned rubble, robot, water, trees, plants, mist and fireflies checked close in dead and alive states.
+** DONE Grow real ivy over the monitor: replace the moss on the bezel's left side and top with scanned ivy that climbs the frame and hangs over its edge, bare stems while the world is dead and leafed once Canopy rises
+CLOSED: [2026-11-15 Sun 22:38]
+- [ ] Find a CC0 scanned ivy or creeper and prepare it for tracing
+- [ ] Place it climbing the left bezel and trailing over the top
+- [ ] Check close in dead and alive states
+Ivy built from scanned ivy leaves (ambientCG LeafSet029, CC0) by scripts/make_ivy.py: 50 vines, 5,768 leaves; bare stems while dead, leaves come in from the foot up with Canopy. Checked close in both states.
+* The film
+** DONE Animation: robot cursor, keys, cameras, and the four world changes (sunrise, water and lilies, the leaf wave, dusk and fireflies)
+CLOSED: [2026-11-15 Sun 22:52]
+Rendering the start and end of all 18 shots (scripts/ends.sh) to check robot targets and transitions.
+Start and end stills of all 18 shots checked (out/real/ends-a.jpg, ends-b.jpg): robot sits on the Sun knob, the Teal option, the Canopy knob and the playhead; typing reads; sunrise, teal water, leaf wave and dusk all land.
+Robot lands on the Sun knob, Teal option, Canopy knob and playhead; typing, sunrise, water, leaf wave and dusk all read in the rendered film.
+** DONE Sound: swamp bed, foley on every action, the rhythm that builds, the mix at -14 LUFS
+CLOSED: [2026-11-15 Sun 22:52]
+All foley, beds and the five chord notes generated (SAO, TokenSynth); mix renders at -14.2 LUFS, true peak -2.0 dBTP, building from about -18 to -10 short-term through the scrub.
+Mix at -14.0 LUFS, true peak -1.7 dBTP. Source sounds de-clipped (originals kept in assets/audio/raw), loudest hits lowered, dusk bed tiled so it fades out. Measured, not listened to.
+** DONE Render, check every beat, score against the fingerprint, post v1
+CLOSED: [2026-11-15 Sun 22:52]
+Full render started: scripts/render_film.sh, one process per shot at 1920x1080, joined with the mix into out/swamp-hype-v1.mp4.
+18 shots at 1920x1080 joined with the mix: 50.0 s, 1500 frames. Watched on frames every 1.25 s. raea fingerprint score: checks no findings; four advisory notes remain (reads as computer generated 0:34-0:50, harsh music 0:34-0:38, glitch 0:39-0:46 which I checked on frames and found clean, muffled voice 0:44-0:50).
+* DONE Rebuild the keyboard as a chunky vintage board (deep wedge case, tall sculpted caps, two-tone beige and grey) and give it procedural grime: dirt in the gaps, stains and wear that vary cap to cap
+CLOSED: [2026-11-15 Sun 22:38]
+- [ ] Wedge case and tall stepped caps, two-tone
+- [ ] Procedural dirt and wear on caps and case
+- [ ] Keys still line up with what the robot presses; check close in both states
+Keyboard rebuilt: deep case with a back ridge, tall tapered dished caps, cream and grey-brown with a rust Return; procedural grime tile (scripts/make_grime.py) mapped on case and caps, earth packed in the well. The wear extension and decals do not draw under ray tracing, so the grime is a generated texture.
+* DONE Fill the horizon: far tree lines, islands and layered mist behind the open water so every shot's background has depth and no bare bright gap
+CLOSED: [2026-11-15 Sun 22:38]
+- [ ] Far tree rings and islands out to the horizon
+- [ ] Aerial haze layering them
+- [ ] Check the dusk hero's right side and the other three states
+Two more lines of trees out to 150 m, 16 low rock islands, water carried to the horizon and a far haze band; the dusk hero's right side now shows trees receding into haze.
+* DONE Post look check v2 replacing a feed post, then re-render the film with the new props
+CLOSED: [2026-11-15 Sun 22:52]
+- [X] Look v2 posted
+- [ ] Film re-rendered and posted
+Look v2 posted as a feed post. The comment ids could not be marked on the old item (the feed tool reports no such item), so they are settled by this version instead. Film re-render running (job film-v1).
+Look v2 posted a feed post; film re-rendered with the ivy, vintage keyboard and filled horizon and posted.
+* Film v2
+** DONE Rebuild the pointer robot as a machine: a hard-surface cursor-shaped drone with panel seams, vents, a lens, thrusters and bolts, still beige and still a pointer
+CLOSED: [2026-11-16 Mon 06:46]
+- [X] Model it and check close stills (key shot, slider shot, end seat)
+Rebuilt in components/robot.tsx: gunmetal frame, bolted beige armour plates with seams and vent slots, steel nose, lens in a housing, bell nozzle and two trim thrusters, antenna beacon. Checked in close stills in the grey and the living world.
+- [X] Still reads as a cursor at screen-pointer size
+On the glass at pointer size (wake, rail and controller shots) it still reads as an arrow cursor; the lens and nozzle read in the close shots.
+The robot is a machine now: a gunmetal frame with bolted beige armour, a lens, a steel nose, a nozzle and trim thrusters.
+** DONE Recut the middle: controllers in about 60% of the time, then a new section where a comment is pinned on the item, a loop is drawn on the frame, and the agent answers with a new version that changes the world
+CLOSED: [2026-11-16 Mon 06:46]
+- [X] Capture the real app's comment, draw and new-version states
+Re-took the real app (assets/app-take, 160 states): Comment tool, pin, typed note, Lasso drawn round the water, posted, Send, the Comment task chip, the v2 card, v2 opened, Compare with the version before, the wipe dragged. Soft-keyed (scripts/key_states.py) so translucent UI over the picture keeps its own colour.
+- [X] Retime the clock: shorter Sun, Water, Canopy beats (690-940, was 690-1110)
+- [X] New shots for the comment, the drawing, and the answer (mist over the water)
+Shots 16-21: open, pin and note, lasso and send, the answer in the chat, the mist rolling in over the world, the v1/v2 wipe. Checked in preview stills.
+- [X] Update hype.script.ts to the new cut
+New scene THE NOTE; cues rewritten for the score and real effects; 53 s; raea spec passes.
+Controllers run 8.3 s (was 14), followed by a 9 s note section: pin, typed note, lasso, send, the Comment task, the v2 card, mist in the world, and the v1/v2 wipe.
+** DONE Replace the generated pad and thumps with a composed score played by downloaded sampled instruments from MIDI, entering late and ebbing and flowing, over real recorded effects
+CLOSED: [2026-11-16 Mon 06:46]
+- [X] Download free sampled instruments; write the cue as MIDI and render it
+Salamander Grand Piano V3 (CC BY 3.0) and VSCO-2 CE strings, horn, harp, timpani (CC0); scripts/score.py writes assets/audio/score.mid and plays it to score.wav. Silent until Return, swells at the sun, falls to solo piano for the note, climax on the scrub, resolves at dusk.
+- [X] Real recorded effects in place of generated ones
+CC0 field and foley recordings (assets/audio/real, SOURCES.md) on every action and as the swamp's beds.
+- [X] Rebalance; -14 LUFS, peak under -1 dBTP
+out/v2/sound.wav: -14.3 LUFS integrated, -2.2 dBTP, LRA 10.7.
+MIDI score played on Salamander piano and VSCO-2 CE strings, horn, harp and timpani, entering at Return, over CC0 recorded effects; -14.2 LUFS, -2.2 dBTP.
+** DONE Render film v2, watch it, score it, post it replacing a feed post
+CLOSED: [2026-11-16 Mon 06:46]
+- [X] Render all 24 shots at 1920x1080 and mux the mix
+- [X] Watch it on a contact sheet; fix what reads wrong
+- [X] Web copy and fingerprint score
+- [X] Post as a watch item replacing a feed post
+24 shots at 1920x1080, 53.0 s, 1590 frames. First pass: the scrub shot was veiled by the low mist bank (camera at y 0.8 inside it); the mist now settles onto the water while the wipe holds on the glass (settleAt), shots 21-24 re-rendered.
+Contact sheets every 1.25 s; no one-frame dips in 1590 frames. The CRT wake's 16.3 kHz flyback whine (35% of its energy) low-passed at 11 kHz; >8 kHz share at 6-7 s from 16-18% to under 1%.
+Web copy x264 crf 15 aq-mode 3. Mix -14.2 LUFS, -2.2 dBTP. Fingerprint against v1: the same 5 flags (dark opening and dark-theme close-ups, noise at 0:00); its strong clip and flash reads are contradicted by its own checks and by measurement.
+Posted as a feed post, replacing a feed post and answering all three notes.
+Rendered, watched, fixed (the mist veil on the scrub, the CRT whine), scored, and posted replacing v1.
+* Film v3
+** DONE Lift the robot clear of the keyboard as it rises in front of the waking monitor
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] Measure the robot's lowest point against the keycaps' tops through the wake shot (frames 165-270)
+scripts/robot_clear.py: its body (0.44 m under the tip once tip-up) was 11 cm into the keys at frame 200, under 3 cm from 167 to 207.
+- [X] Raise its path so it clears the keys by at least 3 cm, keeping the nose bump on the key before it
+It lifts straight off the key to 0.68 m over it and turns tip-up from 180 to 206; only the intended nose bump touches.
+- [X] Stills across the shot show it above the keys
+The robot rises clear of the keyboard.
+** DONE Take the low water shot's camera out of the foreground rock
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] Find the rock the camera sits inside at 27.5 s, and test the other low shots (the opening, the mist) for the same
+It was the bank's front lip: a root-cluster scan flattened into a 5.8 x 1.6 m shelf at lens height, 0.7 m from the lens. scripts/camera_clear.py measures every shot's lens path against every scan's vertices.
+- [X] Move the camera or the rock so the rock is whole in frame or out of it
+The lip cut to a 0.9 m margin round the keyboard (x -1.3..1.6, z 3.9..4.6); 2 m from the water shot's lens.
+- [X] Stills every few frames of the shot show no cut rock
+The low water shot's camera is out of the rock.
+** DONE The send: at dusk the robot shares the film for review from the real app's Share panel
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] Capture the real Share > Review link flow in the app take (Share for review, the link made)
+- [X] A shot on the glass after the dusk play: the robot opens Share and sends it
+- [X] The seat and the logomark move off the swamp to the new end
+The Share > Review link flow was already in the take (252b-258); 24-send plays it at 1430-1520 (title "Swamp, for the mothership"), and the bezel seat is gone
+Share, the title typed, Create link, in shot 24.
+** DONE The beam: light breaks open in the ground at the monitor's foot and the camera follows it up through the canopy and the clouds
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] The ground opening and the beam built and lit in the swamp
+- [X] A shot tilting up with the beam through the canopy into cloud, joining the orbit shot through the white
+components/groundbeam.tsx: a jagged seam of light in the bank left of the keyboard (25-crack), then an upright core and glow column with pulses; the fog switches off above 20 m (Bevy draws the frame black from outside it)
+The seam cracks, the beam stands up, and the camera corkscrews up it into white (25-26).
+** DONE Orbit and the mothership: a real 3D Earth, the beam rising off the dusk side to a massive ship built in 3D
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] NASA Earth plates fetched, each with its source and licence noted (now only a reference: the Earth is 3D)
+- [X] The ship modelled (hull, plating, lights, the port the beam enters) and checked in close and far stills
+  The hull is a solid (solids/mothership.ts) fitted out in Blender (blender/mothership.py): bevels, CC0 plating, 3,600 machinery pieces.
+- [X] A shot travelling up the beam to the ship and into the port
+- [X] Abrams/Spielberg look: low orbit with the limb across the frame, the sun cresting it behind the ship, an anamorphic flare that the ship and the Earth hide, cameras that look up at the ship and drift
+Look check posted as a feed post (loom, belly, sunset at 1080p): low orbit at 600 km, the limb across the frame, the sun cresting it under the hull, anamorphic flare (components/flare.tsx), the beam's glow per pixel, Black Marble 500 m lights over the Gulf.
+2026-11-16: orbit shots 27, 28 and 32 built in components/orbit.tsx (test: compositions/orbit-shots.tsx). 32's robot still to light: a glowing softbox behind the lens (Solari ignores point lights; a directional fill greys the Earth's night side). Stopped: the disk is full (890 of 926 GB, free space swinging to zero), so nothing can run.
+Orbit, the beam to the ship, the strike and the port (27-28).
+** DONE A real Earth: the planet at full size from NASA's maps, with an atmosphere that scatters the sun
+CLOSED: [2026-11-16 Mon 11:10]
+The person's note on the orbit still: a real Earth model that matches, not a picture, to show how real an Earth
+built this way can look.
+- [X] NASA maps fetched with their sources: Blue Marble land and sea, Black Marble night lights, clouds, GEBCO relief
+- [X] The surface shader: day, clouds and their shadows, ocean glint, relief, city lights on the night side only
+- [X] The atmosphere shader: Rayleigh and Mie scattering on a shell, the blue limb, haze, the red terminator
+- [X] Stills judged against NASA's own photographs (the ISS plates): far globe, limb, terminator over the dusk side
+First globe still (out/v3/earth/globe.png) approved as 'nice'; the user wants the space scenes shot the way Abrams and Spielberg would: anamorphic flares, the sun cresting the limb, a camera that looks up at the ship and moves.
+The NASA-map Earth with its atmosphere, in 27, 28 and 32.
+** DONE Make the blue flare streaks an event, not a fixture: one at a time, only while a light hits the lens hard, gone in about a second
+CLOSED: [2026-11-16 Mon 09:10]
+Done looks like: in the stills at rest no bar crosses the frame; the one full bar is in the strike frame, and a second later it has faded.
+- [X] components/flare.tsx: the resting sun gives a short, faint streak (a third of the frame, not across it); a flare's full-width bar only at its peak
+- [X] components/orbit.tsx: the port's steady streak goes; the beam's strike flashes it and it fades in about a second; the sun's streak swells as it clears the hull's edge and settles
+- [X] re-render loom, belly and sunset, plus the strike frame and the frame a second after it, and post them replacing a feed post
+The sun's swell as it clears the hull was not needed: in shot 27 the sun is in view throughout, so the beam's strike is the shot's one flare event.
+Flares now have a reach: a short sun glint at rest; one full-width bar only as the beam strikes the port (shot 27) and as the camera goes into the iris (28), fading within a second.
+** DONE The review room: the film on an alien screen, alien heads dark and out of focus in front, a clamor of wow
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] The room and its screen, playing the film's own footage
+- [X] Three or four heads in silhouette, reacting
+- [X] A real recorded crowd wow, worked to sound like the room
+a subagent is building components/room.tsx (29-room, 30-hands, 31-note)
+components/room.tsx: a dark ribbed room, the screen the only light (Solari traces its picture), playing v2 700-807 from 1872 so the sunrise lands on the wow
+The review room, its screen now a page so it shows in the video render (29).
+** DONE The alien note: hands type on an alien keyboard, the note posts on the screen in an alien script, captioned "I'm not sure this is on brand for us."
+CLOSED: [2026-11-16 Mon 11:10]
+- [X] Hands and keyboard built and animated typing
+- [X] A drawn glyph set; the note pinned on the film in it
+- [X] The caption as a film subtitle, readable and long enough to read
+hands made fuller and grey-green (they read as bone before); the subtitle checked at 1080: 62 px, white, low centre
+The hands (30); the note in their script, posted, with the subtitle (31).
+** DONE The end: Earth and the mothership in space, the robot flying back up to the ship, the logomark
+CLOSED: [2026-11-16 Mon 11:11]
+- [X] The composite: Earth plate, ship, robot with its thrusters burning
+- [X] The logomark small, as before
+32-end: the robot crosses the frame in profile 2.5 m off, lit by a softbox panel, then peels away to the port
+The end card in space with the robot flying home, and the logomark (32).
+** DONE Score and sound for the new ending
+CLOSED: [2026-11-16 Mon 11:11]
+- [X] Extend the score: a build on the beam, the ascent, space, the room, a held beat before the caption, the end
+- [X] Beam, ship, room, crowd and alien-keyboard sound from real recordings
+- [X] Mix at -14 LUFS, true peak under -1.5 dBTP
+hype-sound-v3.tsx: CC0 freesound recordings (crack, beam hum, thunder strike, crowd wow, typing), the score extended; -14.0 LUFS, -2.3 dBTP
+Mix c: -14.0 LUFS and -2.0 dBTP in the encoded film.
+** DONE Alien voices: a language of their own built from real recorded speech and animal calls, chopped and re-sequenced, pitched and formant-shifted; the typist mutters as it types, the room chatters after the wow
+CLOSED: [2026-11-16 Mon 11:11]
+- [X] Find CC0 recordings of speech in languages few viewers know, and of animal calls with a voice-like timbre
+- [X] Build the language: syllables cut, re-sequenced into words, pitched and formant-shifted; one voice per alien
+- [X] Lines: the typist reading the note under its breath while typing; chatter and the wow per head in the room
+- [X] Into hype-sound-v3 at -14 LUFS, true peak at or under -1.5 dBTP
+mix-b: chatter rises out of the wow and leads the room from 1958 (~10 dB over the screen's film); mutter, keys and hmm up 4-6 dB; -14.0 LUFS, -2.2 dBTP
+Their language, cut from real CC0 speech with seal and camel layers: the chatter, the typist's mutter and the hmm.
+** DONE The aliens move to their sound: the clamor, the chatter and the typist's breath drive the heads and bodies frame by frame
+CLOSED: [2026-11-16 Mon 11:11]
+- [X] Per-voice loudness envelopes at 30 fps from the room's sound, as data the room reads
+- [X] Heads: a breath in before the wow, a jolt back on its attack, small rapid shakes on the vowels, turns to each other as they chatter
+- [X] The typist's shoulders and robe move with its muttering and breathing
+The voices' loudness drives the heads, the shoulders and the breath, frame by frame.
+** DONE The hands type like hands: each press anticipated, the fingertip taking the load, the neighbours following, the wrist travelling to the finger at work, keys springing back
+CLOSED: [2026-11-16 Mon 11:11]
+- [X] Per press: a lift before it, the pad landing, the last joint bending back under the load, release with a small overshoot
+- [X] Coupled fingers: the neighbours curl a little with the one pressing; idle fingers drift and settle
+- [X] The wrist leans toward the finger at work; the thumb's send press is slower and heavier
+- [X] Keys travel and spring back with a small bounce; legends brighten on contact
+Each press lifts, strikes and loads the fingertip, the neighbours follow, the wrists travel, and the keys spring back.
+** DONE Brief and script to the new ending; render v3, watch it whole, post it replacing a feed post
+CLOSED: [2026-11-16 Mon 11:11]
+- [X] Brief and hype.script.ts updated (the end card and caption the note asks for)
+- [ ] Render, contact sheet, fingerprint
+- [ ] Post
+room shots 29-31 rendering at 1080p with the voice-driven aliens; film joins with hype-v3-mix-b.wav
+v3 posted replacing a feed post and answering its three notes; fingerprint flags explained in the report.
+* Film v4
+** DONE Open on a mysterious score that turns into the theme with a magic swell at the Return
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Write a quiet, uncertain opening from frame 0 to the Return: a low drone, soft strings in a minor mode, sparse celesta and harp, from the same sampled instruments as the score
+- [X] At the Return, a swell (harp glissando, celesta, rising strings) that lands in the existing theme
+- [X] Render the score and check the seam's level and spectrum
+sound agent: scripts/score_v4.py
+Measured on assets/audio/v4/score.wav: -46 dBFS RMS over the dead swamp, -42 at the wake, -37 typing, -31 through the Return's swell, -25 at the bloom (565), then a smooth decay into v2's theme (-31, -36, -39 over 580-610); centroid 1150 to 1070 to 930 Hz, no step at the join. In the mix (hype-v4-mix-b.wav): -12 LUFS momentary on the bloom, about -20 under the tasks, rising again into the sunrise.
+A quiet, uncertain opening from frame 0 that swells at the Return and blooms on the pulse into the theme.
+** DONE Cut in a macro of the robot's lens turning and focusing on the glass as it wakes
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] A new shot inside 03-wake: close on the lens housing as the robot turns its face to the screen
+- [X] The iris brightens and its aperture tightens as it focuses; the glass's light moves across the lens glass
+- [X] Check in frames that it reads as the robot looking at the screen
+03b-lens 240-270: it flies in face to the glass (faceAt), iris opens then stops down to focus (irisAt), turns back; camera tracks the lens
+03b-lens: a macro of the lens turning to the glass, the iris opening and stopping down to focus.
+** DONE Push in on the New project dialog so what a project is reads
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Reframe the end of 04-rail close on the dialog: its heading, the title typed and the description
+- [X] Check the words are legible at 1080p
+04b-dialog: close on the New project dialog, its heading, title and description legible.
+** DONE Make the Return's effect legible: the line sends, the agent starts, and a first pulse of life runs out over the swamp
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] After the key strikes, a close shot on the glass as the typed line sends and the agent begins planning
+- [X] A pulse of light from the monitor runs out across the dead water and reeds on the score's swell
+- [X] Check the cause and effect read in order: key, screen, swamp
+08-return to 538, 08b-sent 538-566 (the line in the chat), 08c-pulse 566-596 (components/pulse.tsx: the screen flares, rings of light run out over bank and water)
+08b-sent (the line in the chat) and 08c-pulse (rings of light out over the swamp) after the Return.
+** DONE Close on the agent's task list as each task ticks
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Split 09-made: a close shot on the tasks panel from the first tick to the reply
+- [X] Check the task names are legible
+09-tasks: close on the task list as each task ticks.
+** DONE Close on the robot picking the Comment tool before it pins the note
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] A new shot between 16-open and 17-pin: close on the toolbar as the robot hovers and clicks Comment
+- [X] Move the tool's hover and click in the schedule if the shot needs the time
+- [X] Check the tool's icon and its selected state read
+16b-tool: close on the toolbar as the robot picks Comment.
+** DONE A fish leaps from the water in the low water shot, with a splash and rings
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Find a CC0 fish model and check its licence
+- [X] Animate an arc out of the water with the body flexing, in 13-water
+- [X] A splash of droplets and spreading rings where it leaves and re-enters
+- [X] A splash sound from a real recording
+components/fish.tsx: CC0 barramundi (Khronos sample, Microsoft) on a ballistic arc in 13-water, out 836 in 851, nose-first, body beat, shed drops and an entry crown; RINGS set to FISH_OUT/FISH_IN. Splash sound is the fork's.
+Sound: fx fish-out (dslrguide's tiny splash with paulprit's fish splash) at 836, fish-in (paulprit's second fish splash with a plop) at 849; all CC0 freesound recordings (assets/audio/v4/SOURCES.md), panned to the fish.
+The fish leaps in 13-water with drops, rings and real recorded splashes.
+** DONE The ground opens: a tremor builds, light leaks through cracks, then voxel chunks of earth blast out to clear a glowing pit
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Lengthen 25-crack and frame it on the bank so the opening is the subject
+- [X] The build: the ground trembles, the keys rattle, light seeps from the cracks
+- [X] The blast: earth and grass chunks fly out and fall back, tumbling; a glowing pit is left
+- [X] The beam stands up out of the pit's centre
+opening.tsx (voxels swell/leak from 1530, blast 1566, crater + light shaft), ground.ts + bank-height.ts (the scanned bank's measured top; it's ~10 cm under the grass rule here), tremorAt shake + key rattle, plants/grass by the pit torn away; 25-crack from over the water, 25b-beam low tilting up the beam; beam head races up (beamHigh). Checked in stills.
+25-crack: the tremor, the cracks of light, the blast of earth chunks and the glowing pit.
+** DONE Design the ground opening's and the beam's sound
+CLOSED: [2026-11-16 Mon 12:19]
+- [ ] The opening: a rumble that builds, the crack, the chunks thrown and landing (real recorded earth and rock)
+- [ ] The beam: a charging whine, the ignition, a sustained energy hum that moves and sweeps, and the rush as the camera climbs it
+- [ ] Cue them to the picture's beats and set the levels in the mix
+sound agent: scripts/sfx_build_v4.py, compositions/hype-sound-v4.tsx; v4 beats in components/timeline.ts
+** DONE Show the beam shoot straight up from Earth to the ship and into its port
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] A new shot looking up the beam from above the clouds: its head races straight up to the ship's belly
+- [X] The beam meets the port's opening dead centre in the port shot, and stays connected as the camera pushes in
+- [X] Check in frames that it is one straight line from the ground to the port
+The beam's head races straight up to the ship and meets the port's iris dead centre (27, 28).
+*** DONE Make the beam a real volume: a shaft of light in fog that things pass in front of and behind, from the swamp, the orbit and the port
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] find what raea gives for volumetric light and fog
+- [X] the beam as a fog volume lit from inside, in 25b, 26, 27 and 28
+- [X] check it in video from each angle: occluded by what's in front, lighting what's round it
+- [X] energy in the volume, not a plain cylinder: pulses running up it, filaments twisting round the core, a flicker
+- [X] motion blur on the beam's rise and the moving camera
+Fog-grid spots can't make a thin 900 m column: Bevy's spot cone degenerates under ~0.01 rad in f32. Building it as a FramePass that integrates the beam's glowing air along each pixel's ray up to the depth prepass instead.
+Done as components/beamvol.tsx: a before-tonemap FramePass integrating three Gaussian tubes of glowing air plus a head along each pixel's ray up to the depth prepass, with marched energy (pulses, three twisting filaments) and its own 7-step shutter blur. Swamp and space both use it. Scene MotionBlur on from the blast to the orbit; shake slowed to 4-8 Hz so the blur doesn't smear the frame.
+Full-size video of 25-crack, 25b, 26, 27 and 28 checked (out/film-v4): leaves and blocks in front cut the glow, the filaments and pulses move frame to frame, the rise blurs, the head climbs to the port in 27.
+The beam as a volume of glowing air with filaments, pulses and motion blur, occluded by what's in front.
+** DONE Birds burst out of the trees, scared, as the canopy leafs out
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] find a real, licensed, animated bird model (flapping), no generated imagery
+- [X] a flock taking off from the branches as the leaves come, flying out of frame
+- [X] wing flaps and take-off sound from real recordings
+- [X] check it in video
+"Flying Raven" (Google Data Arts Team, CC BY 3.0, Poly Pizza; assets/models/raven) with its 11-pose wingbeat set per frame. components/birds.tsx + birds-path.ts: 30 ravens in 15-leaves aimed through the shot's camera: 11 drop out of the big crown and cross the haze over the monitor, 7 from the crowns behind, 10 specks off the far treeline, 2 crossing close. Checked in a preview video. Video gaps found: a node hidden with hide on the first frame never shows again; scene motion blur here smears the growing canopy, so the shot stays unblurred.
+Sound: fx/birds-flee.wav (scripts/sfx_build_v4.py) from CC0 recordings: csaszi's pigeons flying away a size down, TRP's doves (a flush at the start and a duller second burst), Kinoton's close take-off panned right to left at 0.9 s, three of Bidone's raven croaks; compressed 4:1 so the flutter carries. Cued at 897, -1 dB, the score 2 dB under from 899 to 926: the birds sit 3-6 dB under the rest through the flock's peak.
+Thirty ravens burst out of the crowns in 15-leaves, with real wing and croak recordings.
+** DONE Lead into the review room: the film arriving, the aliens walking in and sitting, before it plays
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Add about four seconds after the port's white and shift the rest of the timeline
+- [X] Out of the white: the dark room's screen wakes with the review link arriving
+- [X] Alien silhouettes walk into frame and take their seats, then the film starts
+29-arrive 1890-2010 (components/room.tsx): out of the port's white the screen idles (standby), the review link card lands at 1906 and opens into the paused film at 1980-1994; the room's light follows the picture. Two aliens come in past the lens from behind the camera, two from the front corners, and sit on seats (pan, foot, back) by 2002; the camera ends where 29-room starts. Checked in a preview video: the walk, the card and the light all move.
+29-arrive: the link lands on the room's screen and the aliens walk in and sit.
+** DONE Give the alien hands real skin: knuckle creases, nails, wrinkles and a mottled, bumpy surface
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Carve creases at the knuckles and wrinkles over the joints into the hands' shapes
+- [X] Nails at the fingertips, darker and glossier than the skin
+- [X] A finer bumpy, mottled skin surface
+- [X] Check the close-up reads as skin
+components/hand-skin.ts: each hand part's level set refined to 0.42 mm edges, pulled onto the true surface and displaced by furrows, scattered bumps and curved wrinkles over every knuckle and across the wrist; nails rebuilt to the fleshed fingers (the v3 claws were buried inside them), a horn plate with a short claw. scripts/make_skin.py: 4096 px seamless mottle (blotches, freckles, blemishes), a normal map (pores, criss-cross furrows, fine creases, raised blemishes) and roughness; every part held in one cube so the box-projected texture has one size. Built only in 30-hands. 1080p still checked.
+The hands carry furrows, knuckle wrinkles, nails and a 4K mottle and normal map.
+** DONE Cut away from the typing to the note's glyphs appearing in the comment on the screen
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Make the screen's pictures of the note being typed, one more glyph a press
+- [X] A close shot on the comment as the glyphs appear in time with the keys
+- [X] Check each press adds a glyph
+30-hands now 2140-2165 (the first two presses), 30b-glyphs 2165-2205: close on the comment on the screen at 3840x2160 (scripts/room_screen.py type-P-S frames): each of TYPING's presses draws its words on over five frames with the caret at the pen; SEND (2199) lights the box's edge (type-sent), and 31-note picks it up until it posts. Checked in 1080p stills and a preview video.
+30b-glyphs: each press writes its glyphs into the comment on the screen.
+** DONE Fix the robot's flight home and give it a woosh and a sad droid warble
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] The robot flies nose-first along one clean arc past the lens and up to the ship
+- [X] A woosh as it passes the lens
+- [X] A sad, descending droid warble, made like a synthesizer droid voice
+- [X] Check the path in frames
+32-end path (orbit.tsx): one arc from behind the lens, out past its lower left at full size (local 28-30, T.pass 2352), across to the right of the ship by 42, and curving back into the port by 96 at an even speed; nose-first throughout. fx robot-woosh (peak on T.pass, panned left to right) and droid-sad (FM chirps then a whistle falling 1150 to 430 Hz, ring-modulated) cued in hype-sound-v4.tsx. Checked in a preview video of the shot.
+One arc past the lens and home to the port, with a woosh and a sad droid warble.
+** DONE End on the stars: tilt up from the ship to the starfield with the raea logo full size over it
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Tilt the end card's camera up off the ship to the stars
+- [X] The raea logo from assets/brand, large and centred over the stars
+- [X] Check nothing else is on screen at the end
+The camera tilts 40° up off the ship from 2425 over 48 frames onto a 30 km plane carrying a gnomonic patch of NASA's Deep Star Maps 2020 (public domain; scripts/make_starfield.py) round the Milky Way's dust lanes in Ophiuchus. It is drawn in the forward pass, because Solari's deferred lighting leaves a surface that far off black. The stars fade up with the tilt, and the logo (assets/brand/raea-mark-paper.png, 480 px at 1080) fades in centred from 2455. Checked in a preview video: from local 148 to the end only the stars and the logo are on screen.
+The tilt up to NASA's real starfield, the logo full size and centred over it.
+** DONE Render v4, mix to its new timing, check the whole film and post it replacing a feed post
+CLOSED: [2026-11-16 Mon 15:58]
+- [X] Re-render the changed shots at 1080p
+- [X] The sound composition and the script to v4's timing; mix at -14 LUFS, true peak under -1.5 on the encoded film
+- [X] Contact sheet and fingerprint score against v3
+- [X] Post with the notes it settles
+Rendering the 36 shots not yet in out/film-v4 at 1080p (job film-v4); 25-crack to 28-port kept, unchanged since they were rendered.
+41 shots at 1080p joined with hype-v4-mix-b.wav: 84.8 s, 2545 frames; -14.3 LUFS, -2.6 dBTP on the encoded film. Contact sheet out/swamp-hype-v4-sheet.png. Fingerprint against v3: the same dark flags (the grey opening, the dark-theme app, the room: by design); its clip, dropout and flash reads are contradicted by raea check. raea check found three things, planned as their own task. Posted as a feed post at the director's word ("send it to me ill see").
+v4 rendered (41 shots, 1080p, 84.8 s), mixed at -14.3 LUFS and -2.6 dBTP on the encoded film, contact-sheeted, fingerprint-scored against v3, and posted replacing a feed post with all 16 notes answered.
+* Film v5
+** DONE Replace the robot's ring on the water in 01-water with a small wake: a V of ripples trailing behind it along its path as it skims across, spreading and fading, instead of a drop's circle
+CLOSED: [2026-11-16 Mon 16:34]
+- [X] Drop the frame-30 ring; a wake laid along the robot's low pass (its path over the water, frames ~15-45): ripple arcs left at each point it passes, each spreading as it ages, together forming the V
+- [X] Stills across 01-water: a trailing wake behind the robot, no circle
+The ring at frame 30 is gone. A V-wake trails the robot's skim across the water: crests leave its path sideways at tan 17° of its speed, three deep and 13 cm apart, and broaden and fade behind it. Checked on 1080p stills at frames 40, 48 and 58.
+** DONE Bring 01-water up out of the water: the camera still pushes forward but starts with its lens just under the surface and rises through it, the waterline sweeping down the frame, then water sheeting, running and dripping down the glass as it climbs
+CLOSED: [2026-11-16 Mon 16:34]
+- [X] Camera path: the lens rises at a steady pace through the surface while the push keeps going
+- [X] Lens water pass (FramePass): murk under the waterline, the meniscus, the draining sheet, runs and drops
+- [X] Stills across 01-water checked with the wake
+01-water opens with the lens 7 cm under the peat water and rises through the surface while the push goes on: the waterline sweeps down at frames 7-17, then the camera climbs to 0.33 m as the robot passes. LensWater (a FramePass) draws the murk, the meniscus, the draining sheet, eight runs and the drops. Checked on stills at frames 0-89.
+** DONE Easter egg: a goose's skeleton half sunk in the dead swamp's mud, seen in a black-and-white shot: the real scanned skull (Egyptian goose, MNHNL, CC BY 4.0) with its neck, a few ribs and a wing modelled from goose anatomy, peat-stained, subtle
+CLOSED: [2026-11-16 Mon 16:56]
+- [X] Skull scan fetched, cleaned to bone, decimated, credited
+- [X] Neck, ribs and wing bones built and laid in the mud
+- [X] Placed where a black-and-white shot catches it; stills checked
+A goose skeleton lies on the bank behind the keyboard's left half (goose.tsx), seen soft behind the focus through 02-key. The skull is a real scan (MNHNL Egyptian goose, CC BY 4.0, decimated to 60k faces, credited). The neck, bent ribs with uncinate spurs, spine, pelvis and wing are modelled to a goose's measures, peat-stained, at 1.25× scale. Checked on 1080p stills at frames 0 and 37.
+** DONE Sound the surfacing in 01-water: the opening's sound muffled under the water until the lens breaks the surface (frames 7-17), then the air and real recorded water dripping and running off the camera
+CLOSED: [2026-11-16 Mon 17:09]
+- [X] Underwater low-pass on the opening bed until the surface, opening up as it breaks
+- [X] Real CC0 drip and surfacing recordings, placed on the break and the runs
+scripts/surfacing_v5.py makes fx/surfacing.wav and fx/bed-dead-under.wav from five CC0 freesound recordings (hydrophone, underwater sea, a hand moving in water, a trickle, drips into water; v5/SOURCES.md). hype-sound-v5.tsx crossfades the low-passed bed into the bed over frames 7-17 and starts the bed 1 s into its file. Measured on the mix: above 2 kHz the opening is -60 to -73 dB for frames 0-5 and opens to about -30 dB by frame 18; the mix is -13.8 LUFS, true peak -2.8 dBTP as WAV.
+** DONE Keep the robot's lens toward the camera through the macro: hold its turn to the glass to the end of 03b-lens and turn it back on the cut, so it never flips round on screen
+CLOSED: [2026-11-16 Mon 16:18]
+- [X] faceAt holds the half turn (and the scan) to 270, the cut to 04-rail; the iris settles before it
+- [X] Stills across 03b-lens and the first frames of 04-rail: the lens faces the camera in both, no turn on screen
+The lens stays turned to the glass through 03b with no flip; it turns back across the cut. The robot now holds half a metre off the glass to the cut (v4 snapped it to the glass at 262, edge-on to the lens). Checked on 03b stills at local 4-29 and 04-rail stills at 0-24.
+** DONE Take the rings of light out of 08c-pulse: the shot holds on the dead swamp as the screen flares, and the score's swell carries it
+CLOSED: [2026-11-16 Mon 17:04]
+- [X] Remove the rings over bank and water (pulse.tsx); keep only the screen's own flare
+- [X] Stills of 08c-pulse: no ring anywhere
+pulse.tsx keeps only flareAt (the screen's flare and spill); the Pulse rings are out of shot.tsx and the pulse's water ring is out of timeline.ts RINGS. Checked on 08c-pulse stills 0, 6, 14, 26: no rings, the dead swamp holds as the screen flares. The faster ramp is the score fork's (score_v5.py).
+** DONE Make the score louder and quicker: the Return's swell launches straight into the theme, and a driving pulse keeps it moving, clearly heard, through the tasks and the controls
+CLOSED: [2026-11-16 Mon 16:35]
+- [X] scripts/score_v5.py: the swell from the key (532) climbs faster and lands harder on the bloom (566)
+- [X] From the bloom, a quicker rhythmic figure (spiccato or pizzicato eighths, timpani) under the theme instead of falling back to its quiet start
+- [X] The score several dB higher against the effects through the app and the controls; still under the room's silence and the end
+- [X] Mix at -14 LUFS, true peak at or under -1.5 dBTP on the encoded film
+A forked sound agent has this (with the click into the room and the room's film sound).
+score_v5: the Return swell climbs into a full D major bloom, and a sixteenth-note drive with horns carries the tasks and controls (tasks -20.0 to -12.4 LUFS). The Copy tap is added and the 1890 stop fixed with 0.12 s fades built into the files. The mix is out/v5/sound/hype-v5-mix.wav, -13.9 LUFS; the fork measured -2.7 dBTP on AAC.
+** DONE Send most of the ravens up over the canopy in 15-leaves, with one or two crossing below it
+CLOSED: [2026-11-16 Mon 17:03]
+- [X] birds-path.ts: the flock's paths climb out of the crowns into the open sky above them; one or two low under the canopy
+- [X] A preview video of 15-leaves: most birds read against the sky
+birds-path.ts: the high flock (10) springs up out of the big tree's crown top, 12-16 m off and 9-13 m up, and crosses the open sky at the top left; the left flock (7) climbs over the left crowns 20-26 m off; the close pair still crosses below the canopy. Checked on stills at 15-leaves 12, 22, 32, 42: silhouettes against the sky over the treetops.
+** DONE Cut into the Comment tool on the robot's motion: hold 16-open until the robot is nearly at the button, cut close as it arrives, and carry that close shot on to the pin so the run has one cut fewer
+CLOSED: [2026-11-16 Mon 17:13]
+- [X] 16-open runs on into the robot's move toward the tool
+- [X] 16b-tool starts on that move and pans with the robot down to the pin, replacing 17-pin as its own shot
+- [X] Stills across the cut: the robot is moving on both sides of it
+take.ts: 16-open holds to CUT_TOOL = 981, mid-way through the robot's move to the Comment tool (972-988), its drift kept at v4's speed; 16b-tool runs 981-1050, picking the robot up as it comes in from the right and presses Comment (988), then going over to the pin's framing (the new Shot2 `then`, smoothstep 987-1002) and holding on the note's words. 17-pin is gone. Checked on stills at 968, 976, 980, 981-1049: the cut lands on the move, and the robot stays in frame through the follow.
+** DONE Hold the mist wide through the compare: the v1/v2 wipe plays on the monitor's screen in 20-mist, and the 21-wipe close-up goes
+CLOSED: [2026-11-16 Mon 17:14]
+- [X] 20-mist runs 1166-1240; 21-wipe drops from the cut
+- [X] Stills at 1080: the before/after on the screen reads in the wide
+take.ts: 20-mist runs 1166-1240 through the compare and the wipe (1206-1232), pushing in faster than v4 to p1 [-2.75, 0.72, 7.7] and turning to the monitor (l1 [0.25, 1.55, 0]); 21-wipe is gone. Checked at 1080 on frames 1176, 1210, 1222 and 1232: the dashed divider, the robot dragging it and the misty v2 against the clearer v1 read on the glass, with the mist and the swamp round it.
+** DONE End 24-send on the robot pressing Copy: after Create link it goes to the link's Copy button and presses it, and the film cuts on the press
+CLOSED: [2026-11-16 Mon 17:16]
+- [X] Bring the title and Create link a few frames earlier so the Copy press lands at the shot's end (1520)
+- [X] The robot's path ends on the captured Copy button (258-shared), nose in; the click sound on the press
+- [X] Stills of the last frames of 24-send
+take.ts: after Create link (1500) the pointer goes on to the link's Copy (the captured panel's button, page 1538.5, 163) over 1504-1516 and presses it at T.copy = 1518 (timeline.ts, was 1516); 24-send cuts at 1520, the tip still on the button; the robot's exit (outAt gone, robotAt2 sink) now starts after the press (T.copy + 3). The camera ends a little up and right of v4's. Checked on stills at 1470, 1502, 1514 and 1519. The Copy tap (hype-sound-v5.tsx) follows T.copy; the mix is re-rendered at the end.
+** DONE Make the bank's plants and leaves ride the ground in 25-crack: each plant rises and tilts with the block it stands on as the ground swells, is thrown with it in the blast, and a burst of leaves goes up and flutters down
+CLOSED: [2026-11-16 Mon 18:28]
+- [X] Each plant on the opening follows its block: lifted and tilted in the swell, flung and tumbling in the blast
+- [X] Loose leaves blown up out of the pit and drifting down through 25b
+- [X] A preview video of 25-crack and 25b
+Riders, bowing and the leaf burst are in components-wip. Fixed: the leaves rendered black (their winding disagreed with their normals); the fireflies are now points of light that fade near the lens (the ball in 25-crack). Found: a PNG-frame render shows objects mounted later in a shot from its first frame (a grid of voxel shadows on the mud); the voxels, cells and crumbs now wait 40 m down. Checking 01-20 for the same.
+In components/ now. Seen on preview video of 25-crack and 25b-beam: the grass and ferns ride the blocks, and the leaves burst up green and flutter down. The final 1080 shots are rendering (film5-end); this closes with the v5 post.
+In v5: the bank's grass and ferns ride the swelling blocks and are thrown with them; 44 scanned leaves burst up and flutter down (the leaves had rendered black from a winding bug, fixed).
+** DONE Shake the trees with the beam's energy: as it fires, the trees round the pit sway away from it and shudder, then settle into a tremble while it hums
+CLOSED: [2026-11-16 Mon 18:28]
+- [X] Each near tree leans away from the beam on its base by distance, with a springy settle, wood and leaves together
+- [X] A preview video of 25b-beam and 26-rise
+treeSway in world.tsx: pushed away from the beam in about 8 frames, swings back over about two seconds, shudders, then a held lean and a tremble while it hums. Compared against v4 in 25b-beam: the crowns visibly thrown back at frame 10 and swung by 33. Closes with the v5 post.
+In v5: the trees round the pit are thrown back as the beam fires, swing back over about two seconds and tremble while it hums; the shudder was calmed to about 4 Hz after its first cut flickered past WCAG's limit.
+** DONE Make the stars at the end subtle: the Milky Way a faint, deep glow behind fine points of light, as a camera would barely catch it, the logo clear over it
+CLOSED: [2026-11-16 Mon 17:11]
+- [X] The diffuse band far darker than now against the stars (make_starfield.py's curve and STAR_NITS)
+- [X] 1080 still of the end held next to the v4 one
+scripts/make_starfield.py v5 splits NASA's Deep Star Maps patch into its stars and the rest: the rest, blurred and floored to black, is the Milky Way's glow at 1.0 (v4's grey grain of faint stars is gone); the 20,000 brightest catalogue stars are redrawn as fine points (a 1 px Gaussian) at their own place, brightness and half their colour. New texture assets/textures/stars/stars-end-v5.png; orbit.tsx points StarPlane at it (STAR_NITS 3 and the tilt's cube kept). Checked at 1080 on 32-end local 150 and 215 (/tmp/stars5/r3/): fine points over a faint brown glow with its dust lanes, the logo clear. At 960 previews the points mip away to black, so judge it at 1080.
+** DONE Close the gap at the aliens' waists: each body one piece from the shoulders down to the seat, so no light shows through
+CLOSED: [2026-11-16 Mon 17:14]
+- [X] room.tsx: the torso reaches into the hips and legs with no seam, walking and seated
+- [X] Brightened stills of 29-arrive and 29-room: no line of light through any body
+room.tsx: the robe now starts 0.78 down the figure (scaled with the torso's breath), up inside the torso, which ends at 0.9, so the 5 cm gap v4 left between the torso's foot and the robe's top is gone; the robe's top is a touch narrower than the torso (0.20 against 0.204), and the torso's bounds now reach its back (z 0.3; v4 clipped it flat at 0.24). Checked at 1080 on 29-arrive local 50 and 86 with the aliens standing against the screen (/tmp/room5/c/crops.png: one body, no light through) and 29-room local 100 seated (/tmp/room5/d/cmp.png, unchanged).
+** DONE Loosen the aliens: they settle into their seats with weight, then look round, at each other and at the screen, shift and breathe while they watch
+CLOSED: [2026-11-16 Mon 17:20]
+- [X] The sit: a drop with a small bounce and a lean back
+- [X] While watching: head turns to a neighbour and back, small shifts of the shoulders, breathing, each head on its own timing
+- [X] A preview video of 29-arrive and 29-room
+room.tsx, transforms only. Weight: each alien now drops the last of the way into its seat (sit is half eased, half falling) and sinks 2-3 cm with one bounce (sinkAt), its head following a frame later and nodding forward. Looks (LOOKS, 11 of them): after they sit, the front pair turn to each other and the back pair too (1984-2024); while the film plays the middle one looks back over its shoulder (2038), the front pair share a look (2050-2069) and one at the back looks round the room before the wow; the back pair glance at each other while the note is read. Each look leans 4 cm toward whoever it's looking at and tips the head, because from behind a turn alone barely changes the outline. Seven weight shifts (SHIFTS) lean the shoulders about the seat, and the robe now follows the torso's axis. Breath is slower and deeper (about 2.8 s, twice the lift). Checked at 1080: 29-arrive local 76-96 (/tmp/room5/i/strip.png, the middle one landing), 29-room local 26-58 (/tmp/room5/g) and 0-66 (/tmp/room5/f), and 31-note 40-82 (/tmp/room5/h).
+** DONE Play the swamp coming alive on the room's screen instead of the app's panels: the sunrise, the fish leaping and the leaves with the birds
+CLOSED: [2026-11-16 Mon 17:29]
+- [X] scripts/room_screen.py: the screen's film from the v5 renders of 11-sun, 13-water and 15-leaves (no app UI), the wow on the sunrise
+- [X] The room's faint film sound from the same frames
+- [X] Stills of 29-room: environment only on the screen
+scripts/room_screen.py now builds the screen's 108 play frames (and paused-a, the first) from v5's own shots in out/film-v5: 11-sun 740-790 (the sunrise), 13-water 822-864 (the fish) and 15-leaves 896-912 (the leaves with the ravens), each frame taken exactly by its index in its shot's file. v4's app panels are gone. The note, typing, link and standby pictures are unchanged (still v2's dusk frame). components/room-light.ts was regenerated from the new frames (scripts/room_light.py, which now leaves out the type-* frames so 30b-glyphs keeps note-draft's light, as in v4); only the play-* and paused-a entries changed. The screen steps a frame a film frame from T.roomPlay, matching film-room-v5.wav, which cuts v5's mix at the same three segments from the same frame, so picture and sound line up. Checked at 1080 on 29-room local 0, 30, 62, 85, 105 and 126 (/tmp/room5/j/sheet.png): paused on the sun, the grey sunrise, the water, the fish's water, the leaves, with the room's light following each.
+** DONE Clear raea check's three findings on v4: blotched near-blacks, the canopy flashing in the rise, the click into the room
+CLOSED: [2026-11-16 Mon 18:28]
+Found by raea check after the render; v4 was posted as it stood when the director asked to see it. Waiting on the director's notes on v4 before re-rendering, so these go into the same pass.
+- [X] Re-render every shot as PNG frames into x264 with more bits for the darks (13 swamp shots blotch; all go the same way so the joins stay clean)
+- [X] 26-rise 1641-1652: leaves crossing the lens swing the frame's brightness 7 times in a second (past WCAG's 3 flashes); keep the camera clear of the crown or slow the passage
+- [X] 1890: fade the score, drone, strike and port rush out over 100 ms into the white instead of stopping dead
+- [X] raea check clean, then post v5
+Done in the v5 pass with the director's notes on v4.
+26-rise: near plane at 1.6 m for the shot (a video render keeps its first frame's), and brightness now climbs smoothly through the crown. 1890: the v5 mix eases from -12 dB to silence over 150 ms into the white. Remaining: the PNG-to-x264 render (running) and the check.
+All shots through PNG frames into x264 (blotching ok); 26-rise's near plane ends the canopy flash; the mix eases into the white at 1890; raea check on v5: 0 errors, 0 warnings, 0 notes.
+** DONE Render v5, mix, check the whole film and post it replacing a feed post
+CLOSED: [2026-11-16 Mon 18:28]
+- [X] Every shot through PNG frames into x264 (the darks), joined with the v5 mix
+- [X] raea check clean; contact sheet; fingerprint score against v4
+- [X] Script and brief to v5
+- [X] Post with the 14 notes it settles
+Posted Swamp, v5 replacing v4: -13.9 LUFS, -2.4 dBTP on the AAC; raea check clean; fingerprint's 8 dark flags as v4's; all 27 rules held. feed_post refused the 15 answers and comment_task can't find v4, so the notes need marking by hand.

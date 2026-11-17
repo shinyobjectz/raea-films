@@ -1,0 +1,83 @@
+// The hand: the director's scanned 60s male hand (media/hand, a purchased scan), ten times life size so a lens's depth of
+// field behaves as it does at arm's length, under the film's own shader. The shader leaves the skin lit as it is and
+// adds what the film draws on it, as emitted light: the thumb's ridges (a picture laid on the pad in UV), rings round
+// the arm and fingers (planes of constant z: a ruler, a timeline), contour lines (planes of constant y), a scan
+// line, and two flagged rings that go from red to the ink's colour as they are fixed.
+import { staticFile } from "raea";
+import { Model } from "raea/3d";
+import { ExtendedMaterial, ShaderExtension, StandardMaterial } from "raea/pbr";
+
+export const K = 10; // the hand's scale
+/** places on the hand, in the scene's units (the scan's metres x K) */
+export const AT = {
+  thumbTip: [0.886, -0.33, 0.364] as V3,
+  fingertips: 1.256, // z of the longest fingertip
+  wrist: -0.75, // z, about
+  elbow: -5.17, // z, the cut end of the forearm
+};
+export type V3 = [number, number, number];
+
+const SHADER = /* wgsl */ `
+fn line_at(k: f32, w: f32) -> f32 {
+  let g = abs(fract(k - 0.5) - 0.5) / max(fwidth(k), 1e-5);
+  return 1.0 - clamp(g - w, 0.0, 1.0);
+}
+fn surface(in: VertexOutput, pbr: ptr<function, PbrInput>) {
+  let p = in.world_position.xyz;
+  let ink = u_ink().rgb;
+  var e = vec3<f32>(0.0);
+
+  // the thumb's ridges, opening out from the whorl's centre
+  let l = (in.uv - vec2<f32>(0.405, 0.912)) / 0.078 + vec2<f32>(0.5);
+  let inside = step(0.0, l.x) * step(l.x, 1.0) * step(0.0, l.y) * step(l.y, 1.0);
+  let r = textureSample(tex_ridges, samp_ridges, clamp(l, vec2<f32>(0.0), vec2<f32>(1.0))).r * inside;
+  let d = length(l - vec2<f32>(0.5, 0.47)) * 2.0;
+  let open = u_ridge() * 1.5;
+  let shown = 1.0 - smoothstep(open - 0.25, open, d);
+  let front = exp(-pow((d - open + 0.1) * 9.0, 2.0)) * step(0.01, u_ridge()) * (1.0 - step(0.99, u_ridge()));
+  e += ink * r * shown * (1.6 + 5.0 * front) * (0.75 + 0.25 * sin(globals.time * 0.0));
+
+  // rings along the arm: every unit a major, five minors between
+  let inRange = smoothstep(u_r0() - 0.08, u_r0(), p.z) * (1.0 - smoothstep(u_r1(), u_r1() + 0.08, p.z));
+  let minor = line_at(p.z * 5.0, 0.0);
+  let major = line_at(p.z * 5.0 / 5.0, 0.6);
+  let pulse = exp(-pow((p.z - u_pulse()) * 2.2, 2.0));
+  e += ink * u_rings() * inRange * (minor * 0.28 + major * 0.9) * (0.5 + 2.4 * pulse);
+
+  // contour lines, as a map draws height
+  let topo = line_at(p.y * 9.0, 0.0);
+  e += ink * u_topo() * topo * 0.5 * inRange;
+
+  // the scan line and the light it trails
+  let ds = p.z - u_scan();
+  let band = exp(-abs(ds) * 60.0) * 6.0 + exp(-abs(ds) * 4.0) * 0.3;
+  e += vec3<f32>(0.85, 0.95, 1.0) * u_scanamt() * band;
+
+  // two flagged rings: red while they stand, the ink's colour once fixed
+  let red = vec3<f32>(1.0, 0.16, 0.08);
+  let f1 = exp(-abs(p.z - u_flag1()) * 55.0);
+  let f2 = exp(-abs(p.z - u_flag2()) * 55.0);
+  e += mix(red, ink, u_fix1()) * f1 * u_flag1amt() * 7.0;
+  e += mix(red, ink, u_fix2()) * f2 * u_flag2amt() * 7.0;
+
+  (*pbr).material.emissive = vec4<f32>((*pbr).material.emissive.rgb + e, (*pbr).material.emissive.a);
+}`;
+
+export type HandFx = {
+  ridge?: number; rings?: number; r0?: number; r1?: number; pulse?: number; topo?: number;
+  scan?: number; scanamt?: number;
+  flag1?: number; flag1amt?: number; fix1?: number; flag2?: number; flag2amt?: number; fix2?: number; ink?: string;
+};
+const OFF: Required<HandFx> = { ridge: 0, rings: 0, r0: -6, r1: 2, pulse: -99, topo: 0, scan: -99, scanamt: 0, flag1: 0, flag1amt: 0, fix1: 0, flag2: 0, flag2amt: 0, fix2: 0, ink: "#9fe6ff" };
+
+export function Hand({ fx = {} }: { fx?: HandFx }) {
+  const u = { ...OFF, ...fx };
+  return (
+    <Model src={staticFile("hand/glb/hand.glb")} scale={K}>
+      <ExtendedMaterial
+        base={<StandardMaterial base_color="#ffffff" base_color_texture={staticFile("hand/maps/colour.jpg")} normal_map_texture={staticFile("hand/maps/normal.png")} metallic_roughness_texture={staticFile("hand/maps/rough.jpg")} perceptual_roughness={1} metallic={0} reflectance={0.4} />}
+        extension={<ShaderExtension wgsl={SHADER} uniforms={u} textures={{ ridges: staticFile("hand/maps/ridges.png") }} />}
+      />
+    </Model>
+  );
+}

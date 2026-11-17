@@ -1,0 +1,30 @@
+// The sea's component library (blender/components/sea/*.py -> media/models/sea/*.glb, on the stand in library/sea.tsx).
+// name = the component's file with spaces for hyphens; rig = its sidecar's rig keys (a clip each, or "in the scene").
+export default {
+  heading: "SEA",
+  props: [
+    { name: "sky", is: "sky", where: "all round, from under the horizon to the zenith", rig: ["turn", "glow"] },
+    { name: "sea", is: "surface", where: "to the horizon, its still level the place's zero", rig: ["waves", "mirror"] },
+    { name: "sun", is: "light", where: "on the horizon dead ahead, 300 m out", rig: ["height", "glow", "light"] },
+    { name: "clouds", is: "sky", where: "low over the horizon, 290 m out and 60 m up", rig: ["drift", "glow"] },
+    { name: "headland", is: "rock", where: "on the horizon to the left, 200 m out" },
+    { name: "lighthouse", is: "building", where: "on the headland's flat, behind its point", rig: ["beam", "light"] },
+    { name: "cliff", is: "rock", where: "the near coast on the left, the pier at its foot" },
+    { name: "sea stack", is: "rock", where: "standing off to the right, 120 m out" },
+    { name: "boat", is: "vehicle", where: "far out to the right, broadside on", rig: ["drift", "rock", "pitch", "radar", "lights"] },
+    { name: "buoy", is: "fixture", where: "on the water in the channel, 35 m out", rig: ["bob", "lean", "turn", "light"] },
+    { name: "mooring buoy", is: "fixture", where: "on the water by the pier", rig: ["bob", "lean"] },
+    { name: "gulls", is: "animal", where: "in the sky over the reef", rig: ["fly", "glide"] },
+    { name: "rocks", is: "rock", where: "breaking the surface near the camera, on the right" },
+    { name: "foam", is: "effect", where: "on the water round the rocks", rig: ["wash", "rise"] },
+    { name: "spray", is: "effect", where: "off the rocks' seaward side", rig: ["burst", "fall"] },
+    { name: "kelp", is: "plant", where: "in the water by the rocks", rig: ["sway", "rise"] },
+    { name: "pier", is: "architecture", where: "running out from the cliff's foot on the left" },
+    { name: "pier lamp", is: "fixture", where: "two along the pier's left rail", rig: ["on"] },
+    { name: "bench", is: "furniture", where: "on the pier's deck, its back to the rail" },
+    { name: "catch", is: "clutter", where: "stacked on the pier's deck near its shore end", rig: ["lid", "handle"] },
+    { name: "life ring", is: "fixture", where: "on its post at the pier's shore end", rig: ["swing", "lift"] },
+    { name: "lantern", is: "fixture", where: "hung from a bracket on a pier post", rig: ["swing", "flame"] },
+    { name: "fender", is: "fixture", where: "two hung from the pier's right side over the water", rig: ["swing"] },
+  ],
+};

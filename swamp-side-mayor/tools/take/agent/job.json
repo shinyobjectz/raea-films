@@ -1,0 +1,475 @@
+[
+ {
+  "update": {
+   "sessionUpdate": "agent_message_chunk",
+   "content": {
+    "type": "text",
+    "text": "A music video: you, in a swamp, summoning ancient magic. I'll plan it first."
+   }
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-plan",
+   "title": "plan_add",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "tasks": [
+     {
+      "title": "Build the swamp"
+     },
+     {
+      "title": "Animate Goose"
+     },
+     {
+      "title": "Cut it to the song"
+     },
+     {
+      "title": "Post the cut"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "tool": "plan_add",
+  "args": {
+   "tasks": [
+    {
+     "title": "Build the swamp"
+    },
+    {
+     "title": "Animate Goose"
+    },
+    {
+     "title": "Cut it to the song"
+    },
+    {
+     "title": "Post the cut"
+    }
+   ]
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-plan",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-build",
+   "title": "Building the swamp",
+   "kind": "execute",
+   "status": "in_progress",
+   "rawInput": {
+    "command": "raea render compositions/swamp.tsx -o out/swamp.png"
+   }
+  }
+ },
+ {
+  "mark": "running"
+ },
+ {
+  "gate": "build"
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-build",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-close-build",
+   "title": "plan_close",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "id": "$id:Build the swamp"
+   }
+  }
+ },
+ {
+  "tool": "plan_close",
+  "args": {
+   "id": "$id:Build the swamp"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-close-build",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-delivery",
+   "title": "controller_write",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "controller": {
+     "id": "delivery",
+     "title": "Delivery",
+     "help": "How this project's films go out",
+     "groups": [
+      {
+       "id": "delivery",
+       "title": "Delivery",
+       "fields": [
+        {
+         "id": "shape",
+         "label": "Shape",
+         "type": "choice",
+         "options": [
+          "16:9",
+          "18:9",
+          "9:16"
+         ],
+         "value": "18:9"
+        },
+        {
+         "id": "loudness",
+         "label": "Loudness",
+         "type": "number",
+         "unit": "LUFS",
+         "value": -14,
+         "min": -24,
+         "max": -6,
+         "step": 1
+        },
+        {
+         "id": "captions",
+         "label": "Captions",
+         "type": "toggle",
+         "value": true
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "tool": "controller_write",
+  "args": {
+   "controller": {
+    "id": "delivery",
+    "title": "Delivery",
+    "help": "How this project's films go out",
+    "groups": [
+     {
+      "id": "delivery",
+      "title": "Delivery",
+      "fields": [
+       {
+        "id": "shape",
+        "label": "Shape",
+        "type": "choice",
+        "options": [
+         "16:9",
+         "18:9",
+         "9:16"
+        ],
+        "value": "18:9"
+       },
+       {
+        "id": "loudness",
+        "label": "Loudness",
+        "type": "number",
+        "unit": "LUFS",
+        "value": -14,
+        "min": -24,
+        "max": -6,
+        "step": 1
+       },
+       {
+        "id": "captions",
+        "label": "Captions",
+        "type": "toggle",
+        "value": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-delivery",
+   "status": "completed"
+  }
+ },
+ {
+  "mark": "controller"
+ },
+ {
+  "gate": "stills"
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-still-1",
+   "title": "feed_post",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "type": "look",
+    "title": "The title card",
+    "file": "/tmp/goose-tut-take/media/stills/planks-7.jpg"
+   }
+  }
+ },
+ {
+  "tool": "feed_post",
+  "args": {
+   "type": "look",
+   "title": "The title card",
+   "file": "/tmp/goose-tut-take/media/stills/planks-7.jpg"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-still-1",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-still-2",
+   "title": "feed_post",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "type": "look",
+    "title": "Goose in the mud",
+    "file": "/tmp/goose-tut-take/media/stills/planks-31.jpg"
+   }
+  }
+ },
+ {
+  "tool": "feed_post",
+  "args": {
+   "type": "look",
+   "title": "Goose in the mud",
+   "file": "/tmp/goose-tut-take/media/stills/planks-31.jpg"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-still-2",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-still-3",
+   "title": "feed_post",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "type": "look",
+    "title": "The summoning",
+    "file": "/tmp/goose-tut-take/media/stills/planks-15_5.jpg"
+   }
+  }
+ },
+ {
+  "tool": "feed_post",
+  "args": {
+   "type": "look",
+   "title": "The summoning",
+   "file": "/tmp/goose-tut-take/media/stills/planks-15_5.jpg"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-still-3",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-close-animate",
+   "title": "plan_close",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "id": "$id:Animate Goose"
+   }
+  }
+ },
+ {
+  "tool": "plan_close",
+  "args": {
+   "id": "$id:Animate Goose"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-close-animate",
+   "status": "completed"
+  }
+ },
+ {
+  "mark": "stills"
+ },
+ {
+  "gate": "cut"
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-cut-v2",
+   "title": "feed_post",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "type": "watch",
+    "title": "Swamp Goose",
+    "file": "/tmp/goose-tut-take/media/goose-v1.mp4"
+   }
+  }
+ },
+ {
+  "tool": "feed_post",
+  "args": {
+   "type": "watch",
+   "title": "Swamp Goose",
+   "file": "/tmp/goose-tut-take/media/goose-v1.mp4"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-cut-v2",
+   "status": "completed"
+  }
+ },
+ {
+  "mark": "v2"
+ },
+ {
+  "gate": "v3"
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-cut-v3",
+   "title": "feed_post",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "type": "watch",
+    "title": "Swamp Goose",
+    "file": "/tmp/goose-tut-take/media/goose-v2.mp4",
+    "replaces": "$last",
+    "changed": "the summoning longer"
+   }
+  }
+ },
+ {
+  "tool": "feed_post",
+  "args": {
+   "type": "watch",
+   "title": "Swamp Goose",
+   "file": "/tmp/goose-tut-take/media/goose-v2.mp4",
+   "replaces": "$last",
+   "changed": "the summoning longer"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-cut-v3",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-close-cut",
+   "title": "plan_close",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "id": "$id:Cut it to the song"
+   }
+  }
+ },
+ {
+  "tool": "plan_close",
+  "args": {
+   "id": "$id:Cut it to the song"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-close-cut",
+   "status": "completed"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call",
+   "toolCallId": "tc-close-post",
+   "title": "plan_close",
+   "kind": "other",
+   "status": "in_progress",
+   "rawInput": {
+    "id": "$id:Post the cut"
+   }
+  }
+ },
+ {
+  "tool": "plan_close",
+  "args": {
+   "id": "$id:Post the cut"
+  }
+ },
+ {
+  "update": {
+   "sessionUpdate": "tool_call_update",
+   "toolCallId": "tc-close-post",
+   "status": "completed"
+  }
+ },
+ {
+  "mark": "v3"
+ },
+ {
+  "gate": "reply"
+ },
+ {
+  "update": {
+   "sessionUpdate": "agent_message_chunk",
+   "content": {
+    "type": "text",
+    "text": "Swamp Goose is in the feed, at version 2: the summoning runs longer."
+   }
+  }
+ },
+ {
+  "mark": "done"
+ }
+]

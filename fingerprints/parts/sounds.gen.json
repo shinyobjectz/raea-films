@@ -1,0 +1,294 @@
+{
+ "instruments": {
+  "celesta": {
+   "A2": "sounds/fluid-celesta/A2.mp3",
+   "A3": "sounds/fluid-celesta/A3.mp3",
+   "A4": "sounds/fluid-celesta/A4.mp3",
+   "A5": "sounds/fluid-celesta/A5.mp3",
+   "A6": "sounds/fluid-celesta/A6.mp3",
+   "C2": "sounds/fluid-celesta/C2.mp3",
+   "C3": "sounds/fluid-celesta/C3.mp3",
+   "C4": "sounds/fluid-celesta/C4.mp3",
+   "C5": "sounds/fluid-celesta/C5.mp3",
+   "C6": "sounds/fluid-celesta/C6.mp3",
+   "C7": "sounds/fluid-celesta/C7.mp3",
+   "D#2": "sounds/fluid-celesta/Ds2.mp3",
+   "D#3": "sounds/fluid-celesta/Ds3.mp3",
+   "D#4": "sounds/fluid-celesta/Ds4.mp3",
+   "D#5": "sounds/fluid-celesta/Ds5.mp3",
+   "D#6": "sounds/fluid-celesta/Ds6.mp3",
+   "F#2": "sounds/fluid-celesta/Fs2.mp3",
+   "F#3": "sounds/fluid-celesta/Fs3.mp3",
+   "F#4": "sounds/fluid-celesta/Fs4.mp3",
+   "F#5": "sounds/fluid-celesta/Fs5.mp3",
+   "F#6": "sounds/fluid-celesta/Fs6.mp3"
+  },
+  "pizz": {
+   "A2": "sounds/fluid-pizzicato_strings/A2.mp3",
+   "A3": "sounds/fluid-pizzicato_strings/A3.mp3",
+   "A4": "sounds/fluid-pizzicato_strings/A4.mp3",
+   "A5": "sounds/fluid-pizzicato_strings/A5.mp3",
+   "A6": "sounds/fluid-pizzicato_strings/A6.mp3",
+   "C2": "sounds/fluid-pizzicato_strings/C2.mp3",
+   "C3": "sounds/fluid-pizzicato_strings/C3.mp3",
+   "C4": "sounds/fluid-pizzicato_strings/C4.mp3",
+   "C5": "sounds/fluid-pizzicato_strings/C5.mp3",
+   "C6": "sounds/fluid-pizzicato_strings/C6.mp3",
+   "C7": "sounds/fluid-pizzicato_strings/C7.mp3",
+   "D#2": "sounds/fluid-pizzicato_strings/Ds2.mp3",
+   "D#3": "sounds/fluid-pizzicato_strings/Ds3.mp3",
+   "D#4": "sounds/fluid-pizzicato_strings/Ds4.mp3",
+   "D#5": "sounds/fluid-pizzicato_strings/Ds5.mp3",
+   "D#6": "sounds/fluid-pizzicato_strings/Ds6.mp3",
+   "F#2": "sounds/fluid-pizzicato_strings/Fs2.mp3",
+   "F#3": "sounds/fluid-pizzicato_strings/Fs3.mp3",
+   "F#4": "sounds/fluid-pizzicato_strings/Fs4.mp3",
+   "F#5": "sounds/fluid-pizzicato_strings/Fs5.mp3",
+   "F#6": "sounds/fluid-pizzicato_strings/Fs6.mp3"
+  },
+  "bass": {
+   "A2": "sounds/fluid-acoustic_bass/A2.mp3",
+   "A3": "sounds/fluid-acoustic_bass/A3.mp3",
+   "A4": "sounds/fluid-acoustic_bass/A4.mp3",
+   "A5": "sounds/fluid-acoustic_bass/A5.mp3",
+   "A6": "sounds/fluid-acoustic_bass/A6.mp3",
+   "C2": "sounds/fluid-acoustic_bass/C2.mp3",
+   "C3": "sounds/fluid-acoustic_bass/C3.mp3",
+   "C4": "sounds/fluid-acoustic_bass/C4.mp3",
+   "C5": "sounds/fluid-acoustic_bass/C5.mp3",
+   "C6": "sounds/fluid-acoustic_bass/C6.mp3",
+   "C7": "sounds/fluid-acoustic_bass/C7.mp3",
+   "D#2": "sounds/fluid-acoustic_bass/Ds2.mp3",
+   "D#3": "sounds/fluid-acoustic_bass/Ds3.mp3",
+   "D#4": "sounds/fluid-acoustic_bass/Ds4.mp3",
+   "D#5": "sounds/fluid-acoustic_bass/Ds5.mp3",
+   "D#6": "sounds/fluid-acoustic_bass/Ds6.mp3",
+   "F#2": "sounds/fluid-acoustic_bass/Fs2.mp3",
+   "F#3": "sounds/fluid-acoustic_bass/Fs3.mp3",
+   "F#4": "sounds/fluid-acoustic_bass/Fs4.mp3",
+   "F#5": "sounds/fluid-acoustic_bass/Fs5.mp3",
+   "F#6": "sounds/fluid-acoustic_bass/Fs6.mp3"
+  },
+  "strings": {
+   "A2": "sounds/fluid-string_ensemble_1/A2.mp3",
+   "A3": "sounds/fluid-string_ensemble_1/A3.mp3",
+   "A4": "sounds/fluid-string_ensemble_1/A4.mp3",
+   "A5": "sounds/fluid-string_ensemble_1/A5.mp3",
+   "A6": "sounds/fluid-string_ensemble_1/A6.mp3",
+   "C2": "sounds/fluid-string_ensemble_1/C2.mp3",
+   "C3": "sounds/fluid-string_ensemble_1/C3.mp3",
+   "C4": "sounds/fluid-string_ensemble_1/C4.mp3",
+   "C5": "sounds/fluid-string_ensemble_1/C5.mp3",
+   "C6": "sounds/fluid-string_ensemble_1/C6.mp3",
+   "C7": "sounds/fluid-string_ensemble_1/C7.mp3",
+   "D#2": "sounds/fluid-string_ensemble_1/Ds2.mp3",
+   "D#3": "sounds/fluid-string_ensemble_1/Ds3.mp3",
+   "D#4": "sounds/fluid-string_ensemble_1/Ds4.mp3",
+   "D#5": "sounds/fluid-string_ensemble_1/Ds5.mp3",
+   "D#6": "sounds/fluid-string_ensemble_1/Ds6.mp3",
+   "F#2": "sounds/fluid-string_ensemble_1/Fs2.mp3",
+   "F#3": "sounds/fluid-string_ensemble_1/Fs3.mp3",
+   "F#4": "sounds/fluid-string_ensemble_1/Fs4.mp3",
+   "F#5": "sounds/fluid-string_ensemble_1/Fs5.mp3",
+   "F#6": "sounds/fluid-string_ensemble_1/Fs6.mp3"
+  },
+  "piano": {
+   "A1": "sounds/vcsl-upright-piano-knight/A1.wav",
+   "A2": "sounds/vcsl-upright-piano-knight/A2.wav",
+   "A3": "sounds/vcsl-upright-piano-knight/A3.wav",
+   "A4": "sounds/vcsl-upright-piano-knight/A4.wav",
+   "A5": "sounds/vcsl-upright-piano-knight/A5.wav",
+   "A6": "sounds/vcsl-upright-piano-knight/A6.wav",
+   "C7": "sounds/vcsl-upright-piano-knight/C7.wav",
+   "C#1": "sounds/vcsl-upright-piano-knight/Cs1.wav",
+   "C#2": "sounds/vcsl-upright-piano-knight/Cs2.wav",
+   "C#3": "sounds/vcsl-upright-piano-knight/Cs3.wav",
+   "C#4": "sounds/vcsl-upright-piano-knight/Cs4.wav",
+   "C#5": "sounds/vcsl-upright-piano-knight/Cs5.wav",
+   "C#6": "sounds/vcsl-upright-piano-knight/Cs6.wav",
+   "F1": "sounds/vcsl-upright-piano-knight/F1.wav",
+   "F2": "sounds/vcsl-upright-piano-knight/F2.wav",
+   "F3": "sounds/vcsl-upright-piano-knight/F3.wav",
+   "F4": "sounds/vcsl-upright-piano-knight/F4.wav",
+   "F5": "sounds/vcsl-upright-piano-knight/F5.wav",
+   "F6": "sounds/vcsl-upright-piano-knight/F6.wav"
+  },
+  "marimba": {
+   "B2": "sounds/vcsl-marimba/B2.wav",
+   "B4": "sounds/vcsl-marimba/B4.wav",
+   "C2": "sounds/vcsl-marimba/C2.wav",
+   "C4": "sounds/vcsl-marimba/C4.wav",
+   "C6": "sounds/vcsl-marimba/C6.wav",
+   "F1": "sounds/vcsl-marimba/F1.wav",
+   "F3": "sounds/vcsl-marimba/F3.wav",
+   "F5": "sounds/vcsl-marimba/F5.wav",
+   "G2": "sounds/vcsl-marimba/G2.wav",
+   "G4": "sounds/vcsl-marimba/G4.wav"
+  },
+  "glock": {
+   "C5": "sounds/vcsl-glockenspiel/C5.wav",
+   "C6": "sounds/vcsl-glockenspiel/C6.wav",
+   "C7": "sounds/vcsl-glockenspiel/C7.wav",
+   "G4": "sounds/vcsl-glockenspiel/G4.wav",
+   "G5": "sounds/vcsl-glockenspiel/G5.wav",
+   "G6": "sounds/vcsl-glockenspiel/G6.wav"
+  },
+  "clarinet": {
+   "A#3": "sounds/tonejs-instruments-clarinet/As3.mp3",
+   "A#4": "sounds/tonejs-instruments-clarinet/As4.mp3",
+   "A#5": "sounds/tonejs-instruments-clarinet/As5.mp3",
+   "D3": "sounds/tonejs-instruments-clarinet/D3.mp3",
+   "D4": "sounds/tonejs-instruments-clarinet/D4.mp3",
+   "D5": "sounds/tonejs-instruments-clarinet/D5.mp3",
+   "D6": "sounds/tonejs-instruments-clarinet/D6.mp3",
+   "F3": "sounds/tonejs-instruments-clarinet/F3.mp3",
+   "F4": "sounds/tonejs-instruments-clarinet/F4.mp3",
+   "F5": "sounds/tonejs-instruments-clarinet/F5.mp3",
+   "F#6": "sounds/tonejs-instruments-clarinet/Fs6.mp3"
+  },
+  "bassoon": {
+   "C3": "sounds/tonejs-instruments-bassoon/C3.mp3",
+   "C4": "sounds/tonejs-instruments-bassoon/C4.mp3",
+   "C5": "sounds/tonejs-instruments-bassoon/C5.mp3",
+   "E4": "sounds/tonejs-instruments-bassoon/E4.mp3",
+   "G2": "sounds/tonejs-instruments-bassoon/G2.mp3",
+   "G3": "sounds/tonejs-instruments-bassoon/G3.mp3",
+   "G4": "sounds/tonejs-instruments-bassoon/G4.mp3"
+  }
+ },
+ "hits": {
+  "pencil": [
+   "kit/pencil-1.wav",
+   "kit/pencil-2.wav",
+   "kit/pencil-3.wav"
+  ],
+  "pencil-circle": [
+   "kit/pencil-circle-1.wav",
+   "kit/pencil-circle-2.wav",
+   "kit/pencil-circle-3.wav"
+  ],
+  "slap": [
+   "kit/slap-1.wav",
+   "kit/slap-2.wav",
+   "kit/slap-3.wav"
+  ],
+  "slide": [
+   "kit/slide-1.wav",
+   "kit/slide-2.wav",
+   "kit/slide-3.wav"
+  ],
+  "snip": [
+   "kit/snip-1.wav",
+   "kit/snip-2.wav",
+   "kit/snip-3.wav"
+  ],
+  "stamp": [
+   "kit/stamp-1.wav",
+   "kit/stamp-2.wav"
+  ],
+  "key": [
+   "kit/key-1.wav",
+   "kit/key-2.wav",
+   "kit/key-3.wav"
+  ],
+  "ding": [
+   "kit/ding-1.wav",
+   "kit/ding-2.wav",
+   "kit/ding-3.wav"
+  ],
+  "shutter": [
+   "kit/shutter-1.wav",
+   "kit/shutter-2.wav",
+   "kit/shutter-3.wav"
+  ],
+  "tape-rip": [
+   "kit/tape-rip-1.wav",
+   "kit/tape-rip-2.wav",
+   "kit/tape-rip-3.wav"
+  ],
+  "tape-pat": [
+   "kit/tape-pat-1.wav",
+   "kit/tape-pat-2.wav",
+   "kit/tape-pat-3.wav"
+  ],
+  "knob": [
+   "kit/knob-1.wav",
+   "kit/knob-2.wav",
+   "kit/knob-3.wav"
+  ],
+  "pin": [
+   "kit/pin-1.wav",
+   "kit/pin-2.wav",
+   "kit/pin-3.wav"
+  ],
+  "lid": [
+   "kit/lid-1.wav",
+   "kit/lid-2.wav",
+   "kit/lid-3.wav"
+  ],
+  "lock": [
+   "kit/lock-1.wav",
+   "kit/lock-2.wav"
+  ],
+  "copier": [
+   "kit/copier-1.wav",
+   "kit/copier-2.wav",
+   "kit/copier-3.wav"
+  ],
+  "string": [
+   "kit/string-1.wav",
+   "kit/string-2.wav",
+   "kit/string-3.wav"
+  ],
+  "wood": [
+   "kit/wood-1.wav",
+   "kit/wood-2.wav",
+   "kit/wood-3.wav"
+  ],
+  "shaker": [
+   "kit/shaker-1.wav",
+   "kit/shaker-2.wav",
+   "kit/shaker-3.wav"
+  ],
+  "cabasa": [
+   "kit/cabasa-1.wav",
+   "kit/cabasa-2.wav"
+  ],
+  "kick": [
+   "kit/kick-1.wav",
+   "kit/kick-2.wav",
+   "kit/kick-3.wav"
+  ],
+  "marktrees": [
+   "kit/marktrees-1.wav",
+   "kit/marktrees-2.wav"
+  ],
+  "triangle": [
+   "kit/triangle-1.wav",
+   "kit/triangle-2.wav"
+  ],
+  "fingercym": [
+   "kit/fingercym-1.wav"
+  ],
+  "handbell": [
+   "kit/handbell-1.wav",
+   "kit/handbell-2.wav",
+   "kit/handbell-3.wav"
+  ],
+  "ratchet": [
+   "kit/ratchet-1.wav",
+   "kit/ratchet-2.wav",
+   "kit/ratchet-3.wav"
+  ],
+  "slitlo": [
+   "kit/slitlo-1.wav",
+   "kit/slitlo-2.wav",
+   "kit/slitlo-3.wav"
+  ],
+  "slithi": [
+   "kit/slithi-1.wav",
+   "kit/slithi-2.wav",
+   "kit/slithi-3.wav"
+  ]
+ }
+}

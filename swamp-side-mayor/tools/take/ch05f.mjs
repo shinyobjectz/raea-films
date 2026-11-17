@@ -1,0 +1,22 @@
+// 05 Point at it (6): the panel's Tasks tab (the agent's task, linked to the note); the agent posts v3 in the cut's
+// place and replies.
+import { cap, chapter, click, go, hover, mark, move, pause, tip, d } from "./tk.mjs"
+chapter("05")
+await hover("shell-tab-tasks", 0, { steps: 4 })
+await tip()
+await cap("111-tasks-hover", "Pointer on the panel's Tasks tab")
+await click("shell-tab-tasks")
+await pause(1200)
+await move(1370, 300, 3)
+await cap("112-tasks", "Tasks: the agent's plan, its new task linked back to the note")
+go("v4"); await mark("v4", 60000)
+await pause(1500)
+go("note-reply"); await mark("note-done", 60000)
+await pause(2500)
+await cap("113-v3-reply", "The agent's reply: version 3 in the feed, drawn wings; the task closed")
+await click("shell-tab-feed")
+await pause(1500)
+await move(1370, 260, 3)
+await cap("114-v3-card", "The feed: the cut's card now at v3, \"drawn wings, not planks\"")
+const u = await d.ui()
+for (const n of u.nodes) if (n.visible && /task|card-/i.test(n.id)) console.log("n", d.fmt(n))

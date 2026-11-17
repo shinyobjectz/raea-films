@@ -1,0 +1,47 @@
+[package]
+name = "bevy_fft"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.97.1"
+description = "GPU FFT library for Bevy: frequency-domain filtering and synthesis on square power-of-two grids."
+license = "MIT"
+repository = "https://github.com/mate-h/bevy_fft"
+readme = "README.md"
+keywords = ["bevy", "fft", "gpu", "wgpu", "ocean"]
+categories = ["game-development", "graphics", "rendering::data-formats"]
+
+[dependencies]
+bevy = { version = "0.20.0", default-features = false, features = ["std", "3d_bevy_render"] }
+bytemuck = "1.24"
+image = { version = "0.25", default-features = false }
+
+[[example]]
+name = "fft"
+path = "examples/fft/main.rs"
+
+[[example]]
+name = "ocean"
+path = "examples/ocean/main.rs"
+required-features = ["free_camera"]
+
+[[example]]
+name = "shallow_water"
+path = "examples/shallow_water/main.rs"
+required-features = ["free_camera"]
+
+[[example]]
+name = "ewave"
+path = "examples/ewave/main.rs"
+required-features = ["free_camera"]
+
+[[example]]
+name = "dispersive"
+path = "examples/dispersive/main.rs"
+required-features = ["free_camera"]
+
+[dev-dependencies]
+bevy_egui = "0.43.1"
+
+[features]
+file_watcher = ["bevy/file_watcher"]
+free_camera = ["bevy/free_camera"]

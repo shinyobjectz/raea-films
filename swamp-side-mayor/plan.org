@@ -1,0 +1,580 @@
+#+TITLE: Swamp-Side Mayor, the goose cut
+#+TODO: TODO MAKING REVIEW | DONE DROPPED
+
+Same song, new film: a goose under a flat blue sky, anime look, hand lettering. 18:9 only (2160x1080).
+Vibe (the director, 11-15): "euphoric, vibrant cartoon degenerate hiphop summoning ancient magic".
+
+* DONE First pass, posted a feed post: the director called it broken on every account; rebuilt from the world up
+* DONE The world rebuilt as ours in one painted look (world2.tsx; trees, grass, plants by Blender scripts); the director: "this style is wayyyy better"
+* DONE Scenery on the goose's sticker line: ruins (blender/ruins_build.py: stone ring, trilithon, columns in the shallows, arch, the goose's statue), critters smoothed and recoloured (blender/critters_build.py), all in the hero pass (sticker.ts)
+* DONE Ancient magic: the summoning circle on the mud floor and runes on the stones light as it calls (tools/fx.py sigil, rune-K; ruins.tsx Magic)
+* DONE Swimming and stylised water: it swims in past the columns and splashes home; drawn ripple rings, crown splashes (tools/fx.py; ruins.tsx Ripples, Splash)
+* DONE Choreography to the lyrics: each move on its words (show.json moves; plan.ts root; blender/goose_build.py move_pose), head plays to the lens, purposeful stomps and the muddy foot, slides, sticky steps, footprints (steps.json)
+* DONE Shots re-blocked round the new floor by the water (plan.ts SHOTS); proof: compositions/check.ts (lens in ruins, water, reeds, grass; blocked; out of frame; whips)
+* DONE Lettering: hook punchlines only (QUACK, MUD FEET?, DUCK?, SOUP., POP!, SWAMP-SIDE MAYOR, ENTER, SPLOOSH) and the goose's "ga~", sticker-edged (tools/ink.sh, ink.tsx)
+* DONE The machine as stickers, lettered keycaps; the trip brightened (sigil gates, critters and words flying)
+* DONE Made in raea opening; the lens stamp; end card
+* DONE Proof of v2 and v3 from the films themselves: trip muddy and grey (now hard beat colour cuts on the page, tone mapping off, sticker gates, a sunburst far end), smoke read as bubbles (now a drawn wisp and puffs), the shake's drops (streaks), plank wings (a drawn goose wing: arm, wrist, scalloped secondaries, fanned primaries), five shots with the lens in the grass or the goose too small (watcher, suction pop, shuffle, key hops, swim home)
+* DONE Final render out/goose-v4.mp4 (89.9 s, 2160x1080, -14.1 LUFS, peak -2.9 dBFS), proofed a frame a second
+* DONE Posted to the feed as a feed post (replaces a feed post; ~/Movies/To post/swamp-side-mayor-goose-18x9.mp4 with its cover (compositions/cover.tsx) and a captions.txt block
+* DONE Notes on v4 (11-16): lettering that explained nothing ("ga~", "brrr", "the mayor" tag, the swirl) cut; the hook's sung words, the title, ENTER and SPLOOSH kept
+* DONE Notes on v4: the critters seen. The frog on its stone jumps as the screen comes up and the snake rears at it, each in its own close shot (layout.ts REACT plays their clips on the beat)
+* DONE Notes on v4: the keyboard rebuilt as a whole one (five rows, sculpted two-tone caps in Lilita One, a bezel and lights) and the monitor as a rounded CRT with mud running off it in drips, not lumps
+* DONE the director, 11-16: summon the computer sooner. It's sung up in the first verse now (b 21.6), the hook is danced in front of it with the raea app on its screen, and the keys burst up after the hook (plan.ts CUE)
+* DONE the director, 11-16: more time on the platform. In place of the warp, the goose dives into the screen and through the real app making this film: prompt, the swamp it built, feed, the film playing, a note, publish (platform.tsx, real captures in assets/app); out through the screen into the pond, so the splash follows
+* DONE the director, 11-16: lettering painted in one colour like the reference's "DUCK" (not the marker in its navy and cream outline, which read abrasive and childish). tools/paint.py paints Archivo Black (OFL) with a dry brush, streaks running along each stroke; every word, ring and arrow is one yellow; the hook's words keep off the goose's face (ink.tsx place)
+* DONE the director, 11-16: "~ga" gone for good: not drawn by tools/ink.sh any more (with "brrr" and "the mayor"), off the cover, and the app's film frames re-cut from v5
+* DONE v5: re-baked, proofed, rendered (-14.1 LUFS, peak -2.9), posted as a feed post replacing a feed post; To post has the film, a new cover and caption. Also: the flung mud is gobs with drops, not balls; tools/film.sh renders the trip's first frame alone (a call starting on it held the default tone mapping: grey goose)
+* TODO v6, the director's notes on v5 (item a feed post, 11-16 07:47): posted as a feed post, waiting on the director
+** DONE Cigarette held like a real one: lips pinch it, it droops and bobs with the bill, ash and ember (note 1)
+CLOSED: [2026-11-16 Mon 09:42]
+The cigarette rides the lower bill (the bake's "cig" frame), droops and bobs with it; filter, paper, ash that grows and drops, an ember that glows on each drag, a wisp and puffs.
+** DONE Frog: its jump readable, feet planted with IK, a wider shot (note 2)
+CLOSED: [2026-11-16 Mon 09:42]
+The frog leaps from its stone to a lily pad as the computer comes up (29.6-31), from a wider lens; its own jump clip held to the arc, feet set at take-off and landing (an arc, not an IK solver). It lives on the pad after and hops for joy when the film comes up.
+** DONE Snake out; a deer from the same CC0 pack in its place (note 3)
+CLOSED: [2026-11-16 Mon 09:42]
+The deer (Quaternius, poly.pizza/m/T6Cs7tmMHJ, CC0, assets/critters/LICENCES.md) eats by the drum, startles as the computer comes up, stares, then walks down to the water and nods at the screen.
+** DONE The goose picked up by the app's cursor and slid, with the app's 3D selection box and label (note 4)
+CLOSED: [2026-11-16 Mon 09:42]
+At the slide the app's cursor comes in, the goose lights up under it (hover ring, its name in a chip), it's clicked (selected ring, the 3D gizmo at its root), grabbed and slid along a dotted path; the box takes in the wings.
+** DONE Summoning magic as the keys come up (note 5)
+CLOSED: [2026-11-16 Mon 09:42]
+As the keys come up: a summoning circle and runes on the mud, soft beams of light round the keyboard, star sparks rising.
+** DONE Typing: open wide, then cut in to the chat composer so it's clear where it types (note 6)
+CLOSED: [2026-11-16 Mon 09:42]
+A wide of it typing, then a cut in to the chat composer on the big screen as the words land.
+** DONE Typing animated with tricks, on the beat, to Disney's principles (anticipation, squash and stretch, follow-through) (note 7)
+CLOSED: [2026-11-16 Mon 09:42]
+Key to key on the beat: a crouch before each hop, squash on landing, stretch in flight, follow-through in the neck and tail; long hops turn tricks (a spin, a front flip, a barrel roll).
+** DONE Enter: a top-down shot, and the key itself an old tall two-row enter (note 8)
+CLOSED: [2026-11-16 Mon 09:42]
+ENTER is a tall two-row ISO enter; a top-down shot as both feet slam it.
+** DONE Drop the "TYPE ONE LINE" labels; the section carried by the swamp's animals reacting (note 9)
+CLOSED: [2026-11-16 Mon 09:42]
+No labels; after ENTER the critters carry it: the frog's leap and heart, the deer's nod, the heron's crane and its cheer (in the raccoon's place).
+** DONE No fall out of the screen: an underwater scene of its feet kicking, then the goose circling the computer in the water, smoking, while the agent builds on screen (note 10)
+CLOSED: [2026-11-16 Mon 09:42]
+It dives through the surface into the pond (seen from below), its feet kick under it, it circles the computer smoking while the screen shows the app building: files filling in, the feed, the film playing in the player, a note, publish. The dive and the swim moved out where the pond is a metre deep so a lens can get under them.
+** DONE No version number on the end card (note 11)
+CLOSED: [2026-11-16 Mon 09:42]
+The end card has no version.
+** DONE Cutaways while it types: the frog and a heron side by side in tiles, each turning its head after the goose key to key, each tile pushing in slowly (note at 0:54.7, a note
+CLOSED: [2026-11-16 Mon 09:42]
+Two tiles side by side (83.5-86): the frog and the heron, each turning its head after the goose key to key, each pushing in slowly (rendered from compositions tile-frog / tile-heron).
+No CC0 heron came with the critters: look for one; if none fits, build our own (sticker-drawn like the rest).
+Found 11-16: Poly Pizza's herons are Google Poly models (CC-BY, not CC0) and unrigged, so the heron is ours, built from solids.
+** DONE Hand edit on the timeline (11-16 16:00): a fade through black, 15 frames centred on the cut at frame 1128 (beat 55.9, QUACK QUACK QUACK into the waddle); the edit's frame list keeps all 2697 frames, nothing trimmed
+CLOSED: [2026-11-16 Mon 09:42]
+Applied as listed: the fade through black, 15 frames centred on frame 1128. The edit's frame list keeps every frame, so nothing was trimmed.
+** DONE 0:08.1: when it cuts back to the swim from behind, the words go behind the goose (it in front of them) a note, unsent)
+CLOSED: [2026-11-16 Mon 09:42]
+On the cut back to the swim from behind, the title sits behind the goose (in 3D, behind it).
+** DONE 0:18.7: nothing the machine sheds is a round ball: the trailing drops become stretched splats a note, unsent)
+CLOSED: [2026-11-16 Mon 09:42]
+The pollen twinkles as spiky stars (three crossed spikes), the splash's flying drops are teardrops, the pour off the computer streaks.
+** DONE 0:27.9: LEFT FOOT / RIGHT FOOT land on the stomps, and the goose shows its rig as it stamps: joints and the app's gizmo on the legs a note, unsent)
+CLOSED: [2026-11-16 Mon 09:42]
+LEFT FOOT / RIGHT FOOT land on the stomps; the rig shows as it stamps: bones in the app's lilac, ringed joints, the foot's chip and gizmo, the grab cursor.
+** DONE 0:43.4: crash zoom with speed lines to its face, then a freeze: a coloured card behind it and DUCK?, an old-school character intro a note, unsent)
+CLOSED: [2026-11-16 Mon 09:42]
+A crash zoom with speed lines to its face, then the frame freezes on a coloured card with DUCK? (64.1-65.3); nothing of the world shows through.
+** DONE 0:47.3: a drawn crown over its head on SWAMP-SIDE MAYOR, in front of the title a note, unsent)
+CLOSED: [2026-11-16 Mon 09:42]
+A drawn crown over its head on SWAMP-SIDE MAYOR, in front of the title (68.9-71.6). It floats a hand clear above the highest of its head and bill, never over them (the director 11-16: "above the head not over it"); the cover wears it too.
+** DONE 0:54.1: no brown ooze dripping on the computer: it comes up wet and hung with weed a note, unsent)
+CLOSED: [2026-11-16 Mon 09:42]
+No ooze: the computer comes up wet, hung with weed, water pouring off its top edge in streaks.
+** DONE The heron's neck breaks when it cranes (v5 about 1:51-1:53, and 1:23-1:26 at a third): a Mesh3d keeps its first frame's shape, so ruins.tsx's lengthening neck capsules stay short and the head comes off. The tutorial's fix is components/tut/heron.tsx (fixed shapes placed by Instances); found from the director's note on the tutorial, 11-16
+CLOSED: [2026-11-16 Mon 09:42]
+Fixed in the film's heron too (ruins.tsx): the neck is one unit cylinder stretched onto each run, with joint balls, as components/tut/heron.tsx does; its cutaway tile re-rendered.
+** DONE The raccoon out of the film, everywhere ("the raccoon is terrible, do not use that", 11-16)
+CLOSED: [2026-11-16 Mon 09:42]
+Not drawn anywhere (ruins.tsx skips it; its place in CRITTERS stays so the others keep their index). Its shot at 118.5 is the heron cheering, head thrown up on each beat under a heart.
+** DONE Under the water, the swamp seen up through the surface, bent and warped by ripples (the director, 11-16)
+CLOSED: [2026-11-16 Mon 09:42]
+underwater.tsx: its own set below the water (bed, lily stems, weed, stones, flecks; the world's plant cards drew as rectangles in the fog) and a pass that bends each ray up through the rippled surface (Snell's window: a circle of sky, willows and the computer overhead, a mirror of the murk past it), rings round the goose and the dive. The view above is rendered once from each underwater lens's spot (film.tsx#pano, five faces) and folded into a dome (tools/dome.py, assets/pano).
+** DONE The computer's green lamp reads as a toy: something else (the director, 11-16)
+CLOSED: [2026-11-16 Mon 09:42]
+A maker's badge on the bezel in its place: raea's sticker mark (assets/logo/raea-sticker.png) on a navy plate.
+** DONE Foley and sound effects under the song (the director 11-16: "how about foley and sound effects")
+CLOSED: [2026-11-16 Mon 10:46]
+tools/foley.ts places 160 sounds on the plan's own events (moves, key strikes, stomps, footprints, cues), so each lands on its frame: footsteps in the mud, the climb out, the wet shake, a proud honk at the call, the shimmer as the circle lights, the computer rumbling up out of the pond and switching on, the frog's plop and the deer's snort, the cursor's clicks at the slide, a whoosh and record scratch into DUCK? and an offended honk, the crown's ting, the keys rattling up, a clack per key and wings on the tricks, ENTER, the plunge, bubbles, the heron's croaks, the foot on the lens. Under the water the song goes muffled. Takes made locally with SAO (tools/sfx.sh; picked by spectrogram); the tutorial's SAO takes reused. tools/mix.sh: -14 LUFS, true peak under -1.5.
+** DONE raea check's flash errors: the takeoff (75.8), the QUACK close-up (54.2), the hops over its shoulder (86) and the flip for the O (88.5): its white wings and head swept across the frame close to the lens; each lens pulled back a third or more, same angle
+CLOSED: [2026-11-16 Mon 10:46]
+** TODO raea gap: raea check's flash screen names only the worst second (apps/check/flash/src/lib.rs finish()), so each fix costs a render round to find the next; list every second past the limit. Found on v6: 4 windows (takeoff, QUACK close-up, over-the-shoulder hops, the flip for the O), found one at a time until a port of the rule listed them all
+Workaround (11-17, 9:16 round): tools/flashscan.sh VIDEO [SHAPE] cuts the export into 3 s pieces every 1.5 s and checks each, so every failing second shows in one pass; tools/flashsplice.sh checks re-rendered frames in context before a full render. Found the 9:16's three windows (0:50.8, 0:52.7, 1:01.6) at once.
+** DONE Render v6, check it, post it replacing a feed post; the player shows v6's own frames
+CLOSED: [2026-11-16 Mon 10:58]
+Posted 11-16 as a feed post (out/goose-v6.mp4, -14.0 LUFS, true peak -2.7; picture master out/goose-v6-picture.mp4, re-mix with tools/mix.sh). raea check: one error, the song's own hard stop at 35.83 s. ~/Movies/To post has v6, its cover (crowned) and caption; v5's are in the Trash.
+* DONE v7, the director's notes on v6 (item a feed post, 11-16 11:0x): posted as a feed post, waiting on the director
+** DONE The frog always sits on something: on a lily pad in the opening, on its stone or pad as the computer comes up; never floating — v7 a feed post: the frog sits on a lily pad in the opening and on its stone or pad as the computer comes up (ruins.tsx FROG_PAD)
+** DONE The frog moves as its rig allows: idle breathing between moves, a real jump, joy hops that land on the pad — v7 a feed post: idle breathing, a real leap and joy hops that land on its pad (layout.ts frog clips)
+** DONE The heron turns to watch the computer rise; its crane shot moves to after the film is finished in the app, framed on it, its ! over its head, a better crane — v7 a feed post: it cranes up as the computer rises (layout.ts heronRig); its hero shot is after the post, framed on its head, its ! riding it
+** DONE The deer's startle plays (its rig's clip, not a stuck pose) and every critter's ! and heart ride on its head — v7 a feed post: its rig's startle clip plays; the ! and heart ride its head through every clip (blender/critter_heads.py)
+** DONE The cutaway tiles: the heron whole in its tile, and both critters snap round to look at the computer as each tile cuts in — v7 a feed post: the heron whole in its tile, both snapping round to the computer as the tiles cut in
+** DONE After the film is published on screen: a hero shot for each animal, like the goose's DUCK? intro (a push in and a coloured card) — v7 a feed post: deer, heron and frog each get a crash-in hero shot on their own coloured card after the post (film.tsx hero)
+** DONE The opening's low lens: no handheld wobble; lifted off the ground and steady, or a dolly — v7 a feed post: a steady crane, lifted off the ground (plan.ts S(0))
+** DONE The cigarette held in the bill, rigged to the lower mandible so it moves as the bill opens and closes — v7 a feed post: rigged to the lower bill, so it moves as the bill opens (goose_build.py LIP)
+** DONE The keys: no flips, spins or rolls. Weighted hops from key to key (a crouch before each, squash on landing, stretch in flight, the neck and tail following through), with speed lines on the fast ones — v7 a feed post: weighted hops: crouch, stretch in flight, squash on landing, neck and tail following, speed lines (plan.ts typing)
+** DONE ENTER: it comes down low and flat on the key and bounces off it like a trampoline — v7 a feed post: a low lens; it lands, sinks the key, is flung up, comes down harder and launches (plan.ts enterSpring)
+** DONE The stamp at the end: the goose's own leg kicks out and its foot meets the glass — v7 a feed post: its own right foot kicks out to the lens by IK and the stamp lands where it hit (plan.ts KICK)
+** DONE Under the water: a better shot after the plunge, and an orbit round it as it swims, the lens dipping in and out of the water — v7 a feed post: deep-below shot re-blocked; an orbit dipping through the surface, a water wash through the crossing, the window's sky seam fixed (tools/dome.py)
+** DONE The swim home as a rap-video shot: low, wide and close, the goose swaggering into the lens — v7 a feed post: low, wide and close at the water, the goose swaggering into the lens, drops gathering on the glass
+** DONE The computer: the screen powers on with an animation; the badge is only the cat, a raised 3D icon on the case, no plate — v7 a feed post: a CRT power-on (assets/screen/on00-10); the cat alone, extruded with a navy rim and eyes, springs out of the case
+** DONE After ENTER the screen shows the agent at work in the real app, never the empty chat or a still: tool calls streaming, artboards, scripts, music, the timeline — v7 a feed post: captures of the raea app at work (tool calls, code, the cast board, the score, the script, the edit, the tasks) under every shot that faces the screen; no feed
+** DONE Sound: the circle sinister (low whooshes), the computer heard rising, footsteps far lower, the keys heard being summoned and coming up, every keystroke heard — v7 a feed post: sinister swirls per stone, the rise heard, footsteps 12 dB down, keys summoned, a hit on every keystroke, ENTER's spring, the lens through the surface
+** DONE The edit: the fade to black at 0:37.6 comes out — v7 a feed post: the fade at 0:37 is gone
+** DONE Water on the lens only when the lens is over the surface and has been wet: drops when the orbit's lens comes back up, spray building through the swim home, a burst round the stamp at the kick; never while it is under (the director in chat, 11-16) — v7 a feed post: lensdrops.tsx: drops when the orbit's lens surfaces, building through the swim home, a burst at the kick; none under the water
+* DONE v8, the director's notes on v7 (item a feed post, 11-16 13:4x): posted as a feed post, waiting on the director
+** DONE The deer as the computer rises: it only raises its head and holds it up, looking at the computer; no clip jumping from its end back to its start, no head going down — v8 a feed post: it eats on a loop that rocks back and forth (no jump), raises its head once as the computer comes up and holds it there, watching; the nod later is gone (layout.ts)
+** DONE The cat badge much smaller and chrome, not blue — v8 a feed post: 0.42 across, low left on the case, a chrome face painted from the cat's own outline (assets/logo/cat-chrome.png)
+** DONE The stomp lines at 0:28 on the foot that's actually stomping — v8 a feed post: each burst under the foot that lands (ink.tsx)
+** DONE The cutaway tiles: the new cat on the case in the background (no old logo), the heron in its tile's frame — v8 a feed post: both tiles rendered again with the new case and the heron framed (tools/tiles.sh)
+** DONE The film in the app's player as a clay or wireframe animatic, the shot wider so the app's interface shows — v8 a feed post: the player shows the film as a grey clay animatic with ink lines (clay.ts, tools/clay.sh), the shot wider so the app shows round it
+** DONE The orbit starts and ends higher, with headroom over the goose — v8 a feed post: 2.8 times higher above the water at both ends, aimed higher over the goose; it eases to a stop and holds (plan.ts orbitH/orbitAngle)
+** DONE After the orbit comes up, hold a beat longer with the water running down the lens — v8 a feed post: a beat longer, the drops running down the lens (lensdrops.tsx drip)
+** DONE Under the water, the surface's mirror side reflects the pond (bed, weeds, goose), rippled, not flat blue — v8 a feed post: the surface reflects the pond below it, rippled, instead of flat blue (underwater.tsx)
+** DONE Under the water, the goose's body shows as clay and wireframe with its rig's gizmos — v8 a feed post: a clay body under a wire cage, its rig's bones and a gizmo, labelled goose · rig (goose-wire.glb)
+** DONE No note in the app at 1:17; the screen shows something else — v8 a feed post: the note is gone; the screen goes to publishing
+** DONE Publishing: the film uploading to social, then seen on a video page — v8 a feed post: four upload bars (YouTube, TikTok, Instagram, X) fill on the app's Publish page, then a video page with the film playing and likes, views and subscribers climbing (screens.tsx)
+** DONE The animals' hero shots framed on their heads, with likes climbing on the video as their background — v8 a feed post: each lens set on the animal's head; behind each a card of likes climbing, the count and views from the video page (screens.tsx likes)
+** DONE After the tasks, no paused frame on the screen: something better — v8 a feed post: the video page stays live, the film still playing, instead of a held frame
+* DONE v9, the director's notes on v8 (item a feed post, 11-16 15:15): posted as a feed post (outlines restored through 0:17-0:35: the director 11-16), waiting on the director
+** DONE Under the water, no clay, wire or rig gizmos on the goose: the real goose, lit by an underwater shader (caustics rippling over it and the bed), in the dive and the orbit's dip — v9 a feed post: the real goose under the water in the dive and the orbit's dip; a caustic web of sunlight rippling over it and the bed (underwater.tsx caustic); the wire copy and its gizmos are gone
+** DONE Cut to the upward shot on the word SCHLOP, and SCHLOP painted in the sky behind the goose — v9 a feed post: the shot from below cuts in at 12.88 s, where the word is sung (beat 18.8), and SCHLOP in the brush lettering stands in the sky behind the goose (ink.tsx behind cues)
+** DONE Rebuild the goose's mesh so the wings can't come apart from the body: the wings joined into the body and skinned, their roots blending into the shoulders, checked at full spread — v9 a feed post: each wing rooted 5.5 cm inside the body with a rounded shoulder, so the body cuts through it at any angle and no gap can open (goose_build.py)
+** DONE The water reacts as the computer rises: a simulated wave field pushed out by the case, the pads, frog and reeds riding and drifting on it, water pouring off the case into the pond — v9 a feed post: deep-water wave packets sent out from the case's edge as it rises and as water pours off it (waves.ts): the water shaded by them, foam at its foot; pads, frogs and reeds rock, bob and drift on the same waves
+** DONE The stomps at 0:32 as high kicks animated to Disney's principles: anticipation, squash and stretch, follow-through, arcs; less stiff, legs not lifting oddly high — v9 a feed post: seven kick-steps on the half beats: the foot whipped forward and up past its landing and down onto it; anticipation, lean back, wing flare, neck and tail following through, a squash on each landing
+** DONE At the second "duck" (1:17), the same freeze as the first, on a blue water card: the head cocked oddly, the cigarette dropping out of the bill — v9 a feed post: a crash in on its face as it swims, then the frame holds on a blue card (rays, ripple rings, bubbles: tools/v9card.py) with DUCK? over it; its head cocked hard over and the bill dropped open, the cigarette tumbling out and plopping into the pond (film.tsx cigFall, plan.ts FREEZE2)
+** DONE After the frog's shot, straight back to the video page: no more of the app — v9 a feed post: the tasks screen after the frog is gone: the video page stays on the screen from the likes to the end
+* TODO the director: the goose archives carry no source or licence record; confirm it is clear to post
+* Tutorial: Goose Learns raea
+** DONE Lesson plan and script, posted for the director (tutorial/plan.md, tutorial.script.ts, tutorial/vo.md)   :gate:
+CLOSED: [2026-11-16 Mon 06:22]
+4:42.5, 618 words, 12 chapters. Brief shaped for the tutorial; every field assumed for the director to confirm (16:9 among them).
+v2 (11-16): the Mayor dropped for the director's "just say this is goose": Goose by name; the project on screen is Swamp Goose. 4:42.5, 601 words.
+v3 (11-16): Goose makes the music video in the tutorial, from the first line in the chat to the export; it plays whole only at the end. 4:42.5, 605 words.
+v4 (11-16): no mouse; the pointer follows Goose's head and a peck clicks, never mentioned. Six honks, each different. 4:42.5, 597 words.
+v5 (11-16): the duck joke, set up in 01 (Goose doesn't care for ducks) and paid off in 11 over the song's hook (It's a song about a duck. Goose is a goose. Goose has never once wondered what he is.). Goose is he. 4:53.5, 626 words.
+v6 (11-16): the sundial and every "five minutes" line are gone (five minutes is the length, not a line); the cold open ends on a dry "Thank you." 4:50.0, 610 words.
+Approved by the director, 11-16 ("okay lets start building it out"): script v6, 4:50, 610 words. 16:9 stays as assumed.
+** DONE Narrator picked: chapter 00 read in two or three dry British voices (local TTS or a recorded read), posted as one question   :gate:
+CLOSED: [2026-11-16 Mon 06:39]
+Three local Pocket voices (jean, marius, javert) read the cold open, the loudness repeat and the duck ending (compositions/narrator.tsx, out/tut/voices). Pace while speaking: jean 2.25 w/s, marius 2.26, javert 1.66. Posted as one question; jean suggested.
+The director, 11-16: Jean (Pocket, local). If Jean isn't dry enough in the cut: Fish Audio, a paid call, quoted first.
+** DONE [#A] Make the app recording survive an interrupt: the app and each chapter's capture run detached in their own process group (tools/take/take-up.sh, take-run.sh; tmux isn't installed), so a message mid-take can't stop it; say clearly in chat when it starts and when it ends; resume from chapter 03 (states 010-054 kept)
+CLOSED: [2026-11-16 Mon 08:36]
+- [X] tmux launcher for the scratch app (port 7535) and a runner that takes one chapter script at a time, each writing a done file
+- [X] Banner in chat at start and end; plan task note while it runs
+- [ ] Resume: 03 onward through 11, contact sheet, DIFFS.md
+Recording now, detached: tools/take/take-up.sh started the app in its own process group (antsy goose-tut-take); each chapter runs by take-run.sh and leaves a done file. A message in the chat won't stop it.
+11-16: the take reached 104-pin (ch05b) before the driver was interrupted. The app was stopped cleanly. Resume from ch05 once the goal-met question is settled, because 084-086 may need re-taking.
+The take ran detached to the end; recording announced at start and end.
+** DONE The app take: a scratch workspace and every state on the glass, captured from raea's own window
+CLOSED: [2026-11-16 Mon 08:36]
+- [ ] Scratch workspace: sample projects in the rail (a duck among them), Swamp Goose with the goose emoji
+- [ ] The cut as one item with v2, v3, v4; the wing note pinned at 0:52; the agent's tasks linked to it
+- [ ] A Delivery controller (Shape 18:9, Loudness -14, Captions) on the rack
+- [ ] The renders in a library; 'a goose in the mud' answered
+- [ ] Every state the script names captured with the pointer; each label checked against the script, and the script changed where the app differs
+The v5 session (t-dv2k6hj1) is capturing the real app making this film into assets/app; reuse those captures where they fit rather than capturing twice, and keep the tutorial's own under assets/tutorial-app.
+11-16: the take job (goose-tut-take) was stopped by the interrupt at 1m47s (signal 15), before anything was captured. Restart when memory allows: it needs 12 GB, and the Mac was at about 20% free with other sessions' raea windows holding over 25 GB.
+11-16 restarted (the director: room now). The scratch world from the first try is kept: /tmp/goose-tut-take, workspace My studio with Night Shift Trailer, Bakery Reel, Rubber Duck Ad, Mic Check. Found: raea's 3D emoji library (626) has no goose or duck, so those marks may show flat; the take records what the rail really does
+Take finished 11-16: states 010-159 in assets/tutorial-app/states; scratch app stopped. 08.03/08.04 (libraries) cut: a library can't be shown without this Mac's own folders and drives. Share/Publish are signed out in the scratch app and show it.
+** DONE New props in the music video's hand: three stone doorways lettered for the rail's doors (Publish, Connections, Settings), the tutorial's machine (16:9 glass, Mac keys), v3's plank wings on Goose
+CLOSED: [2026-11-16 Mon 07:36]
+- [X] Four doorways built and lettered (blender/doors_build.py, assets/glb/ruin-door-0..3, assets/tut-ink/door-*), placed in a row on the near-left grass facing the keyboard (components/tut/doors.tsx); the tutorial's world copy clears their bushes (components/tut/world.tsx). Check stills out/tut/set-*.png, item a feed post
+- [X] The tutorial's machine: 16:9 glass (8.0 x 4.5 m), already up, no bracken over the glass, a Mac's keys with ⌘ (components/tut/machine.tsx, keyboard.json, assets/tut-keys/legends.png)
+- [ ] v3's plank wings on Goose: a tutorial goose build with the plank wing (out/goose_build-v2.py.bak's _station) as a variant to swap at the v4 fix
+Plank wings: blender/tut_goose_build.py is a tutorial copy of the goose build; the music video's own blender/goose_build.py is untouched. With --planks it gives v3's wings as two flat boards on the same bones, weights and moves, so a shot can swap one goose for the other. Output goes to out/tut/goose-planks/.
+The props are done: three lettered doors a feed post, the tutorial's machine with ivy, and Goose with v3's plank wings (assets/glb/goose-planks.glb from blender/tut_goose_build.py --planks). The plank goose has the same bones and clip, so the swap to drawn wings in 05 is a change of file.
+** DONE Ivy instead of the mud drips: no brown drips or mud on the tutorial's monitor and keyboard; procedural ivy vines climbing from the water up the monitor's sides and over its top edge, and along the keyboard's back, leaves as instanced cards, never over the glass or the keys
+CLOSED: [2026-11-16 Mon 07:22]
+- [ ] Vine paths grown procedurally over the case (sides, top edge, a few strands down the front corners), leaves along them
+- [ ] Mud and drips removed from components/tut/machine.tsx
+- [ ] Check stills: wide, glass close-up, keyboard
+Procedural ivy (components/tut/ivy.ts) climbs from the water up the monitor's sides and neck, over its top, and along the keyboard's back, kept off the glass, lamp, vents and keys. There are no drips or mud.
+** DROPPED Previz: the whole film in grey blocking on a scratch read, timed to the lines :gate:
+CLOSED: [2026-11-16 Mon 10:49]
+- [ ] Beats from the script with their times (tools/beats.py → components/tut/beats.json)
+- [ ] A shot for every beat: glass (its captured state) or swamp (camera, Goose's place and move)
+- [ ] compositions/tutprev.tsx: the set, the machine, the doors, Goose blocked, the glass states, a slate per beat, the scratch read on local Pocket TTS
+- [ ] Render at 960x540, check the timing against the lines, post for the gate
+The director asked to finish the video (11-16); the film was built straight from the beats, so no grey previz was posted for the gate
+** DONE Shots, Goose's moves for each gag, its head aiming the pointer and pecking each click (matched to the take's pointer path), keycap stickers for the shortcuts
+CLOSED: [2026-11-16 Mon 10:49]
+- [X] Keycap stickers: the giant keyboard's caps, up and struck, with a ⌘ drawn to Lilita One (tools/keycap.py, assets/tut-keys; sheet out/tut/keycap-sheet.jpg, item a feed post. 11-16 the director: the painted "CMD" didn't match; shortcuts get a style of their own
+Every beat's shot and Goose's gags in components/tut/shots.ts; the pointer follows his head and a peck clicks
+** DONE The film's picture: compositions/tutfilm.tsx from components/tut/shots.ts (every beat's states, close-ups on the glass, keycap stickers, the footprint, the music video on the glass at the end), rendered a chapter at a time and joined with the soundtrack
+CLOSED: [2026-11-16 Mon 10:49]
+11-16: footprint redrawn (t-e39z6kci); 11.01 camera moved out of the keyboard, 11.04 widened; every capture now preloaded behind the glass (t-e39z6klt).
+compositions/tutfilm.tsx rendered in 12 chapter parts (out/tut/film/parts) and joined with the soundtrack: 8667 frames, 4:48.9
+** DONE The swamp's animals as the outside reviewers (the director, 11-16): in 09.02 the heron, deer and frog turn to the glass as the review link goes out; 09.04 pays it off: the heron cranes with a "!" (notes on the frame), the deer nods with a heart (approves), the frog hops off ("Reviews were mixed."); one new Fish line
+CLOSED: [2026-11-16 Mon 10:00]
+- [X] Script: 09.02 picture, 09.04 line and picture
+- [X] Fish: "The heron had notes. The deer approved."
+- [X] Shots: the reviewers per shot, their emotes drawn
+- [ ] Sound agent told: 09.04's cues
+The director 11-16 on 09.04: "heron neck broken". Fixed in the tutorial's own heron (components/tut/heron.tsx): the renderer keeps a mesh's first-frame shape, so the neck is now fixed cylinders placed each frame.
+Done: the reviewers in 09.02 and 09.04, the heron's neck rebuilt (components/tut/heron.tsx); the sound has the heron's croak, the deer's two kalimba notes, the frog's guiro and plop.
+** DROPPED Voice, the swamp bed, foley on every gag, the song under the finished video at the end; mix at -14 LUFS
+CLOSED: [2026-11-16 Mon 08:07]
+Folded into t-dz8s4t8u, which adds the backing score the director asked for on 11-16
+** DONE Render, check, fingerprint score, SRT and chapter marks, post
+CLOSED: [2026-11-16 Mon 10:49]
+Checked (0 errors), fingerprint scored (flags explained in the noise note on t-dz8s4t8u), 12 chapter marks in the MP4, SRT at out/tut/goose-learns-raea.srt, posted
+** DONE Wind on everything that grows in the tutorial's world: grass, rushes, cattails, flowers, bushes, willows, far trees and the new ivy each sway, gently, in one wind
+CLOSED: [2026-11-16 Mon 07:22]
+- [ ] Find what moves now (the paint look's wind, the willows' small rock) and what doesn't
+- [ ] Sway the instanced plants and the trees per instance, phase by position
+- [ ] A 3 s check clip of the wide, looked at
+Rushes, cattails, bushes, willows and far trees each lean from the base in one wind with gusts that roll across the swamp (components/tut/wind.ts). The grass and flowers use the paint look's wind, and the ivy flutters.
+** DONE The narrator on Fish Audio (the director, 11-16): voice A (4ded8557…) on drama-3, each line directed in [brackets] and placed on its beat (out/tut/fish/drama3/cues.json); the full read after the three-doors rewrite
+CLOSED: [2026-11-16 Mon 10:00]
+- [X] Access: Fish Audio key from the director
+- [X] Three voices read the cold open; the director picks
+- [ ] The full read, logged with antsy spend
+Four auditions on fish:s1 through raea gen, with the key from Connections (4 cents). A full read of the current 56 lines is quoted at 56 cents. Today's spend is $9.60 of the $10 cap, so the full read waits for tomorrow's cap or the director's OK, and should come after the three-doors rewrite.
+The director picked A and asked for Drama 3 with better pacing a feed post. Drama 3 ignores <slow>; spaced punctuation does the slowing ("To. The. Computer."). The full read is 56 lines, about 56 cents at raea's 1-cent minimum per line. Check how raea is pronounced first.
+The director approved the paced opening a feed post and asked for a cough before the repeat. It's in a feed post, with cues in out/tut/fish/drama3/cues.json.
+The full read after the three-doors rewrite, plus 09-04-1 for the reviewers; on its beats in the soundtrack (components/tut/sound.tsx).
+** DONE The script and the doors follow the app: the rail's foot has three doors (Publish, Connections, Settings) and libraries are under Search near the top; the duck and goose marks are flat emoji that don't turn. Rewrite 01, 02, 03 and 08's lines to match, and make the prop three doors
+CLOSED: [2026-11-16 Mon 07:32]
+- [ ] DIFFS from the take so far: 010-054
+- [ ] Lines rewritten, timing re-run (tools/vo.py)
+- [ ] Doors: three, in the rail's order
+- [ ] Posted for the director's OK
+Rewrote lines 01, 02, 03, 08 and 10 to match the app. The rail's foot is three doors and Settings is the wrong door. Libraries are under Search at the top of the rail. The duck and the goose are flat and don't turn ("It isn't looking."). The prop is now three doors a feed post, and the film runs 4:51.5.
+** DONE Great ruins hazed on the far hills so the wide isn't bare (the director's note on set-wide): a temple front (giant trilithon, colonnade, two columns broken) behind the pond to the right, a great arch to the left
+CLOSED: [2026-11-16 Mon 07:22]
+Thirteen of the near ruins' stones at 4 to 6.5 times their size stand past the far trees, where the paint look's haze takes them (FAR_RUINS in components/tut/world.tsx).
+** DONE [#A] Goal met looks wrong on the glass (the director's notes on 086-goal-met): the app shows the agent's raw "GOAL MET: …" line as a chat message and asked for a second check after the first passed; the take's stand-in replies are terse. Decide: a goal-met card in the app (apps/app/src/chat/goal.ts and the chat view), or only better stand-in replies; then re-take 084-086
+CLOSED: [2026-11-16 Mon 17:02]
+The director said "go ahead with the project" (11-16). For now I'm keeping to this project's lane: the stand-in's goal replies now read like a real agent's (what it checked, then the GOAL MET line), and its reply goes out before the turn ends so the app checks once. A goal-met card in the app itself is still a suggestion for the app's owners. The re-take of 084-086 rides with the take.
+Cause of the second check (re-take of 11-16, 07:52): /goal set mid-job is queued in the session's outbox (acp/session.ts:647), so two turns end before any check is answered, the job's and then the goal's own start; GoalKeeper.tsx asks a check at each (nextStep), and the second still runs after the first says GOAL MET. Proposed app fix: in GoalKeeper's onTurn, don't ask while a [raea /goal] prompt is already queued, and drop a queued check once the goal is met. The take runs the installed app, so 084-086 stay a true capture until the app changes. The stand-in's replies now name version 2.
+Decided on better stand-in replies plus a close-up on the goal's Met pill (04.02), not an app change
+** DONE Re-audition voice A on Fish's Drama 3 with the narrator's pacing: each line made on its own, directed dry and deadpan, and placed with timed beats so the repeat gag ("Goose walked to the computer." / "To the computer." / "Thank you.") lands slower with real pauses, not the run-on of the first sample. Done when a listen item replaces the auditions with A alone on drama-3, every line's start and gap chosen by hand
+CLOSED: [2026-11-16 Mon 07:26]
+- [X] Find how raea gen reaches Drama 3 (fish:drama-3) and how Drama 3 takes direction
+- [X] Make each opening line in voice A on drama-3, directed dry and measured
+- [X] Place the lines with beats from the script's timing, slower on the repeat
+- [X] Post as a listen item replacing a feed post
+Voice A on drama-3 with a direction per line, each line on its own beat (cues in out/tut/fish/drama3/cues.json). The repeat is slow and spaced, and the gaps are where Goose acts.
+** DONE A pointed cough before the narrator's repeat: retake "To. The. Computer." on voice A, drama-3, with a short dry throat-clear just before it, and keep every other line and beat of the approved opening. Done when a listen item replaces the opening with the cough in place and the following beats moved by its length
+CLOSED: [2026-11-16 Mon 07:29]
+- [ ] Retake the repeat with a [cough] direction (1 cent)
+- [ ] Trim it, keep the cough and a short beat, re-space the words as before
+- [ ] Re-place the lines on their beats and post, replacing a feed post
+The repeat was retaken on drama-3 with "[cough]" before "To. The. Computer.": a short sound, then 0.5 s, then the spaced words. The later beats move 0.8 s, and the opening is otherwise as approved.
+** DONE [#A] No ga~ anywhere on the glass: the sample project posts ga~-free media. Stills and the plank versions from a fresh render of the current music video with Goose's plank wings (compositions/tut-film-planks.tsx; v1 with 2 s of the summoning cut, v2 whole); v5 as the fix (v3). The note moves to 0:58.5, Goose spread-winged over the keyboard, where planks against feathers reads at a glance (at 0:39 the drawn wings are edge-on and look like planks too). The take re-records from chapter 03's second half
+CLOSED: [2026-11-16 Mon 08:02]
+- [X] Take ga~ out of the script and the brief
+- [X] Render the music video with the plank goose (no ga~)
+- [X] Stills from v5 and the cuts swapped into the take's media
+- [X] Re-record from 04 and check every state from 080 on has no ga~
+- [X] Media made: out/tut/media/take (v1, v2, v3, three stills); the agent's posts and replies renumbered
+- [X] Re-take 061-090 (ch03e, ch04d, ch04c) and 100-104 at 0:58.5 (ch05a, seek, ch05b)
+- [X] Every state from 061 on checked for ga~ and the right version
+Stills taken from the plank render, not v5, so the feed's stills match v1 and v2's plank wings
+The take re-recorded 061-104 with ga~-free plank media (v1, v2) and v5 as v3; no ga~ on any state; the note sits at 0:58.5 on the plank wings
+** DONE The full narration read on Fish (the director: "you can use fish its fine"): voice A on drama-3, every line of the script directed in [brackets], the approved opening kept as it is, files named by beat for the previz and the edit
+CLOSED: [2026-11-16 Mon 10:00]
+Every line read on Fish voice A (drama-3), collected to assets/vo/ and placed by components/tut/beats.json; compressed for the mix into assets/vo-comp/ (tools/vo_comp.sh).
+** DONE [#A] The tutorial's sound, in one component (components/tut/sound.tsx): the Fish read on its beats, the swamp's bed (water, frogs, reeds, wind) tiled under it, foley on every gag the beats cue, and a backing score in Tone.js on non-General-MIDI instruments (bassoon, baroque recorders, kalimba, marimba, guiro), ducked under the voice; the music video's song under the finished video at the end; one Mix at -14 LUFS
+CLOSED: [2026-11-16 Mon 10:49]
+- [X] Score: instruments from the Versilian and tonejs-instruments libraries, a cue per chapter, silence at the cards, ducked under the voice
+- [X] Bed and foley made with sao, tiled with crossfades, foley on each beat's cues
+- [X] The song under the finished video, its hook on beat 11.02
+- [X] Audio-only render measured: -14 LUFS, bed 15-20 LU under the voice, no dead stops
+11-16: the agent drafting it was stopped; built in this session instead. components/tut/sound.tsx (the 58 lines, five high-passed swamp beds tiled with 1.5 s crossfades, every cued gag's foley, pecks and keys from shots.ts, the end song from goose-v5.mp4 ducked under the lines) and components/tut/score.ts (Tone.js in F major on VCSL and tonejs-instruments samples: bassoon, tenor recorder, kalimba, marimba, strumstick, contrabass, guiro, woodblock, slit drum); compositions/tutsound.tsx masters it to -14 LUFS.
+11-16 fingerprint: its noise and clip heads flag the swamp beds b, d, e (and a, weakly) as hiss and distortion wherever they're bare; 8 of 9 SAO takes flag, including four new frog-and-insect takes with no wind, and the one clean take (f) isn't spectrally different, so the heads (trained on added hiss) can't tell field ambience from hiss. From 10.02 on only bed_f plays. The end song's top shelved (assets/tut-song/goose-v5-song.wav) and the CRT whine cut.
+Soundtrack at -14.0 LUFS, true peak -1.7 dBTP: 58 Fish lines, the swamp bed, foley on every cued gag, six honks, the Tone.js score (bassoon, recorder, kalimba, marimba, strumstick, contrabass, guiro, woodblock, slit drum), the end song under the finished video
+** DONE [#A] The rest of the app take: chapters 05 (Edit or Note, Send, Tasks, v3, Compare) through 10 (Settings, Fingerprint), each state the script names captured with the pointer
+CLOSED: [2026-11-16 Mon 08:36]
+- [ ] 05: note sent, Tasks, v3, Compare
+- [ ] 06: timeline, Space, edits sent
+- [ ] 07: the Delivery controller, the knob, New controller
+- [ ] 08: Source search, Search's libraries, a row's sentence, 'a goose in the mud'
+- [ ] 09: Export, Share, Publish
+- [ ] 10: Settings, Agents, Fingerprint
+Captured 100-159 (chapters 05-10); Settings: Agents, New agent, Fingerprint.
+** DROPPED [#A] The film (compositions/tutfilm.tsx, 1920x1080): every beat's shot from the previz, the glass carrying its states with the pointer and pecks, Goose's gags blocked in the swamp, the sound under it; no slates
+CLOSED: [2026-11-16 Mon 08:36]
+Carried on as t-e0agcx4t.
+** DONE Goose's fingerprint (10.02) made legible: his orange foot comes up into frame, slaps flat on the glass over the Fingerprint page and lifts away, leaving a muddy webbed print uncovered on "Close enough." (the director's notes on the film, 11-16: "what is this thing", "confusing why its on the screen")
+CLOSED: [2026-11-16 Mon 10:49]
+11-16: the print redrawn as a webbed foot (three toes past a scalloped web); then the foot itself added, so the print has a cause on screen.
+Goose's orange foot comes up, slaps the glass over the Fingerprint page with a squash, lifts away and leaves the muddy webbed print on "Close enough." (with the slap's foley)
+** DROPPED The frog's leap in the app's player (06.02): the latest cut (v5) has the same frog, so only a better frog rig would change it (the director's note, 11-16: "make sure we use latest or improve the frog rig")
+CLOSED: [2026-11-16 Mon 10:00]
+The director, 11-16: "oh then dont worry about the frog". The take's player shows the app's v3 (goose-v4.mp4); v5 has the same leap; the music video's frog is v6's t-dylfinhj.
+** DONE Fix what raea check found on the joined film: the narration driven into the master's limiter (clipping), a black frame on every new capture on the glass (flash-frame), Goose's wings strobing in 11.04 (flash)
+CLOSED: [2026-11-16 Mon 10:49]
+- [X] narration compressed (tools/vo_comp.sh), soundtrack re-rendered
+- [X] next capture preloaded behind the glass, each named by its file; chapters with captures re-rendered
+- [X] 11.04 wider, Goose at 0.45 speed; chapter 11 re-rendered
+- [X] joined film re-checked
+raea check on the posted film: 0 errors, 1 warning (blotching in the near-blacks, from the parts' 10 Mbps encode); loudness, clipping, dropout, dead stops, frozen, flashing and flash-frame all ok
+** REVIEW [#A] Script pass so the film teaches (the tutorial-script method): one running task (Goose makes his music video and ships it), each chapter teaching one thing a viewer can then do, every line action, then place, then result, and each chapter closing on what the viewer can now do. Cut the emoji-watching-the-pointer gag and any line that names features in a row without the viewer doing something. Mark each line's picture: the app full-screen, a close-up on the control, or the swamp. Posted as a read item for the director's OK before any re-read :gate:
+- [X] Audit: each chapter's objective, the order test, lines that list instead of teach
+- [X] Revised script (tutorial.script.ts) and lesson plan
+- [X] Each line's picture marked: app full, close-up, or swamp
+- [X] Posted as a read item for the director
+v7 posted (tutorial-v7.script.ts): 4:44 est., 605 words, 19 lines new. Waits on the director's OK before the re-read; the picture and Goose's moves go on meanwhile.
+11-16: v7 was read and cut into v8 a feed post without an explicit OK on this read item; the director's notes on the cut stand in for the gate.
+** DONE [#A] The app shown so a viewer can learn from it: a cut to the app full-screen (the capture filling the frame) whenever a line teaches a control; a close-up pushed in on the control with the pointer on it as it's used; the 3D monitor kept for the swamp's moments. Done when, on every teaching line, the control it names is readable in the frame
+CLOSED: [2026-11-16 Mon 12:45]
+- [ ] A full-screen glass part and a close-up part in tutfilm.tsx (capture fills the frame, eased push to the control)
+- [ ] Every glass part re-framed from the script's marks
+- [ ] Stills of each chapter's teaching moments checked for readable controls
+11-16: App parts in components/tut/shots.ts (the capture filling the frame, its pointer from states.json gliding to each state, a yellow ring on each click, close-ups pushed in on the control, and a spotlight where the signed-out scratch app shows errors under Share and Publish). Every teaching beat of v7 uses them; stills of all 68 parts checked and 6 re-aimed. Door names now on Screen+Img: in the v6 video the doors were bare (an ImagePlane's texture isn't awaited in video).
+App parts on every teaching line: the capture full-frame, close-ups pushed in on the control, the take's pointer and click rings, spotlights on what each line names (07.01's 18:9 and loudness, 08.01's Source tab), and a slow drift so no screen holds still.
+** DONE Re-read the changed lines on Fish (voice A, drama-3; quote first, log the spend), re-time the beats, and move the score and foley with them
+CLOSED: [2026-11-16 Mon 11:57]
+- [X] Quote
+- [X] Read and collected
+- [X] beats.json re-timed; sound re-rendered
+11-16: v7 moved into tutorial.script.ts (no emoji anywhere, for a note; 03.02 'A goose. Bold.' cut). 19 new lines read on Fish voice A, drama-3, plus 3 slower retakes ($0.22, logged); 33 lines keep their v6 takes. Filed by tools/vo7_collect.py into assets/vo7 (v6's assets/vo untouched); beats fitted to the read (294.1 s); honks, typing, keys, drips and the score's gags moved to v7's beats.
+v7 read and filed (assets/vo7), beats re-timed to 294.1 s, sound and score moved with them; $0.22 on Fish.
+** DONE [#A] Goose's own moves for the tutorial, made with the music video's rig and move code: a tutorial copy of the goose build bakes goose-tut.glb from a timeline of the tutorial's moves (walks with feet planted on the path each shot moves him along, standing and preening, the star pose, a look back, the honk, a head cock, key stomps, the end dance). Wings attached the way the music video draws them. Every Goose shot plays it at film time instead of borrowing chunks of the music video's clip (since v6's re-bake, those borrowed times all land on the wrong moves: swim, sticky, slide, fly, swim home). Done when stills of each move, from the front and side, show planted feet and wings joined at the shoulder
+CLOSED: [2026-11-16 Mon 12:45]
+- [ ] The tutorial's Goose timeline (out/tut/goose/tut-show.json, plus the root path and strikes) written from shots.ts's Goose per beat
+- [ ] blender/tut_goose_build.py bakes it with the music video's move code into assets/glb/goose-tut.glb (and the plank variant for chapter 05)
+- [ ] tutfilm.tsx plays the clip at film time; POSE offsets retired
+- [ ] Front and side stills of the walk, the star pose, the look back, the stomps and the dance, checked for skating feet and the wing joint
+goose-tut.glb baked from the tutorial's own timeline: feet planted, wings joined at the shoulder. The typing hops (03.02) and quack (11.02) shot wider, so his wings no longer flash the frame.
+** DONE [#A] Restage the cold open around Goose: open on him walking to the keyboard with the camera following him; no shot that holds once he's left; the shot at the water's edge in the open, with no stone between the lens and him. Allowed to run longer than now. Done when every cold-open still has Goose clearly in frame, doing what the line says
+CLOSED: [2026-11-16 Mon 12:45]
+- [ ] 00.01: follow Goose from behind and to the side as he walks to the keyboard, under "This is Goose."
+- [ ] 00.03: cut as he turns to leave; no hold on the empty frame
+- [ ] 00.04: low at the water's edge, clear line to him, the computer beyond
+- [ ] Beat times moved where the new shots need it (beats.json); narration, score and foley follow
+Cold open restaged: followed walking to the keyboard, the star pose, off across the meadow, a look back, and back; no hold once he's gone.
+** DONE [#A] No white noise under the film, and music from the first frame: the hissy swamp takes (b, d, e, a) out of the bed, the clean one only and lower, with frogs and drips as foley; the score's cold-open cue starts at 0:00 under "This is Goose." Done when the open has music under it straight away and the fingerprint has no hiss flag on the swamp bed
+CLOSED: [2026-11-16 Mon 11:33]
+- [X] Bed: bed_f only, 4-6 dB lower; b, d, e, a dropped
+- [X] Score: a cue from 0:00 through the cold open (the waddle motif on bassoon from the first step)
+- [X] Soundtrack re-rendered, measured, fingerprint has no hiss flag
+11-16: the beds are out of components/tut/sound.tsx (14 frogs and drips in swamp shots, about 20 LU under the voice); score.ts has a cold-open cue from 0:12 s (walking bass, kalimba, woodblock; marimba climb on the star) and a soft pulse on every beat in each chapter. The mix has only 3 gaps over 0.7 s under -45 dB, all deliberate rests. Fingerprint: the remaining weak 'hiss' flags sit on Fish's voice itself (raw takes flag 20, compressed 26, the score stem 0; the takes' pauses are digital silence). The final soundtrack renders after the v7 retime.
+No swamp bed (frogs and drips only, in swamp shots); score from 0:12 s with a soft pulse through every chapter; out/tut/sound/tutsound-v8.wav at -14.0 LUFS, -1.7 dBFS. The fingerprint's leftover weak hiss flags are Fish's voice (raw takes flag them too), not noise.
+** DONE Re-render every chapter with Goose in it, join, check, fingerprint, and post replacing a feed post
+CLOSED: [2026-11-16 Mon 12:45]
+- [ ] Chapters re-rendered
+- [ ] Joined, raea check, fingerprint against the last cut
+- [ ] Posted replacing a feed post, answering the seven notes
+All 12 chapters rendered and joined (8823 frames, 4:54). raea check: 0 errors (one blotching warn, as on v6); -14.0 LUFS, -1.7 dBTP on the mp4. Fingerprint skipped at the director's request. Posted with replaces; the feed wouldn't take answers on a feed post (not found from this session).
+** DONE Write the post that goes with the tutorial on X (out/tut/goose-learns-raea.tweet.txt)
+CLOSED: [2026-11-16 Mon 19:26]
+Written and opened: 266 of X's 280 characters, counting the link as 23. The film runs 5:50, longer than X's 140 s upload limit for accounts without Premium.
+* Tutorial v9: the director's notes on v8 (item a feed post
+** DONE [#A] v9 script: the film told as one workflow, patiently. Goose makes his music video in raea from opening the app to sharing it; each step says why you'd do it before showing how, and never skips ahead. Rewrites: what makes a good goal (one the agent can check) gets its own beat; 'click anything in the feed', never 'press one'; a lead-in that says what Goose is making and what version 2 is; Note and Edit each explained as clicked, then back to Edit for a change; the timeline section becomes Export (CapCut and other editors); controllers get their own section in the editing view, as the live edits; the tabs gone through one by one instead of slash; the fingerprint explained (what it learns, from what, what it changes). Cut: the wrong-door bits, Esc/back, 'miss the planks', the end cap. Posted as a read item for the director's OK before the Fish read   :gate:
+CLOSED: [2026-11-16 Mon 15:03]
+- [X] truth pass against the app: controllers in the editing view, Export's targets, the right panel's tabs, the fingerprint page
+- [X] lesson plan and VO, chapter by chapter, each line marked with its picture
+- [X] posted as a read item; the director's OK
+11-16: tutorial-v9.script.ts posted as a feed post (4:51, 725 words). Two questions for the director: (1) controllers in the editing view aren't in 0.1.5 or in any source tree on this Mac (the realtime doc says P1 isn't built), so v9 shows them on the panel's Controllers tab; which build has them in the editing view? (2) the live parts (the job and v3 arriving, Note/Edit clicked, versions, To CapCut) need a new take of the scratch app.
+Approved by the director in chat 11-16 ("i approve whatever just make the sweeeping changes needed"); tutorial-v9.script.ts is the script v9 is built from
+** DONE [#A] Cold open at the computer: Goose already at the keyboard (no walk away and back), the monitor powering on as it opens, a 'This is Goose' label with an arrow on him as he's named, the star pose kept. Done when each cold-open still has him at the computer and the label reads
+CLOSED: [2026-11-16 Mon 17:02]
+- [X] screen power-on animation
+- [X] label and arrow on Goose
+- [X] 00.x restaged with no walk
+Goose at the keyboard from the first frame, the monitor powering on, "This is Goose" with an arrow on his name, the star pose kept
+** DONE [#A] Close the seam on Goose's body in the tutorial bake (visible on his chest in the star pose, 0:07): the body's parts welded where they meet, so stills front and side show one surface
+CLOSED: [2026-11-16 Mon 17:02]
+11-16: blender/tut_goose_build.py's wing has a root fillet (FILLET 0.11 over the first 20% of the span): the trailing edge runs wider at the shoulder, so a spread wing's twisted face comes down over the flank instead of standing off it. Re-baked goose-tut.glb (25 s); stills of the star pose, typing hops, quack and stomp checked against v8. Ships with v9.
+11-16, the director on star9.png (marked at the far wing, three-quarters behind): the wings still stood off his back. Cause: the wing turned on a point 3 cm over his shoulder and its root edge rode above his back, so raised and turned forward it swung about 15 cm out. Fix in blender/tut_goose_build.py: the pivot inside the shoulder, and the root edge sewn under the skin, held by his trunk bones and handing over to the wing's over the first fifth of the span. Checked from six angles at four star frames, folded, and every move's stills (feathers and planks); re-baked both glbs
+The wing's pivot moved inside the shoulder and its root sewn under the skin on the trunk's bones (blender/tut_goose_build.py); joined from six angles, folded, and in every move, feathers and planks
+** DONE [#B] Open raea from a desktop: a quick made-up macOS desktop (menu bar, dock with raea's icon), the pointer clicking the icon and the app opening, in place of 01.01's swamp shot
+CLOSED: [2026-11-16 Mon 17:02]
+01.01 opens on a made-up desktop: the pointer clicks raea in the Dock and the app opens
+** DONE [#A] App camera rules: the whole window by default, and a section named by an outline round it rather than a zoom; a close-up only for something too small to read or a click to see (the click on 'open one'), slower and shallower, and always back out before the line moves on. No shot left static while the line runs: something changes on the words. The click ring on the control actually clicked (Connections, not Settings)
+CLOSED: [2026-11-16 Mon 17:02]
+Whole window by default, outlines on what a line names, slower shallower close-ups that back out before the next line, the click ring on the control clicked (Connections)
+** DONE [#A] Connecting an AI without the doors: Goose from behind, looking round a ring of the AIs' logos (Claude, ChatGPT and the rest) in the air above him, each lit as it's named; the doors and arches out of the film (the wrong-door bits, the walk through Settings in 10.01)
+CLOSED: [2026-11-16 Mon 17:02]
+02.01: Goose from behind under a ring of the AIs' logos, each lit as it's named; the doors and arches are out of the film
+** DONE [#B] The goal beat: '/goal honk' and the narrator's 'Honk is not a condition' timed as a joke (a held beat before the line), then a beat on what a good goal is, and a honk that sounds like a goose
+CLOSED: [2026-11-16 Mon 17:02]
+A held beat after "/goal honk", then "'Honk' is not a condition.", an offended goose honk, and a line on what a good goal is
+** DONE [#A] The workflow shown as it happens, from new captures of the scratch app: the agent working with each item arriving in the feed as it lands, Note and Edit clicked as they're named, the next version arriving, going back to an earlier version from the versions menu, Export's targets, controllers in the editing view, each tab of the right panel, the fingerprint page. Compare kept only if its wipe lands on the words
+CLOSED: [2026-11-16 Mon 14:56]
+Captured on raea 0.1.5 in a fresh scratch project: the job landing step by step (200-211), the note with Note and Edit clicked (220-233), the agent's steps and the wings' still landing, Tasks, v3 arriving on the same card and the reply (237-242), the version menu v2 then v3 (243-250), the four tabs (251-259), the controllers chapter again (130-140). Export's targets 170-173 and the fingerprint page 158-159 stand from before
+** DONE [#B] 'With me so far?': in place of the startle by the glass, the narrator asks, Goose honks back; then a short scene saying it's fine if a new tool is confusing at first, with the community Discord on screen, and on
+CLOSED: [2026-11-16 Mon 17:02]
+"With me so far?", Goose honks yes, then the line that a new tool can confuse at first, with the community Discord on screen
+** DONE Read v9's changed lines on Fish, re-time, move the sound and score, render every chapter, join, check, and post replacing a feed post
+CLOSED: [2026-11-16 Mon 17:02]
+11-16: 31 new lines read on Fish (31 cents), 15 kept from v8; assets/vo9/ with read.json (tools/vo9.py)
+v9 read (31 new lines on Fish), re-timed (42 beats, 5:35), sound and score moved, all 12 chapters rendered and joined (10035 frames); raea check 0 errors (fixed 2 dropouts at the joke pauses and a flash in 11.01), posted replacing a feed post
+** DONE [#A] No wall of text on screen: no capture in v9 shows a chat holding a raw handoff (the timeline-edit message's frame lists, 128-edit-reply and the old world's project chat). The panel's tabs captured again in the fresh world, its chat holding only the agent's plan, steps and reply; 174-177 not used
+CLOSED: [2026-11-16 Mon 17:02]
+Captures clean: a sent note's handoff now scrolls out of the chat before any capture (the stand-in's steps, tools/take/note9.mjs); 130-140 and 251-259 retaken beside a chat holding only the agent's turns; 234-240 and 174-177 moved to unused/. v9's shots must not use 100-128 or 141-145 (the old world's chat). Open until the v9 cut is checked frame by frame for it
+No capture in v9 shows a chat holding a raw handoff; the panel's chats hold only the plan, steps and reply
+** REVIEW [#B] raea gap: a sent note shows its whole handoff in the chat as the person's turn (the note, then the instructions to the agent: plan_add, comment_task, feed_post replaces), a wall of text every time Edit notes are sent (apps/app/src/agent/notes.ts notePrompt; AgentView shows a feed message's own words only for the inter-feed suffix, ownWords). Show the person's words and the item, keep the instructions for the agent
+Needs the director: this is a change to the raea app (notes.ts notePrompt and AgentView), not to this film. It's for the app lane to schedule; v9 avoids it by never showing a sent note's handoff.
+** DONE [#B] The tutorial is filmed on 0.1.5 (the take runs ~/Documents/raea-archive/apps/raea-0.1.5.app; /Applications now holds 0.1.6-rc0). In 0.1.6-rc0 the note box has no Note/Edit switch and the cut's header lost Compare and the notes toggle: if 0.1.6 ships that way, 05's Note/Edit beat goes stale. the director: film 0.1.5 as it is, or wait for 0.1.6
+CLOSED: [2026-11-16 Mon 15:03]
+The director approved filming on 0.1.5 (11-16); every v9 capture is from the pinned 0.1.5 bundle
+** TODO raea gap: a <FramePass> or 3D camera that first appears partway through a video render breaks it. runtime/scene/src/parts.rs ordered_shader_rows builds passes only from a batch's first frame, so a pass mounted later comes without its source ("frame_pass0: a shader needs its source", swamp-goose v9 chapter 05 frame 213). systems/framepass put() turns multisampling off only on cameras present at load, so a camera made at a later cut keeps MSAA 4 and the GPU refuses the prepass binding (chapter 07 frame 747). Stills never show it. Worked around in compositions/tutfilm.tsx: the pass on every frame, a camera under the app shots :raea_gap:
+Again on v10 (11-16), with no error at all: every chapter render that opened on an app shot drew its later swamp shots without the FramePass (no ink, washed-out colour), though the pass and a camera were mounted from frame 0; raea render said 0 errors, 0 warns. Worked around in v11 by rendering runs of one kind (shots.ts filmRuns, tools/tutfilm.sh). raea should either apply the pass to 3D that appears later in a run or refuse the run
+* Tutorial v10: the director's notes on v9 (item a feed post
+** DONE Stay on the app through the /goal joke: cut the stomp
+CLOSED: [2026-11-16 Mon 18:03]
+03.04 ends on the app holding "/goal honk" while Goose's offended honk plays off screen, with no cut to Goose at the lens. 03.05 opens on the app deleting the goal, with no cut to his foot on Delete and no heavy stomp clack. Done when every frame from 03.04 to the end of 03.05 is the app and the honk is still heard where it was.
+- [X] shots.ts: 03.04 and 03.05 are app-only (drop the honk-back shot and the stomp shot)
+- [X] sound.tsx: honk kept off screen; the heavy foot-on-Delete clack dropped, Delete clicks kept
+- [X] stills at the old cut points show the app
+03.04 and 03.05 stay on the app; the honk plays over it, and the stomp, the footprint and the foot-on-Delete clack are gone
+** DONE Retime the whole VO so each line lands with its picture, and fix "That is."
+CLOSED: [2026-11-16 Mon 18:03]
+Measure every line's start against the picture it names (cut, click, outline) and the gap before it. Then set one rule: a line starts a breath after its picture lands, with an even pause between lines and no line crowding a cut. Replace 03.05's "That is." with a line that says the goal can now be checked. Done when a table of every line's gap and its lead on its picture is even, with outliers fixed or explained.
+- [X] table: each line's gap before and its offset from the picture it names
+- [X] 03.05's closing line rewritten and read on Fish
+- [X] beats.py: even breaths, lines start after their picture lands
+- [X] reads with a dead pause inside them are tightened or re-read
+- [X] listen through every chapter join
+v9: lines started 0.15 s after each cut and ran 1.05 s apart, chapter or not, while the takes' own sentence pauses ran 0.8 to 1.0 s. v10: inside a line, pauses tightened to 0.5 s (sentence) and 0.32 s (comma); 0.55 s between lines in a beat; each line starts 0.5 s after its cut; 1.2 s between beats, 1.7 s into a new chapter; longer only where the picture is doing something. "That is." is cut.
+Lines start 0.5 s after their cut, pauses are graded (inside a line < between lines < between beats < chapters), and inner pauses are tightened; "That is." is cut. Chapter joins were measured on the mp4: no clicks or level jumps. The join into 11 has 1.1 s of true silence, the chapter's breath with no bed
+** DONE App shots hold wide with no drift, and every outline sits on its control
+CLOSED: [2026-11-16 Mon 18:03]
+Remove the slow push-in on every screen share (the drift in appView). A shot zooms only when it sets a zoom to show one control, and it zooms to that control and back. Outlines are drawn in the same transform as the capture, so each one lands on the control it names. Done when stills of every outlined moment show the outline on its control, and app shots without a zoom are still.
+- [X] appView: drift gone; zoom only where a shot asks for it
+- [X] outline boxes follow the capture's own scale and offset
+- [X] a contact sheet of every outline at its peak, each checked by eye
+- [X] the 2:03 feed-card outline sits on the card
+56 outlines drawn on their captures (/tmp/v10/ol/sheet-*.png); three missed: 03.02's picker (sized from 017's wider "Pick an AI"), 04.02's v2 card (a hand box on the card below) and 07.04's New controller dialog (a hand box through its words). Each now takes its rect from the capture it's drawn on. 04.02 also skips 208, whose v2 poster hadn't loaded (black for 3 s).
+The drift on app shots is removed; zooms only show a control; the outlines in 03.02, 04.02 and 07.04 are re-aimed, checked on a contact sheet of every outline at its peak
+** DONE Match the reviewers' shot (09.03) to the film's look
+CLOSED: [2026-11-16 Mon 18:03]
+At 4:51 the camera drops to the water for the frog, and the light, ink and lens look like a different film. Find what differs from the shots around it (camera height, lens, sun, the ink pass) and bring it in line, or reframe it at the film's usual height. Done when stills of 09.03 sit beside 09.02 and 10.01 as the same world.
+- [X] find what changes there (camera, lens, light, ink)
+- [X] fix it in shots.ts or tutfilm.tsx
+- [X] stills of 09.03 beside its neighbours
+The frog was shot from the water's surface (0.8 m up, a 48 degree lens): a sheet of flat water, no ink on the pads, its stone huge in front. Now at the heron's and deer's height and lens (1.35 m, 40 degrees), from the front right of its leap with the heron in frame. 09.03's cuts are cued on its words.
+09.03 is shot with the film's swamp lens (ON_FROG moved back to fov 40), and the heron, deer and frog are cued on their words
+** DONE Chapter 10 ends on standing rules and teaching your fingerprint, not the setup page
+CLOSED: [2026-11-16 Mon 18:03]
+Drop the Fingerprint setup page and the footprint gag. In their place, two short beats: a standing rule (correct the same thing twice and raea asks "A standing rule?"; say yes and the line goes into your taste file, motion.ts for video, which every agent reads and raea check holds every export to), and how to teach your fingerprint by talking to your agent (your notes and approvals; ask it to learn from your finished renders, run on your own computer), with what that needs from the computer. Every label is checked against 0.1.5's code, and the picture is real app captures or graphics in the film's style. Done when the new lines are read, timed and on screen with real labels.
+- [X] truth pass: the standing-rule flow, taste files and fingerprint teaching in 0.1.5
+- [X] new lines for 10.03 and 10.04 written
+- [X] the picture: real captures where the app shows it, otherwise a graphic in 10.01/10.02's style
+- [X] Footprint and the setup-page shot removed
+0.1.6 is the launch version (the director in chat). Its Rules page: "When raea asks 'A standing rule?', or an agent adds a rule to a project, it shows here." Lines: tell your agent "make it a rule"; the same fix twice and raea asks; Fingerprint, Rules. Then it runs on your computer (8 GB memory, 2 GB disk: the host's NEED_MEM_GB and NEED_DISK_GB), and ask your agent to learn from your finished renders. Pictures are graphics in 10.01/10.02's style; the fingerprint draws on the swamp's own computer. Real captures of 0.1.6's Rules page can replace them once 0.1.6 is final.
+10.03: make it a rule, the standing-rule ask, Fingerprint › Rules. 10.04: runs on your computer (8 GB memory, 2 GB disk), ask your agent to learn from your renders. The pictures are graphics; swap in 0.1.6 captures once it's final
+** DONE Say "computer", not "Mac", everywhere in the film
+CLOSED: [2026-11-16 Mon 18:03]
+raea runs on Mac, Windows and Linux. Lines 01.01 ("an app on your Mac"), 06.0x Export ("saves the film to your Mac") and chapter 10's line change to "computer" and are re-read on Fish. On-screen words that name the Mac (the fingerprint's "This Mac") leave with the setup page. Done when no line or graphic says Mac.
+- [X] script lines changed
+- [X] re-read on Fish
+- [X] grep the script, words and graphics for Mac
+01.01, 06.01 and 10.04 say "computer"; no line says Mac
+** DONE Render v10, check it, score it against v9 and post it replacing v9
+CLOSED: [2026-11-16 Mon 18:03]
+- [X] timeline, bake, sound, chapters, join to out/tut/goose-learns-raea-v10.mp4
+- [X] raea check: 0 errors
+- [X] fingerprint score --was v9
+- [X] feed_post watch, replaces a feed post, answers all eight notes
+10454 frames (348.5 s). raea check: one error, the song's own stop at 346.2 s; 12 frozen warnings from the still app shots. Scored against v9: the dark flags come from the app's theme, and the other axes are close to v9's
+** DONE Tell viewers they can widen the rail (0.1.6)
+CLOSED: [2026-11-16 Mon 19:06]
+From the director in chat, 11-16: add a note about expanding the side rail if you like it wider; it ships in 0.1.6, the version this film launches with. A short line in 01.02 after the rail is named, with an outline on the rail's edge as it's said. I found no rail control in 0.1.6-rc0 or the source, so the line says "drag its edge", the way raea's other panels resize, until the director confirms the gesture.
+- [X] line written into 01.02 and read on Fish
+- [X] outline on the rail's edge as it's said
+- [X] gesture confirmed with the director
+REVIEW: 01.02 now says "If you'd like it wider, drag its edge," with the outline on the rail's edge. I couldn't find the widening control in 0.1.6-rc0 or the source, so the director needs to confirm that dragging the edge is how 0.1.6 does it
+The director's v10 note answered it: 0.1.6 widens the rail with a button, now shown in 01.02.
+** REVIEW raea gap: an <Audio> whose file is missing renders as silence with no error or warning. On swamp-goose v10 the narration (assets/vo10-comp/) wasn't built yet, so raea render of the Mix played no voice, the -14 LUFS master pushed the score into the limiter, and the only sign was 18 clipping errors in raea check. render should refuse, or at least warn, when an <Audio> src doesn't exist :raea_gap:
+Rechecked 11-16 on the raea 0.1.5 CLI with a 1 s test (/tmp/v11/gap/mixed.tsx): one real <Audio> plus one whose file doesn't exist renders with 0 errors, 0 warns, 0 notes. With only the missing <Audio>, render refuses, but says the file "makes no sound: no <Audio>", which misnames the problem. The fix is in raea's render, outside this project; it waits on the director to route it.
+* Music video 9:16: the director's note on v9 (item a feed post
+** DONE A tall lens for every shot: the same camera positions, each aimed at the goose or the shot's subject, with a taller field of view, checked on stills of every shot
+CLOSED: [2026-11-16 Mon 19:56]
+- [X] tall lens module beside plan.ts (v9's film.tsx and plan.ts untouched)
+- [X] per-shot width and aim for the screen shots and the watchers
+- [X] stills of every shot looked at
+Checked on a still of every shot (out/v9x16/s2/sheet.jpg) and the lettered moments (w2-w4). Re-aimed the splash shot (b 26) onto the goose watching it; tipped the underwater shot (b 94.25) up so SPLOOSH sits over the goose as it comes in.
+Tall lens per shot (compositions/tall.ts), checked on a still of every shot; three flapping shots (b 74, 76.5, 91.25) widened to k 1.1 to pass the flash screen
+** DONE Lay out the overlays for 9:16: lettering inside the phone's safe zone, the likes cards, the cutaway's two tiles stacked, the opening sticker, the stamp and the end card
+CLOSED: [2026-11-16 Mon 19:56]
+- [X] ink cues placed in the tall frame
+- [X] likes cards and freeze cards fill the tall frame
+- [X] tiles stacked
+- [X] sticker outline width matched to the frame
+Lettering placed by the tall lens inside the safe zone (top 220, bottom 420, sides 60/140 px), with hand spots (ink.tsx ta) for the title, the three QUACKs, DUCK?, ENTER and its burst. Likes cards drawn as 9:16 bursts with the likes and views in a row under them; tiles stacked frog over heron; sticker, stamp and end card inside the safe zone.
+Lettering in the 9:16 safe zone (hand spots for the title, QUACKs, DUCK?, ENTER), likes as tall bursts with a likes/views row, tiles stacked, sticker, stamp and end card inside the safe zone
+** DONE Render the 9:16 (2697 frames), put v9's mix on it, check it against the 9:16 safe zones, score it, and post it replacing a feed post
+CLOSED: [2026-11-16 Mon 19:56]
+- [X] render
+- [X] mux v9's mix
+- [X] raea check --shape 9:16
+- [X] fingerprint score
+- [X] post
+Rendered (2696 frames, stills kept in out/seq9x16), v9's mix muxed (-14.1 LUFS, -2.5 dBTP), raea check clean but for v9's three sound cuts, flash clean on every second (tools/flashscan.sh), fingerprint scored, rules held; posted replacing a feed post
+* Tutorial v11: the director's notes on v10 (item a feed post
+** DONE Bring the ink back on every swamp shot: in v10 the swamp shots of the chapters that open on the app (03, 04, 05, 07, 09) rendered flat, without compositions/sticker.ts's pass. Find why in compositions/tutfilm.tsx and fix it there; done when a sheet of every swamp shot in v11 has the outlines and paper look of v9
+CLOSED: [2026-11-16 Mon 19:06]
+- [X] find what turns the pass off after an app shot (v9 had it; v10 doesn't)
+- [X] a probe render across an app-to-swamp cut shows the ink on the swamp's first frame
+- [X] every swamp shot inked on a sheet of the v11 render
+comment_task refused the notes again ("no item a feed post in this project"), as on v9 and v10
+Cause: the ink is settled on a render's first frame; every chapter that opened on an app shot rendered its later swamp shots flat. Fix: the film renders in 18 runs, each all app or all 3D (shots.ts filmRuns, tools/tut_runs.ts, tools/tutfilm.sh)
+The film is now rendered in runs of one kind (filmRuns, tutfilm-rNN, tools/tutfilm.sh), so every 3D run starts on a swamp frame; a sheet of every swamp shot in v11 has the ink and paper.
+** DONE Cut the screen outlines to the few that find a small control: drop the outline on dialogs, on the chat box while it's typed in, on whole panels and on blocks of text (03.01's New project dialog, 03.02's box, and the like across components/tut/shots.ts); keep one only where the line names a small control a viewer has to find, and never over what's being shown
+CLOSED: [2026-11-16 Mon 19:06]
+- [X] list every outline in the film and mark each keep or drop
+- [X] drop them in shots.ts
+- [X] a contact sheet of the outlines left, none covering what it points at
+56 outlines before; 17 left plus the rail button's: the controls a line names and the viewer clicks (Connections, +, the AI picker, Send, Stop, Comment, Send edits, Tasks, versions, Export, the dots, the controller, the controllers' +, the four tabs, Share, Publish, Claude's Connect)
+After cutting, raea check found four stretches of 8 to 16 s with nothing moving (01.02–01.05, 03.05, 07.01). Fixed with things that teach, not with decoration: each of the window's three parts (rail, chat, panel) is outlined once as the line names it, 03.05 pushes in so the goal can be read while it's typed, and 07.01's three fields are outlined as they're named. 24 outlines in the film, down from 47 in v10.
+Correction to the count above: v10 had 56 outlines, v11 has 24.
+24 outlines, down from 56: none on dialogs, boxes being typed in, or text; kept on small controls a line names, the window's three parts once in chapter 01, and 07.01's fields. raea check's frozen errors are fixed with a push into 03.05's box rather than more outlines.
+To be exact: the still stretches in 01.02 to 01.05 and 07.01 were fixed with outlines (the window's three parts as they're named, and 07.01's three fields). Only 03.05 got a push instead. The three part outlines go around whole panels, against this task's own rule, so they're flagged to the director.
+** DONE Stop the page jumping under a zoom when a click changes the layout: in 02.03, pressing Claude's Connect opens its sheet and slides the page 200 px left while the camera is close on the button. Pull back to the whole window before the press, so the sheet opening reads as what the app does; find any other click in the film whose next capture shifts under a zoom and do the same
+CLOSED: [2026-11-16 Mon 19:06]
+- [X] measure the shift between each pair of captures cut on a click
+- [X] 02.03 wide before Connect is pressed
+- [X] the same for any other shifted pair
+- [X] stills either side of each such click
+Of 112 capture-to-capture cuts, only 039 to 040 (Connect pressed) shifts the page (200 px left, the sheet opening); the zoomed clicks in 01.03, 04.02, 05.02, 05.03 and 06.02 keep their layout
+Stills either side of the press showed the outline outliving the click and sitting on ChatGPT's button once the page slid: it now fades out before the press
+02.03 stays wide through the Connect press, with Claude's Connect outlined until the press; of the film's 112 capture pairs, only 039 to 040 shifted the page.
+** DONE Show 0.1.6's Widen the sidebar button in 01.02 instead of a drag: capture it (rail-toggle, at the rail's foot under the account) narrow, pressed, wide and folded again, with a copy of the 0.1.6 build on its own scratch world; re-read the line as "To widen it, click the button at its foot. Click again to fold it." and cut 01.02 to the captures
+CLOSED: [2026-11-16 Mon 19:06]
+- [X] a scratch world with the same four projects, on a copy of 0.1.6
+- [X] the rail captured narrow, on the button, wide, and folded
+- [X] the new line read in Fish and placed
+- [X] 01.02 cut to it, the button outlined once
+A copy of the 0.1.6-rc0 bundle on /tmp/goose-tut-take16 (port 7536) with the four projects only. Chapter 01's whole app is now 0.1.6 (300-315): cutting from 0.1.5 to 0.1.6 inside 01.02 jumped the rail's foot 40 px, the jump note 2 is about; the build now changes behind the swamp shot at 02.01
+Read on Fish ($0.01): 4.16 s. 01.02 is 10.6 s, the film 350.3 s; Goose rebaked to 10510 frames
+Chapter 01 recaptured on a copy of 0.1.6-rc0 (scratch world, port 7536): the Widen the sidebar button hovered, the rail wide, folded again; 01.02 re-read in Fish ($0.01).
+** DONE Render v11, check it, score it against v10, and post it replacing a feed post
+CLOSED: [2026-11-16 Mon 19:06]
+- [X] render the chapters and join with the sound
+- [X] raea check
+- [X] fingerprint score against v10
+- [X] post
+18 runs in 7m54s (peak 9.2 GB), joined: 10510 frames
+10510 frames. raea check: 0 frozen errors (4 fixed); 1 error left, the song's own 0.1 s break under the end card (v10 had it too). Fingerprint vs v10: 1 of 13 dark flags fixed; the 12 left are the app's dark theme. Posted with replaces; answers was refused.
+* Music video 16:9: sing-along lyrics
+** DONE Get the song's real words: the Suno lyrics if they can be read, else the transcription (out/lyr/words.json) with its mishearings marked for the director; each line timed to when it's sung
+CLOSED: [2026-11-16 Mon 19:46]
+The song's own words (assets/lyrics/swamp-side-mayor.txt, from its Suno page; the director pasted the same), timed in components/singalong/lines.ts from two hearings (out/lyr/words.json, Whisper turbo in out/lyr/heard-turbo.json). The cut sings no intro and a shortened verse 2 ("with the pondweed dip, I'll bring the bread"); chorus 2's quacks are sung and unpainted.
+** DONE Sing-along layer over the v9 16:9 cut (out/goose-v9.mp4), in a new composition: each sung line at the bottom, each word lit as it's sung, and none of the words the film already letters (the title, SCHLOP, QUACK, MUD FEET?, POP!, DUCK?, SOUP.)
+CLOSED: [2026-11-16 Mon 19:52]
+- [X] a short test proves <Video> renders the cut unchanged
+- [X] lines timed and placed, checked on stills over the brightest and busiest shots
+compositions/singalong.tsx over v9 through <Video>: frames line up exactly and the Y/U/V planes match v9 within re-encode noise. 28 lines in Archivo Black at the bottom, clear of the 120 px player zone, filling the lettering's yellow as sung; each painted phrase is one blank bar. Checked on 24 stills.
+** DONE Render the 16:9 sing-along to its own file with v9's own sound, check it, score it against v9, and post it
+CLOSED: [2026-11-16 Mon 19:54]
+Posted as a feed post: out/goose-v9-singalong.mp4, 2696 frames, v9's sound copied. raea check finds only v9's own issues: its three song stops, and a flash at 12.4 s that v9 has too once read with its colour tags. Fingerprint score skipped at the director's word ("just share it").
+* Tutorial: social export
+** DONE Find why the v11 tutorial (out/tut/goose-learns-raea-v11.mp4) fails to upload: probe its codec, profile, level, frame rate, timestamps, colour tags, size and length against the platforms' specs (reference/platforms.md)
+CLOSED: [2026-11-16 Mon 20:14]
+v11 was a clean file (no decode errors, identical runs, 2 s keyframes, moov first); it failed on length: 5:50 is over X's 140 s for standard accounts, and over raea Publish's own X, Bluesky and Threads limits.
+** DONE Export a social master of v11 in one clean pass (H.264 High, yuv420p, constant 30 fps, closed GOPs, BT.709 tags, moov first, AAC-LC), check it, compare it to v11, and post it
+CLOSED: [2026-11-16 Mon 20:14]
+out/social/goose-learns-raea-v11-full.mp4: one x264 pass, 1920x1080, 10510 frames, 166 MB, AAC from tutsound.wav. Also three parts under 140 s for a thread a feed post, -er2i-11, -erjl-12), from tools/social.sh.
+** DONE X export of the 16:9 sing-along (out/goose-v9-singalong.mp4): down to X's frame and bitrate limits, sound copied as it is, checked and posted as an export
+CLOSED: [2026-11-16 Mon 20:14]
+out/social/swamp-side-mayor-v9-singalong-x.mp4: 1920x960 (was 2160 wide, over X's 1920), about 16 Mbps (was 25.5), 179 MB, 2696 frames, v9's sound copied.

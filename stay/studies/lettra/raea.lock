@@ -1,0 +1,689 @@
+{
+  "version": 1,
+  "snapshot": {
+    "root_packages": {
+      "three@0.185.0": {
+        "nv": "three@0.185.0",
+        "peer_dependencies": []
+      },
+      "lettra@0.3.0": {
+        "nv": "lettra@0.3.0",
+        "peer_dependencies": [
+          {
+            "nv": "three@0.185.0",
+            "peer_dependencies": []
+          }
+        ]
+      },
+      "@react-three/fiber@9.8.2": {
+        "nv": "@react-three/fiber@9.8.2",
+        "peer_dependencies": [
+          {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          },
+          {
+            "nv": "three@0.185.0",
+            "peer_dependencies": []
+          },
+          {
+            "nv": "@types/react@19.3.0",
+            "peer_dependencies": []
+          }
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": {
+          "nv": "its-fine@2.1.1",
+          "peer_dependencies": [
+            {
+              "nv": "react@19.3.1",
+              "peer_dependencies": []
+            },
+            {
+              "nv": "@types/react@19.3.0",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/its-fine/-/its-fine-2.1.1.tgz",
+          "shasum": "e61e716ac9061e83ff63f8e052373daed2d5e8b6",
+          "integrity": "sha512-C5ZoVkeqSt0Aje0tzESO+iT/EQpNFNL39GkP7mCACtoZUFD6GcyerFCr6kp0ZtiII4W9HoYkY48Soy5xE/uHKw=="
+        },
+        "dependencies": {
+          "@types/react-reconciler": {
+            "nv": "@types/react-reconciler@0.28.9",
+            "peer_dependencies": [
+              {
+                "nv": "@types/react@19.3.0",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "react": {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "ieee754@1.2.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz",
+          "shasum": "8eb7a10a63fff25d15a57b001586d177d1b0d352",
+          "integrity": "sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "csstype@3.2.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+          "shasum": "ec48c0f3e993e50648c86da559e2610995cf989a",
+          "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "lettra@0.3.0",
+          "peer_dependencies": [
+            {
+              "nv": "three@0.185.0",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/lettra/-/lettra-0.3.0.tgz",
+          "shasum": "522d762d29565b9749591e20530c387c5c6e207c",
+          "integrity": "sha512-nlAPTOWbUPXtWAzW26Wv7j+1pXoKTgJao8OyUXZCsSprM6DCnS99O9vVApmubX2hn2csm43PdLnRqWmQB1YpUQ==",
+          "attestations": {
+            "provenance": true
+          }
+        },
+        "dependencies": {
+          "three": {
+            "nv": "three@0.185.0",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [
+          "msdf-bmfont-xml",
+          "three"
+        ],
+        "bin": {
+          "lettra": "dist/cli.js"
+        },
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": true,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@react-three/fiber@9.8.2",
+          "peer_dependencies": [
+            {
+              "nv": "react@19.3.1",
+              "peer_dependencies": []
+            },
+            {
+              "nv": "three@0.185.0",
+              "peer_dependencies": []
+            },
+            {
+              "nv": "@types/react@19.3.0",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@react-three/fiber/-/fiber-9.8.2.tgz",
+          "shasum": "c4ca62cec8a2fd51302694d504a6807f82f8e993",
+          "integrity": "sha512-6s0ejw0bT1myQ/aLLugcil8/zBmNnnHw/AISWF1yfDLOxfX3yYaTS+0IkpJITEnm/SSMLtxje6CJDt0i5Wu1Sw=="
+        },
+        "dependencies": {
+          "use-sync-external-store": {
+            "nv": "use-sync-external-store@1.7.0",
+            "peer_dependencies": [
+              {
+                "nv": "react@19.3.1",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "buffer": {
+            "nv": "buffer@6.0.3",
+            "peer_dependencies": []
+          },
+          "scheduler": {
+            "nv": "scheduler@0.28.0",
+            "peer_dependencies": []
+          },
+          "base64-js": {
+            "nv": "base64-js@1.5.1",
+            "peer_dependencies": []
+          },
+          "suspend-react": {
+            "nv": "suspend-react@0.1.3",
+            "peer_dependencies": [
+              {
+                "nv": "react@19.3.1",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "@babel/runtime": {
+            "nv": "@babel/runtime@7.29.13",
+            "peer_dependencies": []
+          },
+          "its-fine": {
+            "nv": "its-fine@2.1.1",
+            "peer_dependencies": [
+              {
+                "nv": "react@19.3.1",
+                "peer_dependencies": []
+              },
+              {
+                "nv": "@types/react@19.3.0",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "react": {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          },
+          "react-use-measure": {
+            "nv": "react-use-measure@2.1.7",
+            "peer_dependencies": [
+              {
+                "nv": "react@19.3.1",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "three": {
+            "nv": "three@0.185.0",
+            "peer_dependencies": []
+          },
+          "zustand": {
+            "nv": "zustand@5.1.0",
+            "peer_dependencies": [
+              {
+                "nv": "@types/react@19.3.0",
+                "peer_dependencies": []
+              },
+              {
+                "nv": "react@19.3.1",
+                "peer_dependencies": []
+              },
+              {
+                "nv": "use-sync-external-store@1.7.0",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "@types/webxr": {
+            "nv": "@types/webxr@0.5.24",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [
+          "expo-file-system",
+          "react-dom",
+          "expo",
+          "expo-gl",
+          "expo-asset",
+          "react-native"
+        ],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@types/react-reconciler@0.28.9",
+          "peer_dependencies": [
+            {
+              "nv": "@types/react@19.3.0",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@types/react-reconciler/-/react-reconciler-0.28.9.tgz",
+          "shasum": "d24b4864c384e770c83275b3fe73fba00269c83b",
+          "integrity": "sha512-HHM3nxyUZ3zAylX8ZEyrDNd2XZOnQ0D5XfunJF5FLQnZbHHYq4UWvW1QfelQNXv1ICNkwYhfxjwfnqivYB6bFg=="
+        },
+        "dependencies": {
+          "@types/react": {
+            "nv": "@types/react@19.3.0",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@types/react@19.3.0",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+          "shasum": "3b3ce8d8c1627fb5ccd4dadd57ef445c5a153b77",
+          "integrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg=="
+        },
+        "dependencies": {
+          "csstype": {
+            "nv": "csstype@3.2.3",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@babel/runtime@7.29.13",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.13.tgz",
+          "shasum": "6b33e456181ff15b5585d932f3aebfc0669b32dd",
+          "integrity": "sha512-v+oN26xP4YIlQsbQ/CbTH1WG5m/l/DjKKZNy/Kp3f/AFvbgt7Em/D0FeMM3O2hX0YzeN2M16W8lOpyhIkfCBcQ==",
+          "attestations": {
+            "provenance": true
+          }
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "base64-js@1.5.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz",
+          "shasum": "1b1b440160a5bf7ad40b650f095963481903930a",
+          "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "suspend-react@0.1.3",
+          "peer_dependencies": [
+            {
+              "nv": "react@19.3.1",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/suspend-react/-/suspend-react-0.1.3.tgz",
+          "shasum": "a52f49d21cfae9a2fb70bd0c68413d3f9d90768e",
+          "integrity": "sha512-aqldKgX9aZqpoDp3e8/BZ8Dm7x1pJl+qI3ZKxDN0i/IQTWUwBx/ManmlVJ3wowqbno6c2bmiIfs+Um6LbsjJyQ=="
+        },
+        "dependencies": {
+          "react": {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "zustand@5.1.0",
+          "peer_dependencies": [
+            {
+              "nv": "@types/react@19.3.0",
+              "peer_dependencies": []
+            },
+            {
+              "nv": "react@19.3.1",
+              "peer_dependencies": []
+            },
+            {
+              "nv": "use-sync-external-store@1.7.0",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/zustand/-/zustand-5.1.0.tgz",
+          "shasum": "739f981fa5427f3d3704705726e9c821671b307f",
+          "integrity": "sha512-ciJZlP48M1PTQbVQq81CGVFxHTLpZNrFjKqwjtCU34AWuXTZT/jrF3p9+fI84Cf1eSCMLapxqBy/SNTfwOBuqA==",
+          "attestations": {
+            "provenance": true
+          }
+        },
+        "dependencies": {
+          "use-sync-external-store": {
+            "nv": "use-sync-external-store@1.7.0",
+            "peer_dependencies": [
+              {
+                "nv": "react@19.3.1",
+                "peer_dependencies": []
+              }
+            ]
+          },
+          "@types/react": {
+            "nv": "@types/react@19.3.0",
+            "peer_dependencies": []
+          },
+          "react": {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [
+          "immer",
+          "@types/react",
+          "react",
+          "use-sync-external-store"
+        ],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "react@19.3.1",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/react/-/react-19.3.1.tgz",
+          "shasum": "26e9523fc36ea06be5050ebb780249a133260ad7",
+          "integrity": "sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==",
+          "attestations": {
+            "provenance": true
+          }
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "three@0.185.0",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/three/-/three-0.185.0.tgz",
+          "shasum": "1b60dc42a042712a79961b2a654617fd6bb2503b",
+          "integrity": "sha512-+yRrcRO2iZa8uzvNNl0d7cL4huhgKgBvVJ0njcTe8xFqZ6DMAFZdCKDP91SEAuj25bNAj7k1QQdf+srZywVK6w=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "react-use-measure@2.1.7",
+          "peer_dependencies": [
+            {
+              "nv": "react@19.3.1",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/react-use-measure/-/react-use-measure-2.1.7.tgz",
+          "shasum": "36b8a2e7fd2fa58109ab851b3addcb0aad66ad1d",
+          "integrity": "sha512-KrvcAo13I/60HpwGO5jpW7E9DfusKyLPLvuHlUyP5zqnmAPhNc6qTRjUQrdTADl0lpPpDVU2/Gg51UlOGHXbdg=="
+        },
+        "dependencies": {
+          "react": {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [
+          "react-dom"
+        ],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "scheduler@0.28.0",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/scheduler/-/scheduler-0.28.0.tgz",
+          "shasum": "03d3ca348aeaf8b7502f64468f217b27523f9695",
+          "integrity": "sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==",
+          "attestations": {
+            "provenance": true
+          }
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "buffer@6.0.3",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz",
+          "shasum": "2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6",
+          "integrity": "sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA=="
+        },
+        "dependencies": {
+          "ieee754": {
+            "nv": "ieee754@1.2.1",
+            "peer_dependencies": []
+          },
+          "base64-js": {
+            "nv": "base64-js@1.5.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "@types/webxr@0.5.24",
+          "peer_dependencies": []
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@types/webxr/-/webxr-0.5.24.tgz",
+          "shasum": "734d5d90dadc5809a53e422726c60337fa2f4a44",
+          "integrity": "sha512-h8fgEd/DpoS9CBrjEQXR+dIDraopAEfu4wYVNY2tEPwk60stPWhvZMf4Foo5FakuQ7HFZoa8WceaWFervK2Ovg=="
+        },
+        "dependencies": {},
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      },
+      {
+        "id": {
+          "nv": "use-sync-external-store@1.7.0",
+          "peer_dependencies": [
+            {
+              "nv": "react@19.3.1",
+              "peer_dependencies": []
+            }
+          ]
+        },
+        "os": [],
+        "cpu": [],
+        "dist": {
+          "tarball": "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.7.0.tgz",
+          "shasum": "6dcb66ef569e02f186af6b3d575f414ce746e18f",
+          "integrity": "sha512-6L+EeigHMQhdaIPNIFUKwfWJSwWFQ8gJbJ2DLOs5sDIegTwR9fRxvnM3uciHKjIZhFz+KAv2emhWMRvDmMcY8A==",
+          "attestations": {
+            "provenance": true
+          }
+        },
+        "dependencies": {
+          "react": {
+            "nv": "react@19.3.1",
+            "peer_dependencies": []
+          }
+        },
+        "optional_dependencies": [],
+        "optional_peer_dependencies": [],
+        "bin": null,
+        "scripts": {},
+        "deprecated": null,
+        "is_deprecated": false,
+        "has_bin": false,
+        "has_scripts": false
+      }
+    ]
+  }
+}

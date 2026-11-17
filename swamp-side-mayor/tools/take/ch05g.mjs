@@ -1,0 +1,17 @@
+// 05 Point at it (7): the v3 card with its poster; the cut opened at v3; the version menu (v1, v2, v3).
+import { cap, chapter, click, gone, hover, key, move, node, pause, tip, vis, d } from "./tk.mjs"
+chapter("05")
+await gone("card-poster-wait", 60000).catch(() => console.log("poster still waiting"))
+await pause(800)
+await cap("114-v3-card", "The feed: the cut's card now at v3, \"drawn wings, not planks\"")
+await click("card-watch")
+await node("versions")
+await pause(1800)
+await hover("versions", 0, { steps: 4 })
+await tip()
+await cap("115-versions-hover", "The cut open at v3; pointer on the version picker")
+await click("versions")
+await pause(900)
+await cap("116-versions-menu", "The version menu: v3, v2, v1, and Compare")
+const u = await d.ui()
+for (const n of u.nodes) if (n.visible && /version|compare|menu|ruler|timeline-time/i.test(n.id + " " + (n.name ?? ""))) console.log("n", d.fmt(n))

@@ -1,0 +1,10 @@
+{
+  "about": "The tutorial's keyboard (components/tut/machine.tsx): the music video's five rows of fifteen units, made a Mac's. Esc takes the backtick's place top left, as a compact keyboard has it; delete and return are named as a Mac names them; the bottom row is control, option, command, space, command, option, control. Each key is [character, legend, width]; tools/keycap.py legends draws the legends in this order.",
+  "rows": [
+    [["esc", "esc", 1], ["1", "1", 1], ["2", "2", 1], ["3", "3", 1], ["4", "4", 1], ["5", "5", 1], ["6", "6", 1], ["7", "7", 1], ["8", "8", 1], ["9", "9", 1], ["0", "0", 1], ["-", "-", 1], ["=", "=", 1], ["\b", "delete", 2]],
+    [["\t", "tab", 1.5], ["q", "Q", 1], ["w", "W", 1], ["e", "E", 1], ["r", "R", 1], ["t", "T", 1], ["y", "Y", 1], ["u", "U", 1], ["i", "I", 1], ["o", "O", 1], ["p", "P", 1], ["[", "[", 1], ["]", "]", 1], ["\\", "\\", 1.5]],
+    [["caps", "caps", 1.75], ["a", "A", 1], ["s", "S", 1], ["d", "D", 1], ["f", "F", 1], ["g", "G", 1], ["h", "H", 1], ["j", "J", 1], ["k", "K", 1], ["l", "L", 1], [";", ";", 1], ["'", "'", 1], ["\n", "return", 2.25]],
+    [["shiftL", "shift", 2.25], ["z", "Z", 1], ["x", "X", 1], ["c", "C", 1], ["v", "V", 1], ["b", "B", 1], ["n", "N", 1], ["m", "M", 1], [",", ",", 1], [".", ".", 1], ["/", "/", 1], ["shiftR", "shift", 2.75]],
+    [["ctrlL", "control", 1.5], ["optL", "option", 1.5], ["cmdL", "⌘", 1.75], [" ", "", 5.5], ["cmdR", "⌘", 1.75], ["optR", "option", 1.5], ["ctrlR", "control", 1.5]]
+  ]
+}

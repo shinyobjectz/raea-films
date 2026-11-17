@@ -1,0 +1,8 @@
+// Foley remade for the scenes whose picture changed after assembly 5 (the study and dining room relit, the canyon regraded, the rain window lifted).
+import { flow } from "raea/gen";
+export default flow(({ audio }) => ({
+  "study": audio.sfx({ prompt: "a quiet study, a clock ticking, soft footsteps on parquet, a wooden door opening", x_text_prompt: "a quiet study, a clock ticking, soft footsteps on parquet, a wooden door opening", x_video_url: "https://v3b.fal.media/files/b/0ab203e1/2OTWuDb6Ioa01e-U5iDVE_study.mp4" }, { model: "fal:fal-ai/hunyuan-video-foley" }),
+  "dining": audio.sfx({ prompt: "soft footsteps on old floorboards, a wooden chair drawn across the floor, a door opening", x_text_prompt: "soft footsteps on old floorboards, a wooden chair drawn across the floor, a door opening", x_video_url: "https://v3b.fal.media/files/b/0ab203e1/JAFhy-lbD38YVe6dDzJDE_dining.mp4" }, { model: "fal:fal-ai/hunyuan-video-foley" }),
+  "canyon": audio.sfx({ prompt: "wind through a narrow sandstone canyon, sand trickling down rock, soft footsteps on sand", x_text_prompt: "wind through a narrow sandstone canyon, sand trickling down rock, soft footsteps on sand", x_video_url: "https://v3b.fal.media/files/b/0ab203e1/xnDOcZtzU5IW9AaS58QSW_canyon.mp4" }, { model: "fal:fal-ai/hunyuan-video-foley" }),
+  "window": audio.sfx({ prompt: "wooden window blinds being raised, then steady rain on a window pane", x_text_prompt: "wooden window blinds being raised, then steady rain on a window pane", x_video_url: "https://v3b.fal.media/files/b/0ab203e2/uMJYy8mor4VI8lUPM46-9_window.mp4" }, { model: "fal:fal-ai/hunyuan-video-foley" }),
+}));

@@ -1,0 +1,5 @@
+/assets/
+/blender/src/
+/out/
+/.cache/
+.DS_Store

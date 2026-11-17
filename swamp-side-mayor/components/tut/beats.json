@@ -1,0 +1,909 @@
+{
+ "seconds": 350.33,
+ "beats": [
+  {
+   "id": "00.01",
+   "chapter": "00",
+   "heading": "00 \u00b7 Cold open. EXT. THE SWAMP, MORNING",
+   "start": 0.0,
+   "seconds": 6.15,
+   "onScreen": "Goose stands at the giant keyboard in front of the beige computer. The screen powers on as the line begins: a line of light opens into the app's window. On \"This is Goose\", hand-lettered words, This is Goose, with an arrow curving down to him.",
+   "camera": "SWAMP: medium, a little low, Goose and the computer both in frame, a slow push in.",
+   "cut": "opens on the power-on",
+   "cues": [],
+   "lines": [
+    {
+     "says": "This is Goose. Today, Goose will make a music video.",
+     "how": null,
+     "at": 0.9,
+     "seconds": 4.55,
+     "file": "vo11/00-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "00.02",
+   "chapter": "00",
+   "heading": "00 \u00b7 Cold open. EXT. THE SWAMP, MORNING",
+   "start": 6.15,
+   "seconds": 5.21,
+   "onScreen": "Goose turns to the lens and strikes a star's pose, wings out, the lit app behind him.",
+   "camera": "SWAMP: medium, low.",
+   "cut": "cut on the wings opening",
+   "cues": [],
+   "lines": [
+    {
+     "says": "And learn the new raea app on the way, from start to finish.",
+     "how": null,
+     "at": 0.3,
+     "seconds": 3.71,
+     "file": "vo11/00-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "01.01",
+   "chapter": "01",
+   "heading": "01 \u00b7 Find your way. THE APP",
+   "start": 11.36,
+   "seconds": 6.06,
+   "onScreen": "A computer's desktop (a Mac's, in the take), the swamp as its wallpaper, the Dock along the bottom. The pointer goes to raea's icon in the Dock and clicks; the icon bounces and the app's window opens out of it.",
+   "camera": "DESKTOP: the whole screen, still.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "raea is an app on your computer. Open it like any other app.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.06,
+     "file": "vo11/01-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "01.02",
+   "chapter": "01",
+   "heading": "01 \u00b7 Find your way. THE APP",
+   "start": 17.42,
+   "seconds": 10.61,
+   "onScreen": "The app, whole. An outline rises round the rail on the left as it's named; the pointer runs down the projects in it.",
+   "camera": "APP, OUTLINE on the rail.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "The app has three parts. Down the left, the rail: your projects.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.7,
+     "file": "vo11/01-02-1.wav"
+    },
+    {
+     "says": "To widen it, click the button at its foot. Click again to fold it.",
+     "how": null,
+     "at": 5.75,
+     "seconds": 4.16,
+     "file": "vo11/01-02-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "01.03",
+   "chapter": "01",
+   "heading": "01 \u00b7 Find your way. THE APP",
+   "start": 28.03,
+   "seconds": 3.11,
+   "onScreen": "The pointer clicks a project in the rail.",
+   "camera": "CLOSE on the project's tile as it's clicked, the click's ring; then straight back out to the whole app.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Open one.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 0.81,
+     "file": "vo11/01-03-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "01.04",
+   "chapter": "01",
+   "heading": "01 \u00b7 Find your way. THE APP",
+   "start": 31.14,
+   "seconds": 7.19,
+   "onScreen": "The project open: an outline round the chat in the middle, then round its box at the bottom.",
+   "camera": "APP, OUTLINE on the chat, then its box.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "In the middle is its chat, where you ask its agent, the AI doing the work, for what you want.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 5.99,
+     "file": "vo11/01-04-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "01.05",
+   "chapter": "01",
+   "heading": "01 \u00b7 Find your way. THE APP",
+   "start": 38.33,
+   "seconds": 6.36,
+   "onScreen": "An outline round the panel on the right, its feed; the pointer goes to it.",
+   "camera": "APP, OUTLINE on the panel.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "On the right, its feed. Everything the agent makes lands there.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.66,
+     "file": "vo11/01-05-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "02.01",
+   "chapter": "02",
+   "heading": "02 \u00b7 Connect your AI. CONNECTIONS",
+   "start": 44.69,
+   "seconds": 9.47,
+   "onScreen": "Goose from behind, by the water. Over his head, a ring of the AIs' logos hangs in the air. Each lights as it's named, and Goose turns his head to it: Claude, ChatGPT, Gemini, Kimi.",
+   "camera": "SWAMP: behind Goose and a little above, headroom for the ring; a slow drift round him.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "First, raea needs an AI to do the work: the one you already pay for, like Claude, ChatGPT, Gemini or Kimi.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.27,
+     "file": "vo11/02-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "02.02",
+   "chapter": "02",
+   "heading": "02 \u00b7 Connect your AI. CONNECTIONS",
+   "start": 54.16,
+   "seconds": 4.35,
+   "onScreen": "The app. The pointer goes down to the rail's foot; an outline on Connections as it's named; a click, and Connections opens.",
+   "camera": "APP, OUTLINE on Connections.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "You connect it in Connections, at the foot of the rail.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 3.15,
+     "file": "vo11/02-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "02.03",
+   "chapter": "02",
+   "heading": "02 \u00b7 Connect your AI. CONNECTIONS",
+   "start": 58.51,
+   "seconds": 6.67,
+   "onScreen": "Connections, its Agents rows. The pointer clicks Connect on Claude; its sign-in opens beside it.",
+   "camera": "APP, OUTLINE on the Agents rows; CLOSE on the Claude row for the click; back out.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Under Agents, click Connect on yours, and sign in with your own account.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.67,
+     "file": "vo11/02-03-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "03.01",
+   "chapter": "03",
+   "heading": "03 \u00b7 Ask for it. THE CHAT",
+   "start": 65.18,
+   "seconds": 8.15,
+   "onScreen": "The + in the rail, outlined; New project; \"Swamp Goose\" typed; Make clicked. The project opens.",
+   "camera": "APP, OUTLINE on the +, then on the form as the name goes in and Make is clicked.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Goose's video needs a project. The plus in the rail makes one: give it a name, and click Make.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 6.95,
+     "file": "vo11/03-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "03.02",
+   "chapter": "03",
+   "heading": "03 \u00b7 Ask for it. THE CHAT",
+   "start": 73.33,
+   "seconds": 7.92,
+   "onScreen": "Under the box, Pick an AI: Kimi picked. Then Goose stomps out the line on the giant keyboard, key by key; the box fills: \"make me a music video. me, in a swamp, summoning ancient magic\". Send.",
+   "camera": "APP, OUTLINE on the AI picker; SWAMP over the keys with Goose, wide; APP as the box fills.",
+   "cut": null,
+   "cues": [
+    "a clack a stomp",
+    "Send: one heavy clack"
+   ],
+   "lines": [
+    {
+     "says": "Under the box, pick the AI to run it. Then say what you want, the way you'd tell a person, and send.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 6.72,
+     "file": "vo11/03-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "03.03",
+   "chapter": "03",
+   "heading": "03 \u00b7 Ask for it. THE CHAT",
+   "start": 81.25,
+   "seconds": 7.75,
+   "onScreen": "The agent's answer arriving; \"1 running\" folded over the box, outlined; then Stop beside Send, outlined.",
+   "camera": "APP, OUTLINE on \"1 running\", then on Stop.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "While it works, what it's running shows over the box. If it wanders, Stop is right beside it.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 6.55,
+     "file": "vo11/03-03-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "03.04",
+   "chapter": "03",
+   "heading": "03 \u00b7 Ask for it. THE CHAT",
+   "start": 89.0,
+   "seconds": 13.03,
+   "onScreen": "Slash goal typed in the box. Then Goose types \"honk\" after it. Nothing happens for a beat.",
+   "camera": "APP, the box outlined; held still on \"/goal honk\" for the beat.",
+   "cut": null,
+   "cues": [
+    "after \"not a condition\": Goose honks back, once, offended, off screen; the app stays up"
+   ],
+   "lines": [
+    {
+     "says": "To keep it going until the job's really done, type slash goal and a condition. It works until that's true.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 7.18,
+     "file": "vo11/03-04-1.wav"
+    },
+    {
+     "says": "\"Honk\" is not a condition.",
+     "how": "after a held beat on /goal honk",
+     "at": 9.28,
+     "seconds": 1.95,
+     "file": "vo11/03-04-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "03.05",
+   "chapter": "03",
+   "heading": "03 \u00b7 Ask for it. THE CHAT",
+   "start": 102.03,
+   "seconds": 9.27,
+   "onScreen": "The goal deleted, and \"/goal every shot has me in it\" typed in its place. The goal settles over the box.",
+   "camera": "APP throughout: the box outlined as the goal is typed and settles.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "A good goal is something the agent can check in the work itself. Not \"make it good\", but \"every shot has me in it\".",
+     "how": null,
+     "at": 0.5,
+     "seconds": 7.57,
+     "file": "vo11/03-05-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "04.01",
+   "chapter": "04",
+   "heading": "04 \u00b7 Watch it work. THE FEED",
+   "start": 111.3,
+   "seconds": 11.44,
+   "onScreen": "In real time: the agent's plan appears, then its steps one after another in the chat (Building the swamp\u2026). In the feed, the stills land one by one, then the first cut.",
+   "camera": "APP, whole, so the chat and the feed are both seen filling; OUTLINE on the feed as the cut lands.",
+   "cut": null,
+   "cues": [
+    "a soft drip for each card"
+   ],
+   "lines": [
+    {
+     "says": "Then it gets to work, and you can watch: each step shows in the chat as it happens, and each thing it makes lands in the feed. First the stills, then the cut.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 10.24,
+     "file": "vo11/04-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "04.02",
+   "chapter": "04",
+   "heading": "04 \u00b7 Watch it work. THE FEED",
+   "start": 122.74,
+   "seconds": 9.59,
+   "onScreen": "The cut's card changes to v2, \"the summoning longer\"; the goal's check in the chat: \"GOAL MET: Goose is in every shot of version 2.\"",
+   "camera": "APP, OUTLINE on the card's v2, then on the goal's line in the chat.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "It made a second version on its own, with a longer summoning. Then the goal checked it, shot by shot: Goose is in every one.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.39,
+     "file": "vo11/04-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "04.03",
+   "chapter": "04",
+   "heading": "04 \u00b7 Watch it work. THE FEED",
+   "start": 132.33,
+   "seconds": 3.67,
+   "onScreen": "The pointer clicks the cut's card; it grows to full size.",
+   "camera": "APP, whole.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Click anything in the feed to open it.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 1.87,
+     "file": "vo11/04-03-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "04.04",
+   "chapter": "04",
+   "heading": "04 \u00b7 Watch it work. THE FEED",
+   "start": 136.0,
+   "seconds": 3.16,
+   "onScreen": "Goose in the swamp turns to the lens.",
+   "camera": "SWAMP: medium, Goose square to the lens.",
+   "cut": null,
+   "cues": [
+    "Goose honks back, once: yes"
+   ],
+   "lines": [
+    {
+     "says": "With me so far?",
+     "how": null,
+     "at": 0.5,
+     "seconds": 0.96,
+     "file": "vo11/04-04-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "04.05",
+   "chapter": "04",
+   "heading": "04 \u00b7 Watch it work. THE FEED",
+   "start": 139.16,
+   "seconds": 10.3,
+   "onScreen": "Goose settles by the water. Beside him, a card: raea's community on Discord, discord.gg/ZCfeKDPgXX.",
+   "camera": "SWAMP: wide and calm; GRAPHIC: the Discord card.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "It's fine if this is a lot at first. Everyone's new to it once. If you get stuck, ask in raea's community on Discord. The link's on screen.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.6,
+     "file": "vo11/04-05-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "05.01",
+   "chapter": "05",
+   "heading": "05 \u00b7 Ask for a change. NOTES AND VERSIONS",
+   "start": 149.46,
+   "seconds": 8.24,
+   "onScreen": "The cut open at version 2, playing to 0:58: Goose spread-winged over the keyboard, his wings flat planks; an outline round the wings. In the swamp Goose flaps his own: planks, and they clack.",
+   "camera": "APP, OUTLINE on the wings; SWAMP, Goose medium, the planks across the frame.",
+   "cut": null,
+   "cues": [
+    "two wooden clacks"
+   ],
+   "lines": [
+    {
+     "says": "Back to the cut. It's a music video about Goose, so he watched himself first. His wings looked like planks.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 7.04,
+     "file": "vo11/05-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "05.02",
+   "chapter": "05",
+   "heading": "05 \u00b7 Ask for a change. NOTES AND VERSIONS",
+   "start": 157.7,
+   "seconds": 4.81,
+   "onScreen": "The pointer clicks Comment, then the wing in the picture; a pin; the box: \"my wings look like planks\".",
+   "camera": "APP, OUTLINE on Comment; CLOSE on the wing as the pin lands; back out as the note's typed.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "He chose Comment, clicked on the wing, and said so.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 3.11,
+     "file": "vo11/05-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "05.03",
+   "chapter": "05",
+   "heading": "05 \u00b7 Ask for a change. NOTES AND VERSIONS",
+   "start": 162.51,
+   "seconds": 12.29,
+   "onScreen": "Under the note, Edit | Note. The pointer clicks Note as it's named, then Edit as it's named, then rests on Edit.",
+   "camera": "APP, OUTLINE on Edit | Note; CLOSE enough to read them, held while the pointer moves between them.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "A note can do one of two things. Note keeps it for you, as a reminder.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 5.24,
+     "file": "vo11/05-03-1.wav"
+    },
+    {
+     "says": "Edit asks the agent to make the change. Goose wants a change, so: Edit.",
+     "how": null,
+     "at": 6.29,
+     "seconds": 5.3,
+     "file": "vo11/05-03-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "05.04",
+   "chapter": "05",
+   "heading": "05 \u00b7 Ask for a change. NOTES AND VERSIONS",
+   "start": 174.8,
+   "seconds": 7.41,
+   "onScreen": "Send. The panel goes to Tasks: the agent's tasks, each linked to the note.",
+   "camera": "APP, OUTLINE on Send, then on Tasks.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Send, and your notes become the agent's plan in Tasks, each task pointing back at its note.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 6.21,
+     "file": "vo11/05-04-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "05.05",
+   "chapter": "05",
+   "heading": "05 \u00b7 Ask for a change. NOTES AND VERSIONS",
+   "start": 182.21,
+   "seconds": 7.18,
+   "onScreen": "In real time: the agent at work in the chat, its task ticked off, and the cut's card in the feed turning to v3; the wings drawn as wings.",
+   "camera": "APP, whole; OUTLINE on the card as it turns to v3.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "When it's done, the fix comes back as the next version, on the same card.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.48,
+     "file": "vo11/05-05-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "05.06",
+   "chapter": "05",
+   "heading": "05 \u00b7 Ask for a change. NOTES AND VERSIONS",
+   "start": 189.39,
+   "seconds": 10.13,
+   "onScreen": "The version menu beside the title, outlined; it opens: v3, v2, v1. The pointer picks v2: the planks again. Then v3: feathers. In the swamp, Goose's planks turn to feathers and he flaps, lifting off the mud for a moment.",
+   "camera": "APP, OUTLINE on the version menu; SWAMP, Goose low against the sky for the flap.",
+   "cut": null,
+   "cues": [
+    "a soft whoomph of feathers"
+   ],
+   "lines": [
+    {
+     "says": "Every version is kept. To go back to one, pick it from the version menu, next to the title.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 6.03,
+     "file": "vo11/05-06-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "06.01",
+   "chapter": "06",
+   "heading": "06 \u00b7 Finish it. EXPORT",
+   "start": 199.52,
+   "seconds": 5.87,
+   "onScreen": "The film's header, Export outlined; the pointer clicks it: \"Exported to Swamp Goose.mp4\".",
+   "camera": "APP, OUTLINE on Export, then on the line it leaves.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "When it's right, Export, top right, saves the film to your computer.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.67,
+     "file": "vo11/06-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "06.02",
+   "chapter": "06",
+   "heading": "06 \u00b7 Finish it. EXPORT",
+   "start": 205.39,
+   "seconds": 10.03,
+   "onScreen": "The \u22ef at the timeline's right end opens its menu: Show in Finder, outlined; clicked.",
+   "camera": "APP, OUTLINE on the \u22ef, then on Show in Finder.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Show in Finder, under the dots at the end of the timeline, takes you to the file. From there it goes into CapCut, or any editor you like.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.33,
+     "file": "vo11/06-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "07.01",
+   "chapter": "07",
+   "heading": "07 \u00b7 Set it once. CONTROLLERS",
+   "start": 215.42,
+   "seconds": 20.73,
+   "onScreen": "The Controllers tab: one controller, Delivery. Outlines on Shape (18:9), Loudness (-14) and Captions as each is named.",
+   "camera": "APP, OUTLINE on each field as it's named.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Some choices hold for every film Goose makes: the shape, eighteen by nine; the loudness, minus fourteen; captions on.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 9.21,
+     "file": "vo11/07-01-1.wav"
+    },
+    {
+     "says": "Instead of saying them in every chat, they live in a controller: a panel of settings every agent reads before it starts. Goose's agent made this one when it began.",
+     "how": null,
+     "at": 10.26,
+     "seconds": 9.77,
+     "file": "vo11/07-01-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "07.02",
+   "chapter": "07",
+   "heading": "07 \u00b7 Set it once. CONTROLLERS",
+   "start": 236.15,
+   "seconds": 4.69,
+   "onScreen": "Goose pecks the Loudness knob and holds on, twisting his whole neck: the knob turns with it, up to -6, its top. In the swamp, the frogs get louder.",
+   "camera": "APP, OUTLINE on the knob; one cut to the swamp.",
+   "cut": null,
+   "cues": [
+    "the knob's ratchet",
+    "the frogs louder"
+   ],
+   "lines": [
+    {
+     "says": "Change one, and whatever an agent makes next follows it.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 3.49,
+     "file": "vo11/07-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "07.03",
+   "chapter": "07",
+   "heading": "07 \u00b7 Set it once. CONTROLLERS",
+   "start": 240.84,
+   "seconds": 4.1,
+   "onScreen": "The knob goes slowly back to -14; the frogs settle.",
+   "camera": "APP, OUTLINE on the knob.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Goose left loudness at minus fourteen.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 2.9,
+     "file": "vo11/07-03-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "07.04",
+   "chapter": "07",
+   "heading": "07 \u00b7 Set it once. CONTROLLERS",
+   "start": 244.94,
+   "seconds": 9.29,
+   "onScreen": "The + in the tab's bar; New controller opens: \"Describe what it should decide, in a sentence.\" A sentence typed; Create; the new controller builds itself in.",
+   "camera": "APP, OUTLINE on the +, then on the form's sentence; whole as it builds.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "To make your own, click the plus and describe in a sentence what it should decide. raea builds it as settings you can set.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 7.59,
+     "file": "vo11/07-04-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "08.01",
+   "chapter": "08",
+   "heading": "08 \u00b7 Find your way round a project. THE PANEL'S TABS",
+   "start": 254.23,
+   "seconds": 11.21,
+   "onScreen": "The panel's tabs, outlined; the pointer clicks each as it's named, and the panel changes with it: Feed's cards; Source, the project's files; Tasks, the plan; Controllers, Delivery.",
+   "camera": "APP, OUTLINE on each tab and the panel under it.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "The panel has four tabs. Feed is the work. Source is everything it's made of. Tasks is the agent's plan. Controllers, its settings.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 9.51,
+     "file": "vo11/08-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "09.01",
+   "chapter": "09",
+   "heading": "09 \u00b7 Share it. REVIEW LINKS AND PUBLISH",
+   "start": 265.44,
+   "seconds": 9.83,
+   "onScreen": "Share, beside Export, outlined: its panel opens on Review link. Then the link goes out to the swamp's reviewers: the frog on its stone, the heron in the shallows and the deer by the drum each turn to the giant glass.",
+   "camera": "APP, OUTLINE on Share and the panel's Review link; then SWAMP, the three reviewers, one quick shot each.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "For other people's notes, Share makes a review link. On Pro, anyone can watch, comment on the frame and approve, with no account.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.63,
+     "file": "vo11/09-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "09.02",
+   "chapter": "09",
+   "heading": "09 \u00b7 Share it. REVIEW LINKS AND PUBLISH",
+   "start": 275.27,
+   "seconds": 6.18,
+   "onScreen": "The rail's foot: Publish outlined, clicked; Publish opens on its tabs, Needs you first.",
+   "camera": "APP, OUTLINE on Publish in the rail, then on its tabs.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Their reviews come back in Publish, at the foot of the rail, with what needs you on top.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 4.98,
+     "file": "vo11/09-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "09.03",
+   "chapter": "09",
+   "heading": "09 \u00b7 Share it. REVIEW LINKS AND PUBLISH",
+   "start": 281.45,
+   "seconds": 8.19,
+   "onScreen": "The heron cranes its neck right out at the glass, a \"!\" over its head (a note); the deer nods, a heart over its head (an approval); the frog looks at the glass a moment longer, and hops off its stone into the water.",
+   "camera": "SWAMP: the heron, then the deer, each with the glass behind it; then close on the frog.",
+   "cut": null,
+   "cues": [
+    "a heron's croak on its note",
+    "plop"
+   ],
+   "lines": [
+    {
+     "says": "The heron had notes. The deer approved.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 3.14,
+     "file": "vo11/09-03-1.wav"
+    },
+    {
+     "says": "Reviews were mixed.",
+     "how": "after the frog's gone",
+     "at": 5.64,
+     "seconds": 1.35,
+     "file": "vo11/09-03-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "10.01",
+   "chapter": "10",
+   "heading": "10 \u00b7 Teach it your eye. FINGERPRINT",
+   "start": 289.64,
+   "seconds": 9.2,
+   "onScreen": "GRAPHIC over the swamp: this film's notes drift in, each in its own words (\"my wings look like planks\", the heron's \"!\", the deer's heart), and gather into a fingerprint's whorls.",
+   "camera": "GRAPHIC, over a soft swamp.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Every note you leave teaches raea what you look for: what you flag, and what you approve. Together, that's your fingerprint.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.0,
+     "file": "vo11/10-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "10.02",
+   "chapter": "10",
+   "heading": "10 \u00b7 Teach it your eye. FINGERPRINT",
+   "start": 298.84,
+   "seconds": 9.68,
+   "onScreen": "GRAPHIC: a new cut's strip; the fingerprint passes along it and marks two moments, each labelled in the note's own words (\"wings look like planks\"); they're fixed, and the strip goes to the feed clean.",
+   "camera": "GRAPHIC.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "Before an agent shows you a cut, it checks it against your fingerprint, and fixes what you'd have flagged. So the same note doesn't come up twice.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 8.48,
+     "file": "vo11/10-02-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "10.03",
+   "chapter": "10",
+   "heading": "10 \u00b7 Teach it your eye. FINGERPRINT",
+   "start": 308.52,
+   "seconds": 16.28,
+   "onScreen": "GRAPHIC over the swamp: Goose's words in a chat bubble, \"make it a rule: I'm in every shot\"; it folds into a card, Rules, a line under Always: \"Goose is in every shot.\" Then two notes the same (\"can't see me here\", twice), and over them \"A standing rule?\"; the card gains it. Fingerprint, Rules lettered under it.",
+   "camera": "GRAPHIC, over a soft swamp.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "When a note should hold for the whole project, tell your agent: make it a rule. Every agent works to it from then on.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 7.29,
+     "file": "vo11/10-03-1.wav"
+    },
+    {
+     "says": "Make the same fix twice, and raea asks if it's a standing rule. You'll find them all in Fingerprint, under Rules.",
+     "how": null,
+     "at": 8.34,
+     "seconds": 7.24,
+     "file": "vo11/10-03-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "10.04",
+   "chapter": "10",
+   "heading": "10 \u00b7 Teach it your eye. FINGERPRINT",
+   "start": 324.8,
+   "seconds": 12.76,
+   "onScreen": "GRAPHIC: a computer, drawn, with the fingerprint's whorls turning on its screen; \"8 GB memory\" and \"2 GB free\" pinned beside it. Then frames of Goose's finished video fly into the screen and the whorls fill out.",
+   "camera": "GRAPHIC.",
+   "cut": null,
+   "cues": [],
+   "lines": [
+    {
+     "says": "It all runs on your own computer. Eight gigabytes of memory and two free on disk are enough.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 6.2,
+     "file": "vo11/10-04-1.wav"
+    },
+    {
+     "says": "To give it a head start, ask your agent to learn from your finished renders.",
+     "how": null,
+     "at": 7.25,
+     "seconds": 4.31,
+     "file": "vo11/10-04-2.wav"
+    }
+   ]
+  },
+  {
+   "id": "11.01",
+   "chapter": "11",
+   "heading": "11 \u00b7 The workflow. THE FINISHED VIDEO",
+   "start": 337.56,
+   "seconds": 9.27,
+   "onScreen": "The finished music video plays on the giant monitor, the first time we see it whole; Goose watches it, bobbing.",
+   "camera": "SWAMP: low behind Goose, the glass beyond, drifting round him.",
+   "cut": null,
+   "cues": [
+    "the song comes up as the voice ends"
+   ],
+   "lines": [
+    {
+     "says": "That's the workflow. Ask in the chat. Watch it land in the feed. Point at what's wrong, and get the next version. Then ship it.",
+     "how": null,
+     "at": 0.5,
+     "seconds": 7.77,
+     "file": "vo11/11-01-1.wav"
+    }
+   ]
+  },
+  {
+   "id": "11.02",
+   "chapter": "11",
+   "heading": "11 \u00b7 The workflow. THE FINISHED VIDEO",
+   "start": 346.83,
+   "seconds": 3.5,
+   "onScreen": "On black: raea's mark, raea.io/docs, and the Discord link.",
+   "camera": "None.",
+   "cut": null,
+   "cues": [
+    "one honk, off"
+   ],
+   "lines": []
+  }
+ ]
+}

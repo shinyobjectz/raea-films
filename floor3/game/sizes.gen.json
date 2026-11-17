@@ -1,0 +1,382 @@
+{
+  "afk/answering": [
+    0.2,
+    0.059,
+    0.16
+  ],
+  "afk/badge": [
+    0.133,
+    0.004,
+    0.182
+  ],
+  "afk/copier": [
+    0.922,
+    1.132,
+    0.699
+  ],
+  "afk/crt": [
+    0.41,
+    0.415,
+    0.431
+  ],
+  "afk/reader": [
+    0.085,
+    0.13,
+    0.033
+  ],
+  "afk/recorder": [
+    0.262,
+    0.082,
+    0.157
+  ],
+  "afk/slumped": [
+    0.607,
+    0.992,
+    0.872
+  ],
+  "cursor/arrow": null,
+  "cursor/busy": null,
+  "cursor/grab": null,
+  "cursor/link": null,
+  "cursor/resize": null,
+  "f3/alarm": [
+    0.112,
+    0.152,
+    0.044
+  ],
+  "f3/backpack": [
+    0.528,
+    0.449,
+    0.486
+  ],
+  "f3/bookcase": [
+    1.14,
+    1.88,
+    0.45
+  ],
+  "f3/calendar": [
+    0.3,
+    0.451,
+    0.017
+  ],
+  "f3/cardigan": [
+    0.329,
+    0.12,
+    0.285
+  ],
+  "f3/clipboard": [
+    0.231,
+    0.021,
+    0.32
+  ],
+  "f3/clock": [
+    0.322,
+    0.322,
+    0.047
+  ],
+  "f3/coat": [
+    0.805,
+    1.85,
+    0.439
+  ],
+  "f3/desk": [
+    2.0,
+    0.787,
+    0.958
+  ],
+  "f3/extinguisher": [
+    0.22,
+    0.515,
+    0.2
+  ],
+  "f3/frame-lake": [
+    0.4,
+    0.5,
+    0.022
+  ],
+  "f3/frame-teamwork": [
+    0.6,
+    0.8,
+    0.022
+  ],
+  "f3/lamp": [
+    0.172,
+    0.623,
+    0.587
+  ],
+  "f3/papers": [
+    0.583,
+    0.012,
+    0.367
+  ],
+  "f3/pencup": [
+    0.315,
+    0.193,
+    0.102
+  ],
+  "f3/photo-beach": [
+    0.178,
+    0.128,
+    0.069
+  ],
+  "f3/photo-dog": [
+    0.178,
+    0.128,
+    0.069
+  ],
+  "f3/plant-corn": [
+    0.692,
+    1.305,
+    0.678
+  ],
+  "f3/plant-snake": [
+    0.418,
+    0.745,
+    0.319
+  ],
+  "f3/poster-exits": [
+    0.482,
+    0.629,
+    0.0
+  ],
+  "f3/stapler": [
+    0.19,
+    0.05,
+    0.042
+  ],
+  "f3/wet-sign": [
+    0.3,
+    0.705,
+    0.299
+  ],
+  "fit/diffuser": [
+    0.58,
+    0.086,
+    0.58
+  ],
+  "fit/outlet": [
+    0.07,
+    0.115,
+    0.01
+  ],
+  "fit/smoke": [
+    0.13,
+    0.037,
+    0.13
+  ],
+  "fit/sprinkler": [
+    0.064,
+    0.054,
+    0.064
+  ],
+  "fit/switch": [
+    0.07,
+    0.115,
+    0.016
+  ],
+  "fit/thermostat": [
+    0.12,
+    0.085,
+    0.029
+  ],
+  "fit/troffer": [
+    0.6,
+    0.112,
+    1.2
+  ],
+  "hallway/door": [
+    0.938,
+    2.068,
+    0.202
+  ],
+  "hallway/frame-b": [
+    0.661,
+    0.771,
+    0.089
+  ],
+  "hallway/frame": [
+    0.385,
+    0.502,
+    0.032
+  ],
+  "it/it": [
+    0.461,
+    2.04,
+    0.319
+  ],
+  "office/bin": [
+    0.279,
+    0.301,
+    0.279
+  ],
+  "office/cables": [
+    0.34,
+    0.803,
+    0.269
+  ],
+  "office/chair": [
+    0.672,
+    1.118,
+    0.649
+  ],
+  "office/clipboard": [
+    0.229,
+    0.042,
+    0.337
+  ],
+  "office/desk-lamp": [
+    0.202,
+    0.893,
+    0.614
+  ],
+  "office/desk": [
+    2.0,
+    0.788,
+    0.947
+  ],
+  "office/door": [
+    3.2,
+    2.7,
+    0.15
+  ],
+  "office/exit-sign": [
+    0.36,
+    0.33,
+    0.061
+  ],
+  "office/filing-cabinet": [
+    0.46,
+    1.32,
+    0.662
+  ],
+  "office/fire-alarm": [
+    0.099,
+    0.144,
+    0.026
+  ],
+  "office/keyboard": [
+    0.44,
+    0.039,
+    0.34
+  ],
+  "office/monitor": [
+    0.545,
+    0.609,
+    0.336
+  ],
+  "office/mouse": [
+    0.062,
+    0.038,
+    0.296
+  ],
+  "office/mug": [
+    0.113,
+    0.096,
+    0.083
+  ],
+  "office/notepads": [
+    1.103,
+    0.022,
+    0.66
+  ],
+  "office/partition": [
+    1.6,
+    1.35,
+    0.42
+  ],
+  "office/phone": [
+    0.236,
+    0.115,
+    0.253
+  ],
+  "office/plant-b": [
+    0.701,
+    0.841,
+    0.657
+  ],
+  "office/plant": [
+    0.587,
+    1.35,
+    0.634
+  ],
+  "office/printer": [
+    0.56,
+    0.873,
+    0.633
+  ],
+  "office/shelf-unit": [
+    1.141,
+    1.881,
+    0.488
+  ],
+  "office/stapler": [
+    0.208,
+    0.095,
+    0.047
+  ],
+  "office/stationery": [
+    0.302,
+    0.164,
+    0.084
+  ],
+  "office/tubes": [
+    1.23,
+    0.095,
+    0.63
+  ],
+  "office/wall-clock": [
+    0.32,
+    0.32,
+    0.047
+  ],
+  "office/water-cooler": [
+    0.31,
+    1.422,
+    0.405
+  ],
+  "office/wet-floor-sign": [
+    0.3,
+    0.63,
+    0.359
+  ],
+  "office/whiteboard": [
+    1.804,
+    1.204,
+    0.092
+  ],
+  "stairwell/door": [
+    1.28,
+    2.21,
+    0.246
+  ],
+  "stairwell/exit-sign": [
+    0.36,
+    0.33,
+    0.061
+  ],
+  "stairwell/extinguisher": [
+    0.28,
+    0.659,
+    0.367
+  ],
+  "stairwell/notice-board": [
+    0.97,
+    0.67,
+    0.032
+  ],
+  "stairwell/radiator": [
+    0.901,
+    0.66,
+    0.14
+  ],
+  "stairwell/stair-sign": [
+    0.3,
+    0.4,
+    0.012
+  ],
+  "stairwell/wall-light": [
+    0.26,
+    0.748,
+    0.137
+  ]
+}

@@ -1,0 +1,211 @@
+import { script } from "raea/brief";
+
+// Storyboard draft 3 (11-11), the film as built in v2/ after the director's notes on graybox v2 and during the full run (all
+// verbatim in brief.ts). Draft 2 is kept beside it as docs/stay.script.draft2.ts.txt. What changed, and whose words:
+//  - "the whole promting thing is broken it should be self referential liek prompting for boring office then promting
+//    for a new way to be creative then we see araea": the prompts are a boring office, a nicer office, a new way to be
+//    creative, and the answer is raea. Nothing rerolls into gags ("the fan and watercooler are weird").
+//  - "the prompts are nie but somethign about them amke no sense while thecamera is moving": a prompt makes a picture,
+//    so each is typed over black or a held frame. The camera first moves when raea answers: the picture is a place.
+//  - "that whole office scene was better off in the liminal spce office ... and then we see it transform beof out
+//    eyes": the office stays the liminal one and is changed in the app while we watch. No monitor is turned.
+//  - "dont have golden hour be the text ... all text leads to this ... when using text doing text effect": the big type
+//    is one sentence across the film, set into each place so the place's things cut into it:
+//    NOW IT'S A PLACE. / GO IN. / CHANGE ONE THING. / KEEP THE REST. / JUST THAT. (the peak's line, approved on draft 1). Then raea's card.
+//  - the cursor only moves things ("maybe its just position"); "spinning car is dumb, why does it say make it red?";
+//    "the swimming pool is randomly in the beginning" (it is the montage's last place now, where the canyon came twice).
+//  - "throw in some cuts to wireframe versions": the picture shows as its construction drawing for a few frames as each
+//    note is taken up, and two montage places are drawn whole.
+//  - "what ahppened to the ocean scene": the open sea and the boat is the last place.
+// Kept: every beat on Stay's own beats (media/music/stay.wav, 1:29.65), every change of place a match cut on the
+// thirds (board/chain.ts), the agent never seen (only its changes), the look a vintage print.
+export default script({
+  title: "Stay",
+  logline: "A prompt makes a picture. In raea the picture is a place: you go in, change one thing and keep the rest. Just that.",
+  scenes: [
+    {
+      heading: "BLACK - A PROMPT",
+      payoff: "Someone asks a generator for a picture.",
+      beats: [
+        {
+          onScreen: "Black. A prompt types itself in mono on the lower third: a boring office. A bar runs under it while the generator works.",
+          camera: "None: type on black",
+          cut: "From black, the film's first frame",
+          cues: ["The song's first notes", "A soft key under each typed letter, well under the song"],
+          seconds: 2.75,
+        },
+      ],
+    },
+    {
+      heading: "INT. A GENERATOR'S OFFICE - NIGHT (HELD FRAMES)",
+      payoff: "A prompt gets you a picture, and asking again gets you another picture.",
+      beats: [
+        {
+          onScreen: "The office the prompt asked for, as a held frame on a cold, grainy reel: an open-plan floor at night under rows of ceiling lights, every desk empty. The prompt box is where it was. It clears and types: a nicer office. The bar runs. On the beat the picture is swapped for another held frame, down the aisle this time, and it is just as grey. The prompt clears a last time and types: a new way to be creative.",
+          camera: "Held, twice: no move at all under a prompt (his note: a prompt makes no sense over a moving camera). Only the film's grain and weave are alive",
+          cut: "Hard cut on \"Hold still\" (2.75): the picture the prompt made. A hard cut on the beat at 7.11: the second picture",
+          cues: ["\"Hold still\"", "The ceiling lights' hum, low", "Keys under each prompt"],
+          seconds: 9.44,
+        },
+      ],
+    },
+    {
+      heading: "INT. THE SAME OFFICE - NIGHT INTO MORNING",
+      payoff: "raea is the answer, and the picture becomes a place you can move through and change.",
+      beats: [
+        {
+          onScreen: "On the drop raea's lockup lands at the centre, the prompt box is gone for good, and the held frame starts to move: the camera goes in down the aisle past desks whose chairs stand where the picture left them. A cursor comes into the room.",
+          camera: "From rest, a dolly in down the aisle that never stops again until the cut at 27.70",
+          cut: "On the drop (12.19) there is no cut in the picture: the same frame, now moving",
+          cues: ["The drop", "The room's hum goes on"],
+          seconds: 2.82,
+        },
+        {
+          onScreen: "The cursor picks a chair on the lower left and drags it across the aisle to a desk. It goes to a window, clicks, and leaves a note on the raea app's own card (its own component, drawn in the scene): let the morning in. For a few frames the room is its own construction drawing, pale lines on a dark sheet; then, sent on, the agent's changes arrive: the ceiling lights (the tubes) go out row by row from the far end, the agent turns the blinds' slats, and a low sun comes through the dust in shafts of light. The reel warms into a print. The cursor clicks a partition and leaves a second card: somewhere worth staying. The drawing again, and the partitions, walls and carpet come back under a warm coat of paint.",
+          camera: "The same dolly, easing while each note is written, turning to the windows for the morning and back to the aisle",
+          cut: "No cut in the picture at 15.01: the take runs on",
+          cues: ["A click as the chair is picked and put down", "Keys under each note", "The lights powering down", "The room with the morning in it, low"],
+          seconds: 12.69,
+        },
+        {
+          onScreen: "The same aisle from its far end. A plant comes up at every desk, row by row toward us, and the desk lamps are on. On the wall where we came in, behind the desks and the plants, the film's first line rises a letter at a time: NOW IT'S A PLACE. The camera comes down and round to a desk and goes into its monitor, where a capture of the raea app is open on a canyon.",
+          camera: "A crane down from the far end and a curve into the screen, moving the whole way",
+          cut: "Reverse cut on the aisle's vanishing point (27.70): the same aisle from its other end",
+          cues: ["A soft whoosh on the reverse", "The morning room"],
+          seconds: 6.07,
+        },
+      ],
+    },
+    {
+      heading: "THE RAEA APP - ON THE MONITOR",
+      payoff: "This is a real app: you leave a note on the picture and an agent makes the change.",
+      beats: [
+        {
+          onScreen: "A capture of the real raea app, its Watch as the monitor showed it, the canyon at noon in its viewer. The cursor goes to the canyon, clicks, and leaves a note on a card: later in the day. Once it is sent we go into the viewer until the canyon's picture is the whole frame.",
+          camera: "A slow creep in while the note is written, then into the viewer, arriving fast",
+          cut: "Match cut on \"Stay...\" (33.77): the monitor's screen to the app's frame",
+          cues: ["\"Stay...\"", "Keys, a click", "A riser into the drop"],
+          seconds: 4.85,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A SLOT CANYON - NOON INTO LATE AFTERNOON",
+      payoff: "The picture in the viewer is a place, and the note is already being done: the light moves.",
+      beats: [
+        {
+          onScreen: "The same frame, now the place itself: we travel down the slot. The cursor is here too: it picks a tumbleweed off the sand and pulls it out of our way. The note is being done: the agent lowers the sun from noon and its light, warmer, climbs the right wall as sand streams fall from the rim. Ahead in the slot, behind a boulder, the second line stands: GO IN.",
+          camera: "A dolly down the slot's centre at one speed, with a tilt up to the strip of sky",
+          cut: "Match cut on the drop (38.62): the viewer's picture becomes the place, frame for frame",
+          cues: ["The drop", "Wind in the slot, low"],
+          seconds: 4.47,
+        },
+      ],
+    },
+    {
+      heading: "INT. A LAUNDROMAT - NIGHT",
+      payoff: "You put a thing where you want it, say how it should move, and it does.",
+      beats: [
+        {
+          onScreen: "A row of dryers under strip lights, one door open. The cursor pushes a laundry cart across the floor to stand under the open dryer, clicks, and leaves a note on a card: slower. let it float. The drawing for a few frames; then the agent slows the sheet: a gingham sheet drifts out of the dryer, slowly, over the laundry cart and across the lens.",
+          camera: "An arc along the row, closing on the open dryer",
+          cut: "Match cut on the collapse (43.09): the canyon's sun to the dryer's round window, on the upper right",
+          cues: ["The dryers' hum", "A click on the cart, keys under the note"],
+          seconds: 4.69,
+        },
+      ],
+    },
+    {
+      heading: "INT. A KID'S BEDROOM - AFTERNOON INTO RAIN",
+      payoff: "One thing changes and the rest of the room is exactly as it was.",
+      beats: [
+        {
+          onScreen: "A sheet settles onto a bed under a window. Across the room the cursor lifts a globe and sets it down the desk in the sun as the light sweeps over. On the wall behind the desk's things the third line rises: CHANGE ONE THING.",
+          camera: "An arc from the bed round to the desk in one move",
+          cut: "Match cut on the build (47.78): the sheet's drift over the lens to the sheet falling onto the bed",
+          cues: ["A room in the afternoon, very low", "A click on the globe"],
+          seconds: 4.79,
+        },
+        {
+          onScreen: "The same room, the globe where it was put. The cursor clicks the window and leaves a card: rain on the glass. The drawing for a few frames; then rain runs down the panes under a grey sky as we go past the fish tank into the window.",
+          camera: "A push from the desk to the window and into the glass",
+          cut: "Match cut on the globe (52.57), the same thing in the same place",
+          cues: ["Keys under the note", "Rain on the window, from when it starts"],
+          seconds: 4.06,
+        },
+      ],
+    },
+    {
+      heading: "EXT. A FOREST ROAD - RAIN",
+      payoff: "The weather you asked for is on everything.",
+      beats: [
+        {
+          onScreen: "From the driver's seat of a car: the wipers sweep the rain off the windscreen onto a road between tall trees.",
+          camera: "From the seat, a slow push in through the glass",
+          cut: "Match cut on the rain (56.63): the rain on the window to the rain on the windscreen",
+          cues: ["Rain on a car's roof", "The wipers"],
+          seconds: 3.43,
+        },
+        {
+          onScreen: "Outside in the mist, low by the road. The cursor clicks the asphalt and leaves a card: soak the road. The drawing for a few frames; then the agent soaks the road, which darkens wet under the rain, and the red car comes through, throwing spray from both wheels.",
+          camera: "A low track back along the centre line as the car comes on",
+          cut: "On the beat at 60.06, a cut on the wiper's sweep, from inside to outside",
+          cues: ["Rain on the road", "The car passing through water"],
+          seconds: 3.1,
+        },
+      ],
+    },
+    {
+      heading: "INT. A PARKING GARAGE - NIGHT",
+      payoff: "You change the one thing you pointed at, and nothing else moves.",
+      beats: [
+        {
+          onScreen: "The car stands nose-out in a bay under sodium lights. The cursor pulls a traffic cone out of the bay's mouth, clicks, and leaves a card: headlights on. The drawing for a few frames, and the car's headlamps are lit, their light on the deck. On the wall behind the car and its pillar the fourth line rises: KEEP THE REST. We come down to the near headlamp.",
+          camera: "A crane down toward the car's nose, ending on its near lamp on the lower left",
+          cut: "Match cut on the car (63.16): the same car",
+          cues: ["A garage's air, low", "A click on the cone, keys under the note"],
+          seconds: 5.33,
+        },
+      ],
+    },
+    {
+      heading: "MONTAGE - FIFTEEN PLACES",
+      payoff: "Any place at all: each one a place you could go into.",
+      beats: [
+        {
+          onScreen: "Fifteen places, one a beat and then two a beat, a circle handed on from each to the next as it travels from the lower left through the centre to the upper right: a record on a turntable, a koi pond's ripples, a stairwell's spiral (as its drawing), a ferris wheel, a clock tower's gear, a train's headlight in a subway, a coffee cup from above, a gym's ball, a cathedral's rose window (as its drawing), the sun through a kelp forest, a lighthouse's lens, a wind turbine's hub, a hoop in the rain, the moon in an observatory's slit, and a pace clock over a swimming pool.",
+          camera: "Each place already moving, a short push or drift, the circle held on its thirds place",
+          cut: "Match cut on the circle on every beat from the drop at 68.49: seven places a beat each, then eight at two a beat",
+          cues: ["The song alone: its peak"],
+          seconds: 6.87,
+        },
+      ],
+    },
+    {
+      heading: "EXT. THE OPEN SEA - SUNDOWN",
+      payoff: "When it is right you leave it, and you stay.",
+      beats: [
+        {
+          onScreen: "The open sea at sundown, a real swell under a burning sky, a fishing boat riding it, the sun low on the upper right where the pace clock was. The cursor clicks the sky and leaves the last card: that's the one. stay. On the drop the film's last line stands up out of the sea behind the boat, dark against the sky, the peak's slam JUST THAT.",
+          camera: "A slow push in over the water toward the boat, the sun held on its third",
+          cut: "Match cut on the circle (75.37): the pace clock to the sun",
+          cues: ["The sea, low", "Keys under the note", "The drop at 80.32, where the line stands"],
+          seconds: 7.45,
+        },
+      ],
+    },
+    {
+      heading: "THE CARD",
+      payoff: "raea 0.1.1.",
+      beats: [
+        {
+          onScreen: "Black. raea's lockup, and under it: 0.1.1 · MAC · WINDOWS · LINUX.",
+          camera: "None: a slow scale up on the lockup",
+          cut: "Match cut on the centre (82.82): the line on the water to the lockup",
+          cues: ["The song's last bars", "The sea fading out"],
+          seconds: 6.84,
+        },
+      ],
+    },
+  ],
+});
