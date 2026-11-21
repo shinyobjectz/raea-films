@@ -1,0 +1,5 @@
+# Insets on the Straube plan: boxes that draw a piece of another sheet (or a profile) away from its true place. build.sh
+# cuts them out of every slice's frame, so nothing in them is traced as ground there. EPSG:25833 metres, read by eye
+# on the 1 m scan (2x2 tiles at 0.5 px/m).
+x0	y0	x1	y1	note
+396190	5821005	396835	5821532	Blatt I.N.: the Weissensee Jewish cemetery's edge and Kniprodestrasse, boxed on the east edge (found 11-17)

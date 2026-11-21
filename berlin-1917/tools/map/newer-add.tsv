@@ -1,0 +1,9 @@
+# Listed monuments dated before 1910 that build.sh puts on the 1917 map from today's footprints all the same, checked
+# by eye on 11-17 against the plan and the 1928 photo: the plan is older than 1909 where they stand, or the reader
+# missed buildings the plan draws (pale ones). Each stood in 1917 by its entry's date.
+id	why
+09055035	Chemisch-physiologisches Institut, 1909: not on the plan (the Tierarzneischule's garden there); standing in 1928
+09031125	Depot der Stadtreinigung, 1902: on the plan, missed by the reader
+09055045	Räude- und Staupestation der Klinik für kleine Haustiere, 1883: none of it on our map; standing in 1928
+09030769	Wikinghof, 1899: its pale wings missed by the reader (21% covered)
+09090057	Mietshaus Schumannstraße 14A, 14B, 1844: rear house missed by the reader (24% covered)

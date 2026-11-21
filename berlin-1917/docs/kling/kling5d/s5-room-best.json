@@ -1,0 +1,9 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/s5-room-best.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys5d/s5-room-best.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks exactly like @Image1: real 35 mm film footage shot in Berlin in the winter of 1917, the salon of a well-to-do first-floor flat, deep red walls, a tall white double door, an upholstered sofa, an armchair, a lamp on a side table, shelves, grey winter daylight. Keep the camera move, the framing, the timing and every wall, beam, door, window and object exactly where it is. Replace every surface with the real materials of @Image1. Real footage with natural film grain and true exposure, not computer graphics. No people. Add no text."
+}

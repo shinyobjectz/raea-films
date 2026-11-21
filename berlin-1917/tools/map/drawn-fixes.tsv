@@ -1,0 +1,13 @@
+# Buildings drawn.ts measures as pale, judged by eye on 11-17 against the Straube scan and the 1928 photo. kind
+# "private": plain housing beige (house numbers, no hatching) that "Berlin um 1900" filed as public. A name is the
+# plan's own lettering on the building, as printed, for a building with no name yet. drawn.ts applies the row whose
+# point the building holds.
+x	y	kind	name
+391587.7	5819178.8	private	
+391620.3	5819136.3	private	
+391634.6	5819138.9	private	
+392004.3	5818154.2	commercial	Synagoge d. Luisenst. Brüder-Gem.
+392043.6	5818214.1	commercial	Buggenhagen
+392285.0	5818235.7	commercial	Parodie-Theater, Deutscher Hof
+390916.4	5819466.3	public	Französischer Dom
+390651.8	5818891.7	public	Bethlehems K.

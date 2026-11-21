@@ -1,0 +1,4 @@
+# Blatt 5 control points: plate px, plate py (full scan, 8450x6516), EPSG:25833 x, y, what. The bridges are the gaps in the 1917 water.
+7307	5534	390095	5820025	Marschallbruecke (map)
+7466	4240	390880	5820360	Weidendammer Bruecke (map)
+6013	5375	389760	5820810	synthetic: a right angle off the two bridges (agrees with the north arrow within 1.5 deg)

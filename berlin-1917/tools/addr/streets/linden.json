@@ -1,0 +1,13 @@
+{
+ "street": "Unter den Linden",
+ "axis": { "a": [390672.99, 5819762.16], "u": [0.99652, 0.08337], "s0": -758, "s1": 666, "source": "the line through the Brandenburger Tor's footprint centre (389918, 5819699; the middle passage is on the Linden's axis) and the Schloßbrücke deck's centre (391335.7, 5819817.6), 85.2 degrees, as OHM's 1917 stub between Pariser Platz and Wilhelmstraße (85.1); stations in metres east of the Friedrichstraße crossing. The 1900 map prints no house numbers here, so every house is placed by share (tools/addr/axis.ts --through)" },
+ "reach": 45,
+ "sides": ["south", "north"],
+ "first_side": "numbers 1-37 go east along the south side from Pariser Platz (the Adlon is 1) to the Kaiser-Franz-Josef-Platz (the Opernplatz); 38-78 come back west along the north side from Universitätsstraße to Pariser Platz (the directory's postal line: 1-37 W 8, 38-78 NW 7). The University, Neue Wache and Zeughaus carry no Linden number",
+ "corners_source": "each corner is the opening in the 1917 fronts (frontage.ts) at the cross street, matched in the directory's order: Wilhelmstraße and Neue Wilhelmstraße from OHM (-545), Friedrichstraße 0, Charlottenstraße 125, Universitätsstraße 256, Schadowstraße -330, Neustädtische Kirchstraße -211, Kleine Kirchgasse -80, Pariser Platz's east edge -622, the Kaiser-Franz-Josef-Platz's west edge 305. The Durchgang zur Kleinen Mauerstraße and the Lindengasse have no source for their position: each is put at the share of house numbers before it (7 of 23, 4 of 6) and snaps to the nearest small opening (ASSUMED)",
+ "corners": {
+  "Pariser Platz": -622, "Wilhelmstr.": -540, "Neue Wilhelmstr.": -546, "Durchgang zur Kleinen Mauerstr.": -376, "Schadowstr.": -330,
+  "Neustädt. Kirchstr.": -211, "Kl. Kirchgasse": -80, "Friedrichstr.": 0, "Charlottenstr.": 125, "Lindengasse": 245,
+  "Universitätstr.": 256, "Kaiser-Franz-Josef-Platz": 305
+ }
+}

@@ -6,6 +6,7 @@ brief, the script and the production log. Clone it, render a frame, change somet
 
 | | Film | What it is | Folder |
 |---|---|---|---|
+| [▶](https://media.raea.io/#berlin-1917) | **Berlin, Winter 1917** | One photograph from the health insurance fund's 1917 housing survey, and the city rebuilt from the record to stand in its room. Documentary, 9:32 | [`berlin-1917/`](berlin-1917) |
 | [▶](https://media.raea.io/#swamp-side-mayor) | **Swamp-Side Mayor** | A goose runs for mayor of the swamp, in a rap. Music video, 1:30 | [`swamp-side-mayor/`](swamp-side-mayor) |
 | [▶](https://media.raea.io/#goose-learns-raea) | **Goose Learns raea** | A dry narrator walks Goose through the raea app while he makes that music video. Tutorial, 5:50 | [`swamp-side-mayor/`](swamp-side-mayor) (same project) |
 | [▶](https://media.raea.io/#swamp) | **Swamp** | A robot cursor on a monitor sunk in a dead swamp brings the world back. Film, 1:25 | [`swamp/`](swamp) |
@@ -13,7 +14,7 @@ brief, the script and the production log. Clone it, render a frame, change somet
 | [▶](https://media.raea.io/#fingerprints) | **Fingerprints** | Models that see, hear and read every cut learn your eye from your own notes. Explainer, 2:19 | [`fingerprints/`](fingerprints) |
 | [▶](https://media.raea.io/#stay) | **Stay** | Every door opens on a new world, every shot ray traced. Music video, 1:31 | [`stay/`](stay) |
 
-All six render on raea 0.1.6: one frame of each was rendered from a fresh clone of this repository and its downloads.
+Each one renders from a fresh clone of this repository and its downloads: one frame of each was rendered that way, the first six on raea 0.1.6 and Berlin, Winter 1917 on 0.1.8.
 
 ## Make one yourself
 

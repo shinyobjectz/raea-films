@@ -1,0 +1,8 @@
+{
+ "street": "Neue Wilhelmstraße",
+ "axis": { "a": [390126.0, 5819709.75], "u": [0.09246, -0.99572], "s0": -286, "s1": -9, "source": "fitted to OHM's Neue Wilhelmstraße standing in 1917 (279 of 289 points every metre within 2.5 m), pointing south; stations in metres along u (south) from the Unter den Linden crossing, the Reichstagufer at -280 (tools/addr/axis.ts)" },
+ "sides": ["west", "east"],
+ "first_side": "numbers 1-8a go south down the west side from the Reichstagufer to Unter den Linden (8a is Unter den Linden 76a); 8b-16 come back north up the east side",
+ "corners_source": "the openings in the 1917 fronts: the Reichstagufer quay north of -272, Dorotheenstraße -190, Unter den Linden 0",
+ "corners": { "Reichstagsufer": -280, "Reichstagufer": -280, "Dorotheenstr.": -190, "Dorotheenstr": -190, "Unter den Linden": 0 }
+}

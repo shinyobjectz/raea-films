@@ -1,0 +1,482 @@
+[
+ {
+  "id": "tree-lime-0-l0",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 1,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-lime-0-l1",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 1,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-lime-0-l2",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 1,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-lime-1-l0",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 101,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-lime-1-l1",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 101,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-lime-1-l2",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 101,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-lime-2-l0",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 201,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-lime-2-l1",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 201,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-lime-2-l2",
+  "species": "lime",
+  "height": 14,
+  "width": 10,
+  "clear": 3.5,
+  "seed": 201,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-elm-0-l0",
+  "species": "elm",
+  "height": 19,
+  "width": 10,
+  "clear": 4,
+  "seed": 2,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-elm-0-l1",
+  "species": "elm",
+  "height": 19,
+  "width": 10,
+  "clear": 4,
+  "seed": 2,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-elm-0-l2",
+  "species": "elm",
+  "height": 19,
+  "width": 10,
+  "clear": 4,
+  "seed": 2,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-elm-1-l0",
+  "species": "elm",
+  "height": 19,
+  "width": 10,
+  "clear": 4,
+  "seed": 102,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-elm-1-l1",
+  "species": "elm",
+  "height": 19,
+  "width": 10,
+  "clear": 4,
+  "seed": 102,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-elm-1-l2",
+  "species": "elm",
+  "height": 19,
+  "width": 10,
+  "clear": 4,
+  "seed": 102,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-plane-0-l0",
+  "species": "plane",
+  "height": 17.4,
+  "width": 15,
+  "clear": 3.5,
+  "seed": 3,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-plane-0-l1",
+  "species": "plane",
+  "height": 17.4,
+  "width": 15,
+  "clear": 3.5,
+  "seed": 3,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-plane-0-l2",
+  "species": "plane",
+  "height": 17.4,
+  "width": 15,
+  "clear": 3.5,
+  "seed": 3,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-plane-1-l0",
+  "species": "plane",
+  "height": 17.4,
+  "width": 15,
+  "clear": 3.5,
+  "seed": 103,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-plane-1-l1",
+  "species": "plane",
+  "height": 17.4,
+  "width": 15,
+  "clear": 3.5,
+  "seed": 103,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-plane-1-l2",
+  "species": "plane",
+  "height": 17.4,
+  "width": 15,
+  "clear": 3.5,
+  "seed": 103,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-maple-0-l0",
+  "species": "maple",
+  "height": 15,
+  "width": 10,
+  "clear": 3,
+  "seed": 4,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-maple-0-l1",
+  "species": "maple",
+  "height": 15,
+  "width": 10,
+  "clear": 3,
+  "seed": 4,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-maple-0-l2",
+  "species": "maple",
+  "height": 15,
+  "width": 10,
+  "clear": 3,
+  "seed": 4,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-maple-1-l0",
+  "species": "maple",
+  "height": 15,
+  "width": 10,
+  "clear": 3,
+  "seed": 104,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-maple-1-l1",
+  "species": "maple",
+  "height": 15,
+  "width": 10,
+  "clear": 3,
+  "seed": 104,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-maple-1-l2",
+  "species": "maple",
+  "height": 15,
+  "width": 10,
+  "clear": 3,
+  "seed": 104,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-chestnut-0-l0",
+  "species": "chestnut",
+  "height": 15,
+  "width": 11,
+  "clear": 3,
+  "seed": 5,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-chestnut-0-l1",
+  "species": "chestnut",
+  "height": 15,
+  "width": 11,
+  "clear": 3,
+  "seed": 5,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-chestnut-0-l2",
+  "species": "chestnut",
+  "height": 15,
+  "width": 11,
+  "clear": 3,
+  "seed": 5,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-chestnut-1-l0",
+  "species": "chestnut",
+  "height": 15,
+  "width": 11,
+  "clear": 3,
+  "seed": 105,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-chestnut-1-l1",
+  "species": "chestnut",
+  "height": 15,
+  "width": 11,
+  "clear": 3,
+  "seed": 105,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-chestnut-1-l2",
+  "species": "chestnut",
+  "height": 15,
+  "width": 11,
+  "clear": 3,
+  "seed": 105,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-locust-0-l0",
+  "species": "locust",
+  "height": 15,
+  "width": 8,
+  "clear": 3,
+  "seed": 6,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-locust-0-l1",
+  "species": "locust",
+  "height": 15,
+  "width": 8,
+  "clear": 3,
+  "seed": 6,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-locust-0-l2",
+  "species": "locust",
+  "height": 15,
+  "width": 8,
+  "clear": 3,
+  "seed": 6,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-oak-0-l0",
+  "species": "oak",
+  "height": 17,
+  "width": 11,
+  "clear": 3.5,
+  "seed": 7,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-oak-0-l1",
+  "species": "oak",
+  "height": 17,
+  "width": 11,
+  "clear": 3.5,
+  "seed": 7,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-oak-0-l2",
+  "species": "oak",
+  "height": 17,
+  "width": 11,
+  "clear": 3.5,
+  "seed": 7,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-birch-0-l0",
+  "species": "birch",
+  "height": 16,
+  "width": 9,
+  "clear": 3,
+  "seed": 8,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-birch-0-l1",
+  "species": "birch",
+  "height": 16,
+  "width": 9,
+  "clear": 3,
+  "seed": 8,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-birch-0-l2",
+  "species": "birch",
+  "height": 16,
+  "width": 9,
+  "clear": 3,
+  "seed": 8,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-poplar-0-l0",
+  "species": "poplar",
+  "height": 25,
+  "width": 5.5,
+  "clear": 2,
+  "seed": 9,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-poplar-0-l1",
+  "species": "poplar",
+  "height": 25,
+  "width": 5.5,
+  "clear": 2,
+  "seed": 9,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-poplar-0-l2",
+  "species": "poplar",
+  "height": 25,
+  "width": 5.5,
+  "clear": 2,
+  "seed": 9,
+  "leaves": 1000,
+  "prune": 0.08
+ },
+ {
+  "id": "tree-willow-0-l0",
+  "species": "willow",
+  "height": 12.65,
+  "width": 10,
+  "clear": 2.5,
+  "seed": 10,
+  "leaves": 16000,
+  "prune": 0
+ },
+ {
+  "id": "tree-willow-0-l1",
+  "species": "willow",
+  "height": 12.65,
+  "width": 10,
+  "clear": 2.5,
+  "seed": 10,
+  "leaves": 4000,
+  "prune": 0.03
+ },
+ {
+  "id": "tree-willow-0-l2",
+  "species": "willow",
+  "height": 12.65,
+  "width": 10,
+  "clear": 2.5,
+  "seed": 10,
+  "leaves": 1000,
+  "prune": 0.08
+ }
+]

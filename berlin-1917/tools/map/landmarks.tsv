@@ -1,0 +1,14 @@
+# Known answers for the 1917 map, by today's ALKIS footprint (gebaeude id). expect: public = a 1917 public building
+# covers most of it; absent = no 1917 building has this shape (built later).
+id	name	expect
+gebaeude.DEBE01YYK00000sJ	Französischer Dom	public
+gebaeude.DEBE01YYK000085g	Deutscher Dom	public
+gebaeude.DEBE01YYK0000ESD	Königliches Schauspielhaus (Konzerthaus)	public
+gebaeude.DEBE02YY40000AAS	Kunstgewerbemuseum (Martin-Gropius-Bau)	public
+gebaeude.DEBE01YYK00003f4	Abgeordnetenhaus (Preußischer Landtag)	public
+gebaeude.DEBE01YYK00005AI	Herrenhaus (Bundesrat)	public
+gebaeude.DEBE01YYK0002MCN	Reichstag	public
+gebaeude.DEBE01YYK00000ln	Zeughaus	public
+gebaeude.DEBE01YYK000000D	Dom (Berliner Dom)	public
+gebaeude.DEBE01YYK00000wg	Rotes Rathaus	public
+gebaeude.DEBE01YYK00000sk	Reich Air Ministry, 1935-36 (Finance Ministry)	absent

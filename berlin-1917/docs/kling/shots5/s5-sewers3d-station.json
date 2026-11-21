@@ -1,0 +1,7 @@
+{
+ "id": "s5-sewers3d-station",
+ "seconds": 7.0,
+ "kind": "model",
+ "what": "the system's mains converging on the pumping station",
+ "line": "v19 \"a pumping station\""
+}

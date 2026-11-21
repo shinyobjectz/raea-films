@@ -1,0 +1,9 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/s5-room-wing.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys5d/s5-room-wing.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks exactly like @Image1: real 35 mm film footage shot in Berlin in the winter of 1917, a crowded room in a tenement's side wing where six people sleep, an iron bed, a dark wardrobe, a washstand with a basin, pale walls, an iron stove, a chair, grey winter daylight. Keep the camera move, the framing, the timing and every wall, beam, door, window and object exactly where it is. Replace every surface with the real materials of @Image1. Real footage with natural film grain and true exposure, not computer graphics. No people. Add no text."
+}

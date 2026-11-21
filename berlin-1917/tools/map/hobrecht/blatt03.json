@@ -1,0 +1,31 @@
+{
+  "note": "Blatt 3 (Systems I and II, 1:7500, a double page; north up): the frame less its legend. The fold (x about 4250) carries the lines across unbroken, so it is kept.",
+  "frame": {
+    "x0": 600,
+    "y0": 560,
+    "x1": 7880,
+    "y1": 5970
+  },
+  "holes": [
+    {
+      "x0": 5970,
+      "y0": 520,
+      "x1": 7920,
+      "y1": 1220
+    }
+  ],
+  "stations": [
+    {
+      "system": "II",
+      "x": 391289,
+      "y": 5817651,
+      "name": "Pumpstation II (as drawn on Hobrecht's Blatt 3: its inlet well, about 2 m)"
+    },
+    {
+      "system": "I",
+      "x": 393475,
+      "y": 5817207,
+      "name": "Pumpstation I, Reichenberger Strasse (as drawn on Hobrecht's Blatt 3: its inlet well, about 2 m)"
+    }
+  ]
+}

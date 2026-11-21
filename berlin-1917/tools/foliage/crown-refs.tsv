@@ -1,0 +1,10 @@
+# Photographs of real crowns in leaf, measured by tools/foliage/crowns.ts --boxes (FO12). Fetched by refs.ts into
+# cache/ (not in git); licence and creator in each set's list.json. Box: x0 y0 x1 y1 as shares of the frame, y1 at
+# the crown's base, picked by eye on a 10% grid (11-17).
+tree-flickr/oak/05.jpg	0.0	0.04	0.9	0.57	oak	open-grown, blue sky
+tree-flickr/chestnut/08.jpg	0.07	0.0	0.95	0.67	chestnut	open-grown, cloud
+tree-refs/chestnut/00.jpg	0.21	0.11	0.77	0.72	chestnut	park, cloud
+tree-flickr/maple/25.jpg	0.46	0.07	0.93	0.6	maple	under a cliff, sky
+tree-flickr/lime/32.jpg	0.09	0.17	0.63	0.6	lime	open-grown, black and white
+tree-flickr/plane/10.jpg	0.14	0.07	0.93	0.55	plane	park, autumn, cloud
+tree-flickr/plane/16.jpg	0.09	0.07	0.85	0.5	plane	square, clipped

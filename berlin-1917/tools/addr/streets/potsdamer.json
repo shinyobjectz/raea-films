@@ -1,0 +1,41 @@
+{
+  "street": "Potsdamer Straße",
+  "axis": {
+    "a": [
+      389840.0,
+      5818955.0
+    ],
+    "u": [
+      -0.8124,
+      -0.5830
+    ],
+    "s0": 0,
+    "s1": 530,
+    "source": "OHM has no Potsdamer Straße standing in 1917 in the slice. The line through the middles between the two fronts of the 1917 footprints, measured every 10 m over 31 cross-sections where the street is under 40 m wide (it is about 37 m between fronts; residual median 0.57 m), 35.7 degrees south of west. Station 0 where that line meets the Königgrätzer Straße line at the Potsdamer Tor (OHM's Leipziger Straße ends at 389837, 5818952); stations in metres south-west along the street. The slice's west edge (E 389400) crosses the street's fronts at stations 527-552, so s1 stops at 530"
+  },
+  "sides": [
+    "west",
+    "east"
+  ],
+  "first_side": "numbers 1a-23a go south-west down the west side from Bellevuestraße at the Platz to Königin-Augusta-Straße at the Landwehrkanal; 124-141 come back up the east side from the canal to the Platz (the directory's postal line: 1-23a u. 124-141 W 9; 24-123b, beyond the canal, are Schöneberg's and outside the slice)",
+  "corners_source": "the openings in the 1917 fronts along the axis: Bellevuestraße in the Platz's opening on the west side (0-56); Linkstraße on the east side (108-149, where OHM's Linkstraße meets the east front at 153); Margarethenstraße (west, 418-463) and Eichhornstraße (east, 420-440) meet the street as a crossing. Königin-Augusta-Straße, the north bank of the Landwehrkanal, is beyond the slice: the Straube plan (1910) prints the Potsdamer Brücke at 389295, 5818562 (on the line, 1.6 m off it, at station 672) and No. 124 at the bank's corner, so the corner is put at 640, the bank street's middle (ASSUMED within 15 m). The Potsdamer Platz end of the east side: the corner is put in the 7 m gap at 60-67, taking the building between the Platz's opening and that gap (47-60) to be Potsdamer Platz 3, which the directory lists between Potsdamer Straße and the station (ASSUMED); No. 141 then holds 67-108",
+  "corners": {
+    "Potsdamer Platz": 55,
+    "Bellevuestr.": 30,
+    "Linkstr": 130,
+    "Margarethenstr.": 440,
+    "Eichhornstr": 430,
+    "Königin-Augusta-Str": 640,
+    "Königin-Augusta Str": 640
+  },
+  "known": [
+    {
+      "number": 139,
+      "at": [
+        389698.0,
+        5818833.5
+      ],
+      "source": "Weinhaus Huth (1911-12), the one building on Potsdamer Platz that stands today: its ALKIS footprint (a 1917 survivor in map/1917/buildings.geojson) fronts the street from station 177 to 195; the 1917 directory lists 139 with Huth, M. as owner and W. Huth, wine merchant"
+    }
+  ]
+}

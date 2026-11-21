@@ -1,0 +1,730 @@
+{
+  "street": "Wilhelmstraße",
+  "axis": {
+    "a": [
+      390130.89,
+      5819710.28
+    ],
+    "u": [
+      -0.28193,
+      0.95944
+    ],
+    "s0": -2050,
+    "s1": 0,
+    "source": "fitted to OHM's Wilhelmstraße standing in 1917 (1856 of 2069 points every metre within 2.5 m: the straight part from Unter den Linden to the bend before Belle-Alliance-Platz), pointing north; stations in metres north of the Unter den Linden crossing, so negative going south. The bend into the Platz is the axis' bend (frontage.ts), added 11-17 for houses 1-5 and 142-148",
+    "bend": {
+      "at": -1890,
+      "radius": 220,
+      "toward": "left",
+      "source": "the street curves east into Belle-Alliance-Platz from about -1890: a circular arc fitted to OHM's 1917 Wilhelmstraße (390672,5817886; 390692,5817837; 390714,5817807) and the middle of the lettering STRASSE on the Straube plan (390697,5817822; 390730,5817790); those five points lie within 4.5 m of it, and the plan's house numbers on the bend 13-20 m out on their own sides (11-17)"
+    }
+  },
+  "sides": [
+    "east",
+    "west"
+  ],
+  "first_side": "numbers 1-69a go north up the east side from Belle-Alliance-Platz to Unter den Linden; 69b-148 come back south down the west side (the directory's postal line: 1-42a u. 98-148 SW 48, 42b-61 u. 79-97 W 66, 61a-78 W 8). The Auswärtiges Amt (75-76) and the Reichskanzlei (77) are on the west side between the Linden and Voßstraße",
+  "corners_source": "each corner is the opening in the 1917 fronts (frontage.ts) at the cross street, matched in the directory's order: Behrenstraße -150, Voßstraße -581, Leipziger Straße -750 (OHM's 1917 Leipziger Straße stops 400 m east; the openings face each other on both sides), Wilhelmplatz (the east side's 174 m opening, -664 to -490), Buchhändlerhof -925 (a court with no opening in the fronts and no source for its place: put at the share of house numbers before it, 8 of 19, ASSUMED), Zimmerstraße and Prinz-Albrecht-Straße -1050, Kochstraße -1166, Anhalter Straße -1290, Puttkamerstraße -1419, Hedemannstraße -1577 (OHM) on the west side; the Verlängerte Hedemannstraße at -1556 on the east: the 1910 plan shows no opening there (lots 17-22 run on), so it goes where the directory lists it, between 19 and 20, midway between the plan's 19 (-1571) and 21 (-1526) (ASSUMED; OHM's line meets at -1571, on 19's printed number). Belle-Alliance-Platz at -2035, where the bent axis reaches the Platz's ring of fronts (about 95 m from the Friedenssäule)",
+  "corners": {
+    "Unter den Linden": 0,
+    "Behrenstr.": -150,
+    "Voßstr.": -581,
+    "Wilhelmplatz": -577,
+    "Leipziger Str.": -750,
+    "Buchhändlerhof": -925,
+    "Zimmerstr.": -1052,
+    "Prinz-Albrecht-Str.": -1048,
+    "Kochstr.": -1170,
+    "Anhaltstr.": -1290,
+    "Puttkamerstr.": -1419,
+    "Verl. Hedemannstr.": -1556,
+    "Hedemannstr.": -1577,
+    "Belle-Alliance-Platz": -2035
+  },
+  "known": [
+    {
+      "number": 1,
+      "at": [
+        390745,
+        5817806.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 2,
+      "at": [
+        390713.75,
+        5817830
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 3,
+      "at": [
+        390700,
+        5817848.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 4,
+      "at": [
+        390672.5,
+        5817927.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 5,
+      "at": [
+        390668,
+        5817936.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 6,
+      "at": [
+        390662.5,
+        5817952.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 7,
+      "at": [
+        390654.5,
+        5817983
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 9,
+      "at": [
+        390640,
+        5818032.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 11,
+      "at": [
+        390623.5,
+        5818082.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 13,
+      "at": [
+        390617.25,
+        5818107.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 15,
+      "at": [
+        390608.5,
+        5818134.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 17,
+      "at": [
+        390597.5,
+        5818171.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 19,
+      "at": [
+        390587.5,
+        5818206.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 21,
+      "at": [
+        390575,
+        5818250.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 22,
+      "at": [
+        390570,
+        5818266.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 23,
+      "at": [
+        390561.25,
+        5818296.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 25,
+      "at": [
+        390551.25,
+        5818333
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 27,
+      "at": [
+        390540.25,
+        5818372.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 29,
+      "at": [
+        390530.25,
+        5818406.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 32,
+      "at": [
+        390516.5,
+        5818449
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 34,
+      "at": [
+        390506.5,
+        5818490.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 36,
+      "at": [
+        390496.5,
+        5818522.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 39,
+      "at": [
+        390483.25,
+        5818571
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 40,
+      "at": [
+        390470.75,
+        5818613.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 41,
+      "at": [
+        390460.75,
+        5818647.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 42,
+      "at": [
+        390455.75,
+        5818663.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 44,
+      "at": [
+        390423.5,
+        5818775.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 46,
+      "at": [
+        390412.25,
+        5818810.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 49,
+      "at": [
+        390402.25,
+        5818844.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 51,
+      "at": [
+        390392.25,
+        5818869.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 53,
+      "at": [
+        390387.25,
+        5818889.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 55,
+      "at": [
+        390379.75,
+        5818914.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 56,
+      "at": [
+        390374,
+        5818936.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 57,
+      "at": [
+        390370,
+        5818953.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 58,
+      "at": [
+        390365,
+        5818972.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 59,
+      "at": [
+        390351.25,
+        5819017.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 60,
+      "at": [
+        390341.88,
+        5819054.38
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 62,
+      "at": [
+        390258.25,
+        5819325.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 63,
+      "at": [
+        390249.5,
+        5819360.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 64,
+      "at": [
+        390240.75,
+        5819395.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 65,
+      "at": [
+        390224.5,
+        5819444
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 66,
+      "at": [
+        390209.5,
+        5819495.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 67,
+      "at": [
+        390200,
+        5819528.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 68,
+      "at": [
+        390176.25,
+        5819608.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 69,
+      "at": [
+        390157,
+        5819649.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 70,
+      "at": [
+        390130,
+        5819634.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 71,
+      "at": [
+        390155,
+        5819566
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 72,
+      "at": [
+        390167.5,
+        5819523.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 73,
+      "at": [
+        390185.75,
+        5819467.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 74,
+      "at": [
+        390202,
+        5819407.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 75,
+      "at": [
+        390217,
+        5819360.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 76,
+      "at": [
+        390230.5,
+        5819313.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 77,
+      "at": [
+        390249.25,
+        5819252
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 78,
+      "at": [
+        390265.5,
+        5819194.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 79,
+      "at": [
+        390298.75,
+        5819095
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 80,
+      "at": [
+        390318.75,
+        5819043.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 81,
+      "at": [
+        390340,
+        5818945
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 88,
+      "at": [
+        390378.5,
+        5818814.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 90,
+      "at": [
+        390387.25,
+        5818788
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 92,
+      "at": [
+        390397.88,
+        5818755.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 94,
+      "at": [
+        390405.75,
+        5818721
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 98,
+      "at": [
+        390419.5,
+        5818681
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 99,
+      "at": [
+        390424.5,
+        5818662.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 101,
+      "at": [
+        390433.25,
+        5818631
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 103,
+      "at": [
+        390455.5,
+        5818550.63
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 104,
+      "at": [
+        390461.5,
+        5818531.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 107,
+      "at": [
+        390475.25,
+        5818484
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 109,
+      "at": [
+        390486.5,
+        5818446.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 112,
+      "at": [
+        390496.5,
+        5818414
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 115,
+      "at": [
+        390506.5,
+        5818376.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 117,
+      "at": [
+        390515,
+        5818349.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 119,
+      "at": [
+        390525,
+        5818310.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 122,
+      "at": [
+        390537.5,
+        5818270.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 123,
+      "at": [
+        390545,
+        5818245.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 125,
+      "at": [
+        390552.5,
+        5818215.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 127,
+      "at": [
+        390565,
+        5818171.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 128,
+      "at": [
+        390572.25,
+        5818143.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 134,
+      "at": [
+        390602.25,
+        5818049.75
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 136,
+      "at": [
+        390613.75,
+        5818011.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 138,
+      "at": [
+        390627.5,
+        5817965
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 140,
+      "at": [
+        390640,
+        5817927.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 142,
+      "at": [
+        390653.75,
+        5817885
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 144,
+      "at": [
+        390666.25,
+        5817847.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 146,
+      "at": [
+        390695,
+        5817801.25
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    },
+    {
+      "number": 148,
+      "at": [
+        390727.5,
+        5817775.5
+      ],
+      "source": "Straube, Übersichtsplan von Berlin (1910), the cache tiles along the street (cache/berlin/rasters/straube): the number printed on the lot, read by eye at 0.25 m a pixel on a 10 m grid (tools/map/stcrop.ts; about 2 m). Every reading sits 8-22 m off the axis on its own side and in walking order (research/straube-numbers-wilhelmstrasse.tsv). A house the directory lists over two numbers is put midway between the plan's two; the tiles sit within 1 m of ALKIS (align_straube_alkis.json), not applied"
+    }
+  ],
+  "known_left_out": {
+    "43": "the plan prints, going south, 44, 43, 43B, A (so 43 north of 43b), where the directory lists 43, 43a, 43b, 44 going north; the two disagree, so 43 is not anchored and 43-43b spread between Zimmerstraße and 44",
+    "104": "read on the plan, but the directory has no 104 here (its \"101\" after 103 is likely 104 misread, not corrected)"
+  }
+}

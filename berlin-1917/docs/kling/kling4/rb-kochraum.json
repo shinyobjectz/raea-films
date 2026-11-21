@@ -1,0 +1,9 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/rb-kochraum.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys4/rb-kochraum3.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks exactly like @Image1: real 35 mm film footage shot in Berlin in the autumn of 1917, the cramped cooking room of a porter's flat under a ceiling of bare planks, a broken white tiled range with a small iron stove pushed into it, white linen hanging on a washing line, framed family photographs on the plank wall, lit by one hard flash-like light with deep shadows. Keep the camera move, the framing, the timing and every wall, beam, door, step, rail and object exactly where it is. Replace every surface with the real brick, plaster, timber and iron of @Image1. Real footage with natural film grain and true exposure, not computer graphics. No people. Add no text."
+}

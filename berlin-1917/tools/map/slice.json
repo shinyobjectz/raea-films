@@ -1,0 +1,41 @@
+{
+  "name": "friedrichstadt",
+  "crs": "EPSG:25833",
+  "bbox": [
+    389400,
+    5817300,
+    392900,
+    5820800
+  ],
+  "tile": 500,
+  "rasters": [
+    {
+      "key": "straube",
+      "svc": "straubeplan",
+      "layer": "straubeplan",
+      "mpp": 0.25,
+      "ext": "png"
+    },
+    {
+      "key": "photo1928",
+      "svc": "luftbild_1928_04",
+      "layer": "c_luftbilder_1928_04_raster",
+      "mpp": 0.25,
+      "ext": "jpg"
+    },
+    {
+      "key": "use1910",
+      "svc": "staedtebauliche_entwicklung",
+      "layer": "berlin_1910",
+      "mpp": 0.5,
+      "ext": "png"
+    },
+    {
+      "key": "photo2026",
+      "svc": "truedop_2026",
+      "layer": "truedop_2026",
+      "mpp": 0.5,
+      "ext": "jpg"
+    }
+  ]
+}

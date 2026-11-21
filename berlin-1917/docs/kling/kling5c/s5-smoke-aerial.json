@@ -1,0 +1,9 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/s5-smoke-aerial.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys5c/s5-smoke-aerial.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks exactly like @Image1: real 35 mm film footage shot in Berlin in the winter of 1917, an aerial view at first light over the snowy roofs of the Friedrichstadt toward the two domes of the Gendarmenmarkt, coal smoke from thousands of chimneys leaning east in the cold air. Keep the camera move, the framing, the timing and every building, window, sign, lamp, rail and person exactly where it is, with the lettering of every sign unchanged. Replace every surface with the real stone, glass, wood, snow and slush of @Image1. Anyone walking walks naturally at a normal pace. Real footage with natural film grain and true exposure, not computer graphics. Add no text."
+}

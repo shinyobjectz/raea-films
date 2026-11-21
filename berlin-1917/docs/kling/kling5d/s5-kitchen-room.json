@@ -1,0 +1,9 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/s5-kitchen-room.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys5d/s5-kitchen-room.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks exactly like @Image1: real 35 mm film footage shot in Berlin in 1917, the side-wing kitchen of a worker's flat, a white tiled kitchen range, a white kitchen dresser with paper lace on its shelves, the iron bed where the lodger sleeps, a kitchen table, a chair, washing hung under the ceiling, lime-washed walls with a green oil-paint dado, grey daylight. Keep the camera move, the framing, the timing and every wall, beam, door, window and object exactly where it is. Replace every surface with the real materials of @Image1. Real footage with natural film grain and true exposure, not computer graphics. No people. Add no text."
+}

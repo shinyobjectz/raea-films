@@ -1,0 +1,7 @@
+{
+ "id": "s5-cellar-coal",
+ "seconds": 6.0,
+ "kind": "real",
+ "what": "coal sacks against the snowy court's wall by the cellar entrance (a court shot, not inside a cellar)",
+ "line": "v22 \"coal was short\""
+}

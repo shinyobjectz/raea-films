@@ -1,0 +1,8 @@
+{
+  "name": "berlin-1917-map",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "earcut": "3.0.1"
+  }
+}

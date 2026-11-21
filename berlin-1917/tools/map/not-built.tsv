@@ -1,0 +1,19 @@
+# Pieces the 1910 plan draws as buildings that are not buildings, or that were gone by winter 1917-18. Each was checked
+# by eye on 11-17 against the Straube scan and the 1928 photo; a demolition carries its source. The first nine were
+# among the 19 "public" pieces with 60% or more of their inside as pale as paper (drawn.ts); the rest were found by the
+# world lane at eye height. build.sh drops the building or public piece that holds each point, and the ground there
+# becomes open (courtyard or street by the plan's tint, as any other).
+x	y	what
+390644.7	5820670.9	garden parterre with a dashed fan of paths (photo: beds and a semicircle)
+390982.8	5820269.4	round plot on a barracks square (34 m2)
+391146.7	5820531.8	inner courtyard of the Domkandidatenstift
+391138.1	5820531.2	ring round the same courtyard
+391245.3	5819755.2	pale passage beside the Kronprinzenpalais
+391263.3	5819367.3	26 m2 speck under trees
+392054.2	5819589.1	18 m2 speck in a narrow yard
+392256.3	5820308.8	pale strip along the street with a dashed end (a planned line, not a house)
+392032.9	5818152.6	pale yard strip inside the synagogue's plot
+390927.9	5819381.9	Schiller monument's plinth (Begas, 1871) on the Schillerplatz, not a house
+390959.5	5819276.7	garden strip beside the Deutscher Dom under the plan's U-Bahn marks (photo: beds and trees)
+390623.2	5820194.1	gone by 1917: Kaiser-Wilhelms-Akademie, Friedrichstraße 139-141, demolished 1913/14 (de.wikipedia "Spreedreieck"; the site lay fallow until the 1921 competition); Adreßbuch 1917: 139-140 "Baustellen", 141 "Baustelle"
+390614.2	5820260.3	gone by 1917: Geschäftshaus Friedrichstraße 138 / Reichstagufer 19, bought by the state and demolished 1915/16 (de.wikipedia "Spreedreieck"); Adreßbuch 1917: 138 "Baustelle", 137 "existiert nicht"

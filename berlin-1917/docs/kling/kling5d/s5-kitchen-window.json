@@ -1,0 +1,9 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/s5-kitchen-window.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys5d/s5-kitchen-window.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks exactly like @Image1: real 35 mm film footage shot in Berlin in 1917, looking out of the open double casement window of a third-floor kitchen in a tenement, lace curtains at both sides, onto the plastered walls and windows of the courtyard below, grey daylight. Keep the camera move, the framing, the timing and every wall, beam, door, window and object exactly where it is. Replace every surface with the real materials of @Image1. Real footage with natural film grain and true exposure, not computer graphics. No people. Add no text. No pictures or frames hung on the walls."
+}

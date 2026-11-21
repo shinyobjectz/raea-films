@@ -1,0 +1,50 @@
+# What stands in the housing survey's photographs (cache/refs/zlb-raw; the AOK Berlin sick fund's Wohnungs-Enquete,
+# 1903-1920, public domain), read off contact sheets of 480 px tiles by Claude, 11-17, for the director's notes on v7
+# (a review note). The first 36 of the 127 interior photos in id order (sheets 0-2). Only what reads at that
+# size: small things (a gramophone, a crucifix) are not counted. "?" unsure, "-" not in the frame (a stove is often
+# behind the camera). The survey shows the fund's sick and poorest members: the bottom of the worker class, not its
+# middle. Columns: room pictured (S Stube, K kitchen, C Kammer, A attic room, W workroom), beds, sofa, table (R round,
+# Q square or oblong, -), cloth (F to the floor, H half way, B bare or oilcloth), case furniture, mirror, stove (T
+# tiled, I iron, R range, 0 none per the text), wall clock (C carved Black Forest, R round, -), pictures, other.
+id	room	beds	sofa	table	cloth	case	mirror	stove	clock	pictures	other
+z2_1913_1914_MP_0081	K	1	0	Q	B	dresser	-	-	-	3
+z2_1913_1914_MP_0083	S	-	0	Q	F	-	-	-	-	5+	gas pendant
+z2_1913_1914_MP_0087	K	1	0	-	-	-	-	R	-	1	sewing machine, bed in a niche
+z2_1913_1914_MP_0089	A	1	0	Q	H	cabinet	-	-	?	5+	board walls
+z2_1913_1914_MP_0091	K	0	0	Q	B	dresser	-	R	-	0	canister shelf, bench
+z2_1913_1914_MP_0093	K	1	0	-	-	-	-	-	-	0	ladder to a sleeping loft
+z2_1913_1914_MP_0099	W	?	0	Q	B	chest	-	-	-	3	tailor's workroom, sewing machine
+z2_1913_1914_MP_0101	K	2	0	Q	-	dresser	-	R	-	1	four sleep in it
+z2_1913_1914_MP_0103	C	1	0	Q	H	-	?	0	-	3	pram; "Schlafzimmer ohne Heizgelegenheit"
+z2_1915_1916_MP_0089	K	0	0	Q	B	shelf	-	R	-	1
+z2_1915_1916_MP_0091	S	2	0	Q	-	wardrobe	-	0	-	2	"Ein Ofen ist nicht vorhanden"
+z2_1915_1916_MP_0093	K	1	0	-	-	-	-	I	R?	2	"Küche mit eisernem Ofen"
+z2_1915_1916_MP_0095	S	2	0	Q	B	wardrobe	-	-	C	3	gas pendant; Stube 7.40 x 4.80 x 3 m
+z2_1915_1916_MP_0101	K	1	0	-	-	-	-	I	-	0
+z2_1915_1916_MP_0103	K	0	0	Q	B	dresser	-	R	-	0	canister shelf with edging
+z2_1915_1916_MP_0105	S	2	0	Q	-	wardrobe, chest	over chest	-	-	2
+z2_1915_1916_MP_0107	K	0	0	Q	-	dresser	-	-	-	0
+z2_1915_1916_MP_0109	C	1	0	-	-	chest	-	-	-	2	plates on the wall
+z2_1915_1916_MP_0113	K	1	0	Q	-	dresser	-	R	-	1	plates on the wall
+z2_1915_1916_MP_0115	K	1	0	-	-	dresser	-	R	-	0
+z2_1915_1916_MP_0117	C	2	0	-	-	-	-	-	R?	3	attic slope
+z2_1917_MP_0073	K	0	0	Q	B	dresser	-	R	-	0	spice cabinet
+z2_1917_MP_0075	S	1	0	-	-	chest	pier mirror on a console	-	-	2
+z2_1917_MP_0083	S	1	0	Q	-	-	-	T	R	5+	pram
+z2_1917_MP_0089	S	1	0	-	-	vertiko	-	-	-	2	gas pendant; WC built into the Stube
+z2_1917_MP_0091	S	1	0	-	-	wardrobe	-	-	?	2
+z2_1917_MP_0095	K	0	0	Q	-	dresser	-	R	-	0
+z2_1919_1920_MP_0081	S	0	1	R	F	-	-	-	C	4+	gas pendant; the sofa corner
+z2_1919_1920_MP_0083	S	2	0	-	-	-	-	-	C	5+	gas pendant; 9 sleep in it
+z2_1919_1920_MP_0085	-	-	-	-	-	-	-	-	-	-	allotment hut, outside
+z2_1919_1920_MP_0087	-	-	-	Q	-	dresser	-	-	-	-	allotment hut, inside
+z2_1919_1920_MP_0089	S	-	-	-	-	-	-	-	-	0	dark, nearly empty
+z2_1919_1920_MP_0091	W	-	1?	Q	-	-	-	-	-	1	dressmaker's workroom
+z2_1919_1920_MP_0093	K	1	0	-	-	dresser	-	-	-	1	parents and two children live in it
+z2_1919_1920_MP_0095	S	2	0	-	-	chest	over chest	-	C	5+	gas pendant; 9 people in room and kitchen
+z2_1919_1920_MP_0097	S	-	0	Q	F	-	-	-	C	4+	gas pendant; mother and 8 children
+# Tally (rooms where the thing would show): Stube 13 (S): a carved wall clock in 5 (38%), a round one in 1; a sofa in
+# 1; 2+ beds in 6, a bed in 11 of the 13 where beds could show; a white cloth to the floor on 3 of 6 tables seen;
+# case furniture in 9; a mirror over a chest in 2, a pier mirror on a console in 1; a gas pendant in 7. Kitchen 15
+# (K): a bed in 9 (60%), a dresser in 11, a tiled range in 9, an iron stove in 2. The texts name 6 iron stoves
+# (Kanonenöfen) and 4 rooms with no stove across all 157 photos.

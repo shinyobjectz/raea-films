@@ -1,0 +1,11 @@
+{
+ "street": "Jerusalemer Straße",
+ "axis": { "a": [391192.13, 5819056.10], "u": [-0.07297, 0.99733], "s0": -560, "s1": 260, "source": "fitted to the 1900 map's house numbers within 22 m of it (29 of them), anchored at its crossing with the Leipziger Straße axis (station 460 there); parallel to Friedrichstraße's within 0.3 degrees, as the Friedrichstadt grid has it; stations in metres north of the Leipziger Straße crossing. OHM has no line for it" },
+ "sides": ["east", "west"],
+ "first_side": "numbers 1-23 go north up the east side from the Jerusalemkirche to Hausvogteiplatz; 24-66 come back down the west from Mohrenstraße to Lindenstraße (the directory's postal line: 1-13 u. 36-66 SW 19, 14-35 C 19)",
+ "corners_source": "OHM's crossing streets met with the axis (Linden-, Koch-, Zimmer-, Schützen-, Krausen-, Leipziger, Kronenstraße); the Jerusalemkirche's north end from its OHM outline (1879-1945); Hausvogteiplatz and Mohrenstraße from the 1900 map's numbers (east 23 at 174 and Hausvogteiplatz 10 at 186, west 24 at 182); Dönhoffplatz fills the east side between Krausen- and Leipziger Straße, put in its middle",
+ "corners": {
+  "Lindenstr.": -537, "Kochstr.": -406, "Jerusalemer Kirche": -387, "Zimmerstr.": -299, "Schützenstr.": -198,
+  "Krausenstr.": -97, "Dönhoffplatz": -50, "Leipziger Str.": 0, "Kronenstr.": 101, "Hausvogteiplatz": 190, "Mohrenstr.": 198
+ }
+}

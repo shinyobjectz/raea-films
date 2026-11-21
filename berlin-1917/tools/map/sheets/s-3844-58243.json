@@ -1,0 +1,39 @@
+{
+  "name": "s-3844-58243",
+  "cache": "berlin",
+  "crs": "EPSG:25833",
+  "bbox": [
+    384400,
+    5824300,
+    385900,
+    5826800
+  ],
+  "tile": 500,
+  "out": "map/1917/sheets/s-3844-58243",
+  "align": "../../cache/berlin/align_straube_alkis.json",
+  "berlin1900": "../../cache/friedrichstadt/berlin1900",
+  "note": "A sheet of the city: the scan offset is the city's (align.ts berlin.json, one field for every sheet so seams agree); the 1900 vectors are friedrichstadt's.",
+  "rasters": [
+    {
+      "key": "photo1928",
+      "svc": "luftbild_1928_04",
+      "layer": "c_luftbilder_1928_04_raster",
+      "mpp": 0.25,
+      "ext": "jpg"
+    },
+    {
+      "key": "straube",
+      "svc": "straubeplan",
+      "layer": "straubeplan",
+      "mpp": 0.25,
+      "ext": "png"
+    },
+    {
+      "key": "use1910",
+      "svc": "staedtebauliche_entwicklung",
+      "layer": "berlin_1910",
+      "mpp": 0.5,
+      "ext": "png"
+    }
+  ]
+}

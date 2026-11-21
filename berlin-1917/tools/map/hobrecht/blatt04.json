@@ -1,0 +1,23 @@
+{
+ "note": "Blatt 4 (System III): the frame less its legend and the inset of the Tiergarten end",
+ "frame": {
+  "x0": 430,
+  "y0": 480,
+  "x1": 4030,
+  "y1": 6015
+ },
+ "holes": [
+  {
+   "x0": 420,
+   "y0": 480,
+   "x1": 1010,
+   "y1": 2500
+  },
+  {
+   "x0": 420,
+   "y0": 4700,
+   "x1": 2010,
+   "y1": 6100
+  }
+ ]
+}

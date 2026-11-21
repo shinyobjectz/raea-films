@@ -1,0 +1,7 @@
+# Park pieces the Straube reader made of roadway, each checked by eye against the plan scan (2026-11-16). build.sh drops
+# the reader's park piece within 2 m of each point. Long thin parks on streets can be real (Unter den Linden's beds), so
+# no shape rule does this.
+x	y	where
+390416.8	5818994.1	Leipziger Straße between Wilhelm- and Mauerstraße (roadway)
+390309.1	5818233.9	Wilhelmstraße by Prinz-Albrecht-Straße (roadway)
+390508.1	5819105.8	Mauerstraße by Kronenstraße (roadway)

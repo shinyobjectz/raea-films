@@ -1,0 +1,11 @@
+{
+ "street": "Leipziger Straße",
+ "axis": { "a": [390733.36, 5819021.93], "u": [0.99723, 0.07427], "s0": -800, "s1": 1000, "source": "its 1917 axis (OHM, 1688-1977) through Friedrichstraße, stations in metres east of it" },
+ "sides": ["south", "north"],
+ "first_side": "number 1, the Herrenhaus at 3, Dönhoffplatz: the south side, walked east; the second comes back on the north",
+ "corners": {
+  "Leipziger Platz": -600, "Wilhelmstr.": -393, "Mauerstr.": -174, "Friedrichstr.": 0, "Charlottenstr.": 129, "Markgrafenstr.": 261,
+  "Jerusalemer Str.": 460, "Dönhoffplatz": 530, "Kommandantenstr.": 600, "Beuthstr.": 779, "Seydelstr.": 824, "Spittelmarkt": 860
+ },
+ "corners_source": "OHM where it has the street (Wilhelm-, Mauer-, Friedrich-, Charlotten-, Markgrafen-, Seydelstraße); the others read off the 1917 fronts and the Adreßbuch's own diagram"
+}

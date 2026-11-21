@@ -1,0 +1,10 @@
+{
+ "endpoint": "fal-ai/kling-video/o3/pro/video-to-video/edit",
+ "video_file": "src/rb-dive-end.mp4",
+ "image_files": [
+  "out/rebuilt/real/keys5c/rb-dive-street.png",
+  "out/rebuilt/real/keys5c/rb-dive.png"
+ ],
+ "keep_audio": false,
+ "prompt": "Re-render @Video1 so it looks like real 35 mm film footage shot in Berlin in the winter of 1917: the camera descends past snowy rooftops that look like @Image2 into Leipziger Strasse, and the street at the end looks exactly like @Image1, tall stone business houses and the glass-fronted department store, tram rails in the slush, gas lamps, people of 1917 on the pavements. Keep the camera move, the framing, the timing and every building, window, lamp, rail and person exactly where it is. Replace every surface with the real stone, glass, snow and slush of the images. Anyone walking walks naturally at a normal pace. Real footage with natural film grain and true exposure, not computer graphics. Add no text."
+}

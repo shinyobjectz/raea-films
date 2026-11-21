@@ -1,0 +1,5 @@
+{
+ "note": "Blatt 5 (System IV, 1:7500, a double page; north drawn 59 deg anticlockwise of the page top): the main map, less its legend and the inset b of Alt-Berlin (blatt05b).",
+ "frame": { "x0": 600, "y0": 500, "x1": 7890, "y1": 5930 },
+ "holes": [{ "x0": 2990, "y0": 0, "x1": 6000, "y1": 1915 }, { "x0": 5990, "y0": 470, "x1": 7920, "y1": 1160 }]
+}
