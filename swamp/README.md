@@ -1,4 +1,4 @@
-# Swamp
+# Mothership
 
 [![A giant monitor sunk in a swamp, brought back to life](docs/cover.jpg)](https://media.raea.io/#swamp)
 
